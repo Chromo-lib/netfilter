@@ -40,6 +40,7 @@ export default defineConfig({
       enforce: 'pre'
     },
     react(),
+    copyStatic('rulesets'),
     process.env.NODE_ENV === 'production' ? copyStatic('static') : null,
     process.env.NODE_ENV === 'production' ? combineRules() : null
   ]
