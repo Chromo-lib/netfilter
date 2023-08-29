@@ -1,0 +1,253 @@
+:root {
+  --light: #e7e7e7;
+  --white:#fff;
+  --transparent: #13131359;
+  --black:#212121;
+  --dark: #2c2c2c;
+  --green: #98c379;
+  --blue:#3f51b5;
+  --rose:#a80038;
+  --red:#bd0d00;
+  --coffee:#795548;
+  --persian_green:#009688;
+  --metal:#607d8b;
+  --gray:#565656;
+  --yellow:#8f8c00;
+  --viola:#4a3968;
+
+  --border:1px solid #383838;
+  --linear:linear-gradient(90deg,#171923, #101114) padding-box, linear-gradient(90deg, #FFBE0B, #FF0075, #0076FF, #06D6A0) border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  margin: 0;  
+  font-size: .85rem;
+  font-family: "__Inter_20951f","__Inter_Fallback_20951f", "DejaVu Sans Mono","Liberation Mono","Consolas","Ubuntu Mono","Courier New","andale mono","lucida console",monospace;
+  letter-spacing: 0.6px;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+#root {width: 100vw; height: 100vh; position: relative; display: flex; flex-direction: column; padding: 7px;}
+
+header {height: 50px; position: absolute; position: sticky; top: 0; backdrop-filter: blur(2px);}
+aside { overflow: auto; }
+main {height: calc(100% - 50px); overflow: auto;}
+
+textarea, button, select, input,option {
+  background-color: var(--gray);
+  color: var(--white);
+  font-size: .85em;
+  padding: 10px 25px; 
+  border: var(--border);
+  outline: none;
+}
+
+option,p,li {font-size: .85rem;}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;  
+  letter-spacing: 2px;
+  line-height: 1.5;  
+  box-shadow: 0 0 18px rgb(0 0 0 / 20%);
+  transition: all .25s;
+}
+
+textarea:hover, input:hover, select:hover ,button:hover {
+  opacity: 0.8;
+}
+
+a {color: var(--gray);}
+
+textarea { resize: none; padding: 10px;}
+
+ul { list-style: none; margin: 0; padding: 0;}
+
+li {  
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+li:last-child {margin-bottom: 0;}
+
+pre { overflow: auto; max-height: 300px; padding: 10px;}
+
+p {
+  margin-top: 0; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+small {color: var(--gray);}
+
+hr {
+  width: 100%;
+    border-color: var(--gray);
+    margin: 15px 0;
+}
+
+.box {
+  font-family: 'Consolas','Courier New', Courier, monospace;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 1px solid var(--gray);
+}
+
+.tag {
+  color: var(--gray);
+  font-size: 0.73rem;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  padding: 5px 10px;
+  margin-left: 0;
+  margin-bottom: 0;
+  word-break: keep-all;
+}
+/*****************************************/
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--transparent);
+  padding: 70px;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.modal-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+
+.btn-close-modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 35px !important;
+}
+/********************************************/
+.m-0 {margin: 0;}
+.mb-0 {margin-bottom: 0;}
+
+.mb-1 {margin-bottom: 10px;}
+.mr-1 {margin-right: 10px;}
+.ml-1 {margin-left: 10px;}
+.mt-1 {margin-top: 10px;}
+
+.mr-3 {margin-right: 30px;}
+.mt-3 {margin-top: 30px;}
+
+.p-0 {padding: 0;}
+.p-1 {padding: 10px;}
+
+.d-none {display: none;}
+.d-flex {display: flex;}
+.flex-wrap {flex-wrap: wrap;}
+.flex-column {flex-direction: column;}
+.align-center {align-items: center;}
+
+.justify-center {justify-content: center;}
+.justify-between {justify-content: space-between;}
+
+.grid-2 {display: grid; grid-template-columns: 1fr 1fr; gap: 10px;}
+.grid-3 {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;}
+
+.w-100 {width: 100%;}
+.h-100 {height: 100%;}
+
+.blur {backdrop-filter: blur(5px);}
+
+.truncate {width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.br7 {border-radius: 7px;}
+
+.border-0 {border: 0;}
+.bordered {border: 2px solid var(--dark);}
+.border-bottom {border-bottom: var(--border);}
+.border-linear {background: var(--linear);border: 1px solid transparent;}
+
+.green{color: var(--green);}
+.red{color: var(--red);}
+.rose{color: var(--rose);}
+.gray {color: var(--gray);}
+
+.bg-dark {background-color: var(--dark);}
+.bg-transparent, .image,.media, .stylesheet,.font {background-color: var(--transparent);}
+.bg-green, .image,.media {background-color: var(--green); color: var(--white);}
+.bg-persian_green,.font {background-color: var(--persian_green); color: var(--white);}
+.bg-viola, .stylesheet {background-color: var(--viola); color: var(--white);}
+.bg-coffee, .websocket,.webtransport {background-color: var(--coffee); color: var(--white);}
+.bg-blue, .csp_report {background-color: var(--blue); color: var(--white);}
+.bg-rose, .script {background-color: var(--rose); color: var(--white);}
+.bg-red, .xmlhttprequest {background-color: var(--red); color: var(--white);}
+.bg-metal, .ping,.other {background-color: var(--metal); color: var(--white);}
+.bg-yellow, .sub_frame,.main_frame {background-color: var(--yellow); color: var(--white);}
+.bg-linear {background: var(--linear);}
+
+.scale {animation: scale 0.25s;}
+
+.fadein {animation: fadein .25s;}
+
+.blink { animation: blink-animation 3s infinite;}
+
+.overflow {overflow: auto;}
+
+.lead {font-size: 16px;}
+
+@keyframes blink-animation { to { opacity: 0;  visibility: hidden; }}
+
+@keyframes scale {
+  0% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light);
+}

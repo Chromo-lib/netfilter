@@ -1,0 +1,68 @@
+body {
+  user-select: initial !important;
+}
+
+.ytp-ad-skip-button-slot,
+.ytp-ad-skip-button-container,
+.ytp-ad-skip-button {
+  display: block !important;
+}
+
+#ad-block-modal,#onetrust-banner-sdk,#box-over-content-a,#ad_overlay,#sticky-ad,#video-ad,#Billboard-ad,#onetrust-consent-sdk,
+#popupModal,#appconsent,#ad-wrap,#id-custom_banner,#onboarding-splash,#cookies_policy_wrap,#ad_bnr_atf_01,
+#content-for-adblock,#newsletter-floating,#page-body,#player-ads,#CybotCookiebotDialogBodyUnderlay,
+#show-ad,#masthead-ad,#google-top-ads,#ads_left,#big-yoodle,#display-ads,#adContainer,
+#tgChat {
+  display: none !important;
+}
+
+.ytp-ad-progress-list,.aeF > .nH > .nH[role="main"] > .aKB,.ad-slot-header__wrapper,.ad-feedback-link-container,
+.ads_under_player,.advert-wrapper,.cookie-policy,.adSlotHeaderContainer,.ad-slot-header,.ad-feedback__modal,.h-position-fixed-bottom,
+.ad-link,.post-ads,.sponsored_ad,.AdBox,.advertising_widget,.sticky-ad-bottom,.js-skyscraper-ad,.theiaStickySidebar,
+.adsbygoogle,.side-ads,.seoAdWrapper,.wall_marked_as_ads,._ads_block_data_w,.news_ticker_iframe,.burda-masthead-placement.ad,
+.badge-style-type-ad,.ad-slot,.boxOverContent__banner,.adstextpad,.google-bottom-ads,._ap_apex_ad,.ct_popup_modal,.HeaderAd,
+.GoogleActiveViewElement,.ezoic-ad-adaptive,.ezoic-ad,.adtester-container,.flex-posts-ads,.content-kuss-ads,.adsense-ads,
+.q-box.dom_annotate_ad_image_ad,.q-box.dom_annotate_ad_promoted_answer,.q-box.spacing_log_question_page_ad,.sponsorAd,
+.aplvideo,.otPlaceholder,.box.chat,.ytp-ad-player-overlay,.ytp-ad-image-overlay,.widget_abn_admanager_sidestealer,
+.boxOverContent--a,.adsenvelope,.sponsored_ad,.pgAdWrapper,.header-ad,.cookieWrapper{
+  display: none !important;
+}
+
+ytm-promoted-video-renderer,
+ytm-companion-slot,
+ytm-companion-ad-renderer,
+ytd-compact-promoted-video-renderer,
+ytd-display-ad-renderer,
+ytd-ad-slot-renderer,
+ytd-carousel-ad-renderer,
+ytd-promoted-video-renderer,
+ytd-movie-offer-module-renderer,
+ytd-promoted-sparkles-web-renderer,
+ytd-promoted-sparkles-text-search-renderer,
+ytd-player-legacy-desktop-watch-ads-renderer {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+[id^="ads."],div[aria-label="Ads"],div[class*="btf_ad-placements-"],div[class*="ad-topper"],
+a[href^="https://www.googleadservices.com/pagead/aclk?"],div[id^="lsadvert-"],
+div[data-advertiser-id],a[href^="https://affpa.top/"],a[aria-label="Advertiser"],
+div[class^="Hits_SponsoredWrapper__"],iframe[id^="google_ads_frame"],div[id^="adsads"],
+div[class^="MaxBanner_container_"],div[id^="div-gpt-ad"],div[class^="MaxBanner_container_"],iframe[name^="google_ads_iframe"],
+[aria-label=cookieconsent],div[aria-label*="Timeline: Explore"],div[data-placeholder-*="Ad"],aside[aria-label*="Who to follow"],div[aria-label*="Timeline: Trending now"],
+iframe[id^=ad_],div[class*="-ad-v"],div[class*="ads"],div[class*="-ads-"],div[class*="AdsenseAd_"],a[href*="/adwords/"],a[href*="doubleclick.net"],iframe[src*="doubleclick.net"],
+a[href^="http://www.youtube.com/cthru?"],a[href^="https://www.youtube.com/cthru?"],
+a[onclick*='"ping_url":"http://www.google.com/aclk?'],a[rel^="sponsored"][target="_blank"],
+a[onclick*="\"ping_url\":\"http://www.google.com/aclk?"],a[href^="https://www.bet365.com/"][href*="affiliate="],
+a[data-ads-placement-id],a[data-ads-placement-type],a[href*=".aflam.info"],a[href*=".hao123.com/?tn="] > img,a[href*="/?track=ad:"],a[href*="/jump/next.php?r="],
+a[href*="adintop.com/outgoing/click.php?"],a[href*="booraq.org"],
+a[href*="dubizzle.com/ar/?utm_source="],a[href^="http://arabyads.go2cloud.org/"],
+a[href^="http://clicks.pipaffiliates.com/"] > img,a[href^="http://viral481.com/srv."],
+a[href^="http://www.fusebux.com/index.php?r="] > img,a[href^="https://arabic-life.buzz/"],
+a[href^="https://cs-api.postquare.com/gas-api/click.json?"],a[href^="https://firstbyte.pro/?from="] > img,
+a[href^="https://halocell.com/go/"] > img,a[href^="https://khamsat.com/?r="] > img,
+a[href^="https://witalfieldt.com/"]
+{
+  display: none !important;
+  visibility: hidden !important;
+}

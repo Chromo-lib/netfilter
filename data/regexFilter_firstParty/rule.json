@@ -1,0 +1,20 @@
+{
+  "priority": 2,
+  "action": {
+    "type": "block"
+  },
+  "condition": {
+    "regexFilter": "",
+    "domainType": "firstParty",
+    "excludedRequestDomains": [],
+    "excludedInitiatorDomains": [],
+    "resourceTypes": [
+      "script",
+      "xmlhttprequest",
+      "ping",
+      "websocket",
+      "other",
+      "csp_report"
+    ]
+  }
+}

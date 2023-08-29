@@ -1,0 +1,12 @@
+node_modules
+dist
+build
+_data
+
+.cache
+package-lock.json
+yarn.lock
+yarn-error.log
+combine-rules-test
+*.zip
+*.rar

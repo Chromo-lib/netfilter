@@ -1,0 +1,10 @@
+{
+  "id": 89,
+  "action": {
+    "type": "block"
+  },
+  "condition": {
+    "urlFilter": "||ads724.com^",
+    "isUrlFilterCaseSensitive": false
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "sec-ch-ua-platform",
+          "operation": "set",
+          "value": "Windows"
+        }
+      ]
+    },
+    "condition": {
+      "regexFilter": "https:\/\/.*",
+      "resourceTypes": [
+        "main_frame",
+        "script",
+        "xmlhttprequest",
+        "ping",
+        "image",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "ping",
+        "csp_report"
+      ]
+    }
+  }
+]

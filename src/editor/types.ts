@@ -1,0 +1,1 @@
+export type WebResponseErrorDetails = chrome.webRequest.WebResponseErrorDetails;

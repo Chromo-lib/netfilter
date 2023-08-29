@@ -1,0 +1,15 @@
+abuseipdb.com
+dash.deno.com
+facebook.com
+googlevideo.com
+google.com
+openai.com
+gstatic.com
+virustotal.com
+polyfill.io
+youtube.com
+tiktok.com
+twitter.com
+deno.dev
+sndcdn.com
+alicdn.com

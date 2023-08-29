@@ -1,0 +1,25 @@
+{
+  "priority": 1,
+  "action": {
+    "type": "block"
+  },
+  "condition": {
+    "requestDomains": [],
+    "domainType": "thirdParty",
+    "resourceTypes": [
+      "sub_frame",
+      "script",
+      "stylesheet",
+      "font",
+      "image",
+      "xmlhttprequest",
+      "ping",
+      "media",
+      "websocket",
+      "webtransport",
+      "webbundle",
+      "csp_report",
+      "other"
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "(\/assets\/jquery\/jquery-1.2.2.min|\/cast_sender|advertisement|cdn-tracking).js",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "(\/assets\/jquery\/jquery-1.2.2.min|\/cast_sender|advertisement|cdn-tracking).js",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/detroitchicago\/(houston|cmbdv2).js",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/cdn-cgi\/(apps\/head\/|zaraz).js",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/(invoke|fbevents|plausible|geo|ga.min.|pixelNew|lazyload-ad|beacon|analysis|tracking).js$",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/(invoke|fbevents|plausible|geo|ga.min.|pixelNew|lazyload-ad|beacon|analysis|tracking).js$",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/(action=ads&|api\/v2\/collector|Events\/Impression|log_event|plugins\/vast|pb.load-gpt-ads)",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/(action=ads&|api\/v2\/collector|Events\/Impression|log_event|plugins\/vast|pb.load-gpt-ads)",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/(monitor\/stat|jsOtAutoBlock|autotrack|satismeter|analytics\/tracking|geoip2|piwik).js$",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/(monitor\/stat|jsOtAutoBlock|autotrack|satismeter|analytics\/tracking|geoip2|piwik).js$",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*(.php.p=stats&).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/(matomo-tracking).js$",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/(matomo-tracking).js$",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^(.+[_.-])?telemetry[_.-]",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^banners?[_.-]",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+        "image"
+      ]
+    }
+  }
+]

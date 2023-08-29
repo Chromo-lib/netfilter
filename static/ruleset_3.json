@@ -1,0 +1,176 @@
+[
+  {
+    "id": 3,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*vk.com\/(performance_observers|userInfoStats|sentry|px.js|videostats|rtrg).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "ping",
+        "script",
+        "xmlhttprequest",
+        "csp_report",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "drift.com\/(impressions|targeting|track).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "ping",
+        "script",
+        "xmlhttprequest",
+        "csp_report"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "hubspot.com\/(analytics|loader-v2.js|tracking|usage-logging).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "ping",
+        "script",
+        "xmlhttprequest",
+        "csp_report"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "amazon.com\/(empty.gif|batch\/1\/OE|ah\/ajax\/counter|events).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "ping",
+        "script",
+        "xmlhttprequest",
+        "csp_report"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "bing.com\/(fd\/ls\/l.*IG.*).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "pinterest.com\/(storage_report|StatsLogResource|string_usage).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "ebay.com\/.*\/(roverimp|delstats|dfpsvc|roverclk|ScandalLoader.js).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "xmlhttprequest",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "usps.com\/.*\/(clear.png|__imp_apg__).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "tiktok.com\/.*\/(report|whale).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*indeed.com\/.*(logType=impression&|logType=trackEvent&|rpc|frontend-sentry-).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "xmlhttprequest",
+        "script",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*usatoday.com\/.*(\/dcjs\/prod\/|pbjsandwich).*",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "xmlhttprequest",
+        "script",
+        "image"
+      ]
+    }
+  }
+]

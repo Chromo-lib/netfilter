@@ -1,0 +1,17 @@
+{
+  "priority": 1,
+  "action": {
+    "type": "block"
+  },
+  "condition": {
+    "domainType": "firstParty",
+    "initiatorDomains": [],
+    "resourceTypes": [
+      "main_frame",
+      "xmlhttprequest",
+      "ping",
+      "image",
+      "other"
+    ]
+  }
+}
