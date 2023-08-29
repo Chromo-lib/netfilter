@@ -8,11 +8,9 @@
     "condition": {
       "regexFilter": ".*vk.com\/(performance_observers|userInfoStats|sentry|px.js|videostats|rtrg).*",
       "domainType": "firstParty",
-      "resourceTypes": [
-        "ping",
+      "resourceTypes": [        
         "script",
         "xmlhttprequest",
-        "csp_report",
         "other"
       ]
     }
@@ -26,8 +24,7 @@
     "condition": {
       "regexFilter": "drift.com\/(impressions|targeting|track).*",
       "domainType": "firstParty",
-      "resourceTypes": [
-        "ping",
+      "resourceTypes": [        
         "script",
         "xmlhttprequest",
         "csp_report"
@@ -43,11 +40,9 @@
     "condition": {
       "regexFilter": "hubspot.com\/(analytics|loader-v2.js|tracking|usage-logging).*",
       "domainType": "firstParty",
-      "resourceTypes": [
-        "ping",
+      "resourceTypes": [        
         "script",
-        "xmlhttprequest",
-        "csp_report"
+        "xmlhttprequest"
       ]
     }
   },
@@ -61,10 +56,8 @@
       "regexFilter": "amazon.com\/(empty.gif|batch\/1\/OE|ah\/ajax\/counter|events).*",
       "domainType": "firstParty",
       "resourceTypes": [
-        "ping",
         "script",
-        "xmlhttprequest",
-        "csp_report"
+        "xmlhttprequest"
       ]
     }
   },

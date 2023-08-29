@@ -39,6 +39,7 @@ _vercel/insights/
 /api/spots/
 /api/v3/trackSegmentEvent
 /assets/ads-
+/assets/jquery/main100\.js\?v\=
 /atrk.js
 /b/ss/indepdev/1/JS-
 /batch/1/OE/
@@ -148,6 +149,7 @@ _vercel/insights/
 /v1/pixel\?
 /valnet-header.
 /vast-im.js
+/video.counters\.
 /videoads/
 /web-vitals-
 /web-vitals.

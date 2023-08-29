@@ -13,13 +13,12 @@ export default function setWebResponseErrorDetailsUL({ webResponseErrorDetails, 
     }
 
     webResponseErrorDetails.reverse().forEach(detail => {
-      const error = detail.error?.replace('net::ERR_', '').slice(0, 1) || 'B';
-      const bgColorError = error === 'B' ? 'red' : error === 'F' ? 'black-red' : 'dark-red';
+      const initiator = getDomainFromUrl(detail.initiator)?.slice(0, 1) || 'I';
 
       webResponseErrorDetailsUL.innerHTML += `<li class="bg-dark border-bottom fadein" id="d-${detail.requestId}"> 
           <div class="w-100 d-flex align-center justify-between">
             <div class="d-flex align-center mb-1 truncate">
-              <span class="ml-0 mr-1 badge rounded bg-black p-5 bg-${bgColorError}" title="${detail.error}">${error}</span>
+              <span class="ml-0 mr-1 badge rounded bg-red p-5" title="${detail.initiator}">${initiator}</span>
               <h4 class="d-block m-0 ml-1 red truncate" title="${detail.host}">${getDomainFromUrl(detail.host)}</h4> 
             </div>
   

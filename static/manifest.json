@@ -41,7 +41,7 @@
       },
       {
         "id": "ruleset_5",
-        "enabled": false,
+        "enabled": true,
         "path": "ruleset_5.json"
       }
     ]

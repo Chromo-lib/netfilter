@@ -3,7 +3,7 @@
 // example.uk.co =>  example.uk.co
 //  www.example.uk =>  example.uk.
 
-export default function getDomainFromUrl(url: string) {
+export default function getDomainFromUrl(url: string | null | undefined) {
   if (!url) return '';
   if (/^(chrome|firefox|edge|addon)/g.test(url)) return url;
 
@@ -19,5 +19,4 @@ export default function getDomainFromUrl(url: string) {
   }
 
   return hostnameParts.slice(tldIndex).join(".");
-  
 }

@@ -3,24 +3,56 @@
     "id": 1,
     "priority": 1,
     "action": {
-      "type": "modifyHeaders",
-      "requestHeaders": [
-        {
-          "header": "sec-ch-ua-platform",
-          "operation": "set",
-          "value": "Windows"
-        }
-      ]
+      "type": "block"
     },
     "condition": {
-      "regexFilter": "https:\/\/.*",
+      "regexFilter": "\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}.js",
+      "domainType": "thirdParty",
       "resourceTypes": [
-        "main_frame",
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https://[a-z]{3,5}.[a-z]{10,14}.top/[a-z]{10,16}/[a-z]{5,6}",
+      "domainType": "thirdParty",
+      "resourceTypes": [
         "script",
-        "xmlhttprequest",
-        "ping",
-        "image",
-        "other"
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "[0-9a-f]{32}\/invoke.js",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}.js",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script"
       ]
     }
   }

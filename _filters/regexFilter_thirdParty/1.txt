@@ -4,7 +4,7 @@ _right_ads\.
 _vercel/insights/
 -adobeDatalayer_
 -auto-ads-
-:\/\/syndication\.
+://syndication\.
 .adtech.
 /_/trace/trace/
 /_hcms/perf/
@@ -178,5 +178,3 @@ qualtrics.com/SIE/
 sexfreehd.xxx/.*/js.php
 ssl-images-amazon.com/images/.*/dasf-
 xhcdn.com/js/.*\.track.min.js
-yimg.com/cx/vzm/cs.js
-yimg.com/wi/ytc.js

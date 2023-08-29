@@ -131,6 +131,7 @@ freeones.com/build/freeones/adWidget.
 freepornvideo.name/js/JTJIV6szTz6sdA4.js
 friv.com/z/assets/scripts/advert-336x280.js
 g.csdnimg.cn/common/csdn-report/report.js
+g.jwpsrv.com/g/gcid-0.1.2.html?notrack
 g.pcmag.com/
 gaypornrape.net/js/3LQkZfQVN7mWARVbozLgE.js
 gayxxxtube.net/img_bnnrs/
@@ -203,6 +204,7 @@ nyt.com/ads/tpc-check.htm
 nytimes.com/v1/purr-cache
 nytimes.com/vi-assets/static-assets/adslot
 orgasm.com/images/girl3.jpg
+p.jwpcdn.com/player/plugins/vast/
 paypal.com/credit-presentment/log
 paypal.com/xoplatform/logger/api/logger
 pervclips.com/tube/js/customscript.js
@@ -292,6 +294,7 @@ twitter.com/i/jot
 twitter.com/oct.js
 unagi.amazon.com/
 unsplash.com/nmetrics
+upstream.to/google.js
 uptostream.com/assets
 vidazoo.com/basev/
 videowood.tv/pop

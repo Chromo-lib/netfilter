@@ -55,7 +55,7 @@ a[href^="http://www.youtube.com/cthru?"],a[href^="https://www.youtube.com/cthru?
 a[onclick*='"ping_url":"http://www.google.com/aclk?'],a[rel^="sponsored"][target="_blank"],
 a[onclick*="\"ping_url\":\"http://www.google.com/aclk?"],a[href^="https://www.bet365.com/"][href*="affiliate="],
 a[data-ads-placement-id],a[data-ads-placement-type],a[href*=".aflam.info"],a[href*=".hao123.com/?tn="] > img,a[href*="/?track=ad:"],a[href*="/jump/next.php?r="],
-a[href*="adintop.com/outgoing/click.php?"],a[href*="booraq.org"],
+a[href*="adintop.com/outgoing/click.php?"],a[href*="booraq.org"],a[href^="mailto:support@netu.tv"],
 a[href*="dubizzle.com/ar/?utm_source="],a[href^="http://arabyads.go2cloud.org/"],
 a[href^="http://clicks.pipaffiliates.com/"] > img,a[href^="http://viral481.com/srv."],
 a[href^="http://www.fusebux.com/index.php?r="] > img,a[href^="https://arabic-life.buzz/"],
