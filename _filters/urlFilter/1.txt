@@ -11,6 +11,7 @@ abcnews.com/assets/dtci/js/abcnews_visitorId.js
 abcnews.com/assets/dtci/js/at.js
 abritel.fr/serp/api/errors
 abritel.fr/serp/api/metrics
+abysscdn.com/cdn-cgi/trace
 accesswire.com/img.ashx
 activengage.com/overwatch/
 ad.admitad.com/
@@ -295,13 +296,14 @@ twitter.com/oct.js
 unagi.amazon.com/
 unsplash.com/nmetrics
 upstream.to/google.js
-uptostream.com/assets
+uptostream.com/assets/
 vidazoo.com/basev/
 videowood.tv/pop
 vimeo.com/ablincoln
 vimeocdn.com/ga/
 vintagenudes.pro/js/aQCeo5xWBGKc6Uv0xe.js
 visualstudio.com/v2/track
+waaw.to/cdn-cgi/trace
 walmart.com/px/PXu6b0qd2S/init.js
 walmartimages.com/dfw/4ff9c6c9-d9a0/
 web-prod.edg.io/wp-content/plugins/perfmatters/vendor/instant-page/instantpage.js
@@ -317,7 +319,6 @@ xtremetop100.com/horizontalBanner.jpg
 xtremetop100.com/images/right_adspot2.jpg
 xtremetop100.com/images/UWSidebanner.gif
 xxxgirlsphotos.com/girls.js
-abysscdn.com/cdn-cgi/trace
 xxxpornanal.com/123iigttdj924
 yimg.com/cx/vzm/cs.js
 yimg.com/nn/lib/metro/g/myy/advertisement

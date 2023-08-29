@@ -241,6 +241,7 @@ a-counters.com
 a-mo.net
 a-pagerank.net
 a-static.com
+a.1film.to
 a.applvn.com
 a.com
 a.mouseflow.com
@@ -2885,6 +2886,7 @@ connatix.com
 connect.facebook.com
 connect.facebook.edgekey.net
 connect.facebook.net
+connect.idocdn.com
 connectad.io
 connectif.cloud
 connectingsingles.com
@@ -3561,7 +3563,6 @@ dood.re
 dood.so
 dood.to
 dood.yt
-doodstream.com
 dooloust.net
 dooood.com
 doownl0ad3s.com
@@ -5052,6 +5053,7 @@ gqitalia.it
 grabo.bg
 grader.com
 grahamcrackers.com
+grandfathercancelling.com
 grandsierraresort.com
 granify.com
 grantedpigsunborn.com
@@ -8079,7 +8081,6 @@ optad360.io
 optify.net
 optimahub.com
 optimix.asia
-connect.idocdn.com
 optimizeads.net
 optimizely.com
 optimizesrv.com
@@ -8557,6 +8558,7 @@ pointsbet.com
 poker.org
 pokerlistings.com
 pokernews.com
+pokerobjet.com
 pokerstars.com
 pokerstars.eu
 pokerstars.fr
@@ -12151,7 +12153,6 @@ w4m.rs
 w4vecl1cks.com
 w55c.net
 w716eb02n9.ru
-waaw.to
 wadmargincling.com
 waisheph.com
 wakingtimes.com

@@ -18,7 +18,7 @@ export default function setWebResponseErrorDetailsUL({ webResponseErrorDetails, 
       webResponseErrorDetailsUL.innerHTML += `<li class="bg-dark border-bottom fadein" id="d-${detail.requestId}"> 
           <div class="w-100 d-flex align-center justify-between">
             <div class="d-flex align-center mb-1 truncate">
-              <span class="ml-0 mr-1 badge rounded bg-red p-5" title="${detail.initiator}">${initiator}</span>
+              <span class="ml-0 mr-1 badge rounded bg-red p-5" title="Initiator: ${detail.initiator}">${initiator}</span>
               <h4 class="d-block m-0 ml-1 red truncate" title="${detail.host}">${getDomainFromUrl(detail.host)}</h4> 
             </div>
   
