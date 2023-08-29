@@ -5,7 +5,7 @@ function removeDuplicates(arr) {
   return arr.filter((item, index) => arr.indexOf(item) === index);
 }
 
-const DATA_FILTERS_PATH = resolve(process.cwd(), 'data');
+const DATA_FILTERS_PATH = resolve(process.cwd(), '_filters');
 const rules = [];
 
 const onReadDir = directoryName => {
@@ -53,14 +53,15 @@ const onReadDir = directoryName => {
       }
     }
     if (!/regexFilter|urlFilter/gi.test(directoryName)) {
-      console.log('directoryName ===> ', directoryName);
       const domain = rule.condition.requestDomains ? 'requestDomains' : 'initiatorDomains';
       const ruleDefinition = { ...rule, condition: { ...rule.condition, [domain]: domainList } };
       rules.push(ruleDefinition);
     }
+    
+    console.log('> Clean filter ', directoryName);
 
     writeFileSync(
-      resolve(process.cwd(), 'data', directoryName, fileName),
+      resolve(process.cwd(), '_filters', directoryName, fileName),
       domainList.sort((a, b) => a.localeCompare(b)).join('\n')
     );
   })
