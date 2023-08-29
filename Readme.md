@@ -1,6 +1,14 @@
 # NetFilter
 Ad, Tacking, Malwares block and dashboard for developers, using declarativeNetRequest API.
 
+  ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen) ![GitHub release](https://img.shields.io/github/release/Chromo-lib/netfilter/all?logo=GitHub) ![](https://badgen.net/github/license/Chromo-lib/netfilter)
+
+<div style="display:flex">
+  <a href="#" rel="nofollow"><img src="https://i.imgur.com/kMH6r1a.png" style="max-width:100%;"></a>
+
+  <a href="https://microsoftedge.microsoft.com/addons/detail/bglkabckjafblolnieljfgcgnnekcbkh" rel="nofollow"><img src="https://i.imgur.com/n49Wiu2.png" style="max-width:100%;"></a>
+</div>
+
 # Captures
 ![](capture.png)
 
