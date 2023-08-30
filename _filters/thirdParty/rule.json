@@ -13,12 +13,10 @@
       "font",
       "image",
       "xmlhttprequest",
-      "ping",
       "media",
       "websocket",
       "webtransport",
       "webbundle",
-      "csp_report",
       "other"
     ]
   }

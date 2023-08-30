@@ -630,6 +630,7 @@ pixel.facebook.com
 play.mix.kinostuff.com
 pos.baidu.com
 posthog.chatwoot.com
+pubsrv.devhints.io
 pxl.indeed.com
 redirect.appmetrica.yandex.ru
 referrer.disqus.com

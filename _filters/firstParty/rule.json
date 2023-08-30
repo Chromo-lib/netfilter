@@ -9,7 +9,6 @@
     "resourceTypes": [
       "main_frame",
       "xmlhttprequest",
-      "ping",
       "image",
       "other"
     ]

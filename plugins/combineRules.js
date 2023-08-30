@@ -2,7 +2,10 @@ const { readdirSync, readFileSync, writeFileSync } = require("fs");
 const { resolve } = require("path");
 
 function removeDuplicates(arr) {
-  return arr.filter((item, index) => arr.indexOf(item) === index);
+  return arr.filter((item, index) => {
+    item = item.replace(/(\?|\/)$/g, '');
+    return arr.indexOf(item) === index
+  });
 }
 
 const DATA_FILTERS_PATH = resolve(process.cwd(), '_filters');
@@ -57,7 +60,7 @@ const onReadDir = directoryName => {
       const ruleDefinition = { ...rule, condition: { ...rule.condition, [domain]: domainList } };
       rules.push(ruleDefinition);
     }
-    
+
     console.log('> Clean filter ', directoryName);
 
     writeFileSync(

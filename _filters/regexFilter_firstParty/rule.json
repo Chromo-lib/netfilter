@@ -11,10 +11,8 @@
     "resourceTypes": [
       "script",
       "xmlhttprequest",
-      "ping",
       "websocket",
-      "other",
-      "csp_report"
+      "other"
     ]
   }
 }

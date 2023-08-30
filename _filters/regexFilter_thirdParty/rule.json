@@ -12,10 +12,8 @@
       "sub_frame",
       "script",
       "xmlhttprequest",
-      "ping",
       "websocket",
-      "other",
-      "csp_report"
+      "other"
     ]
   }
 }
