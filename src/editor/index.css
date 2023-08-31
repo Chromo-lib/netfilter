@@ -45,15 +45,14 @@ body {
 #root {
   width: 100%;
   height: calc(100vh - 14px);
-  display: grid;
-  grid-template-columns: 75% 25%;
+  display: flex;
   position: relative;
   background-color: var(--black);
   border-radius: 7px;
   overflow: hidden;
 }
 
-aside {padding: 10px;}
+aside {padding: 10px; overflow: auto;}
 main {overflow: auto; border-right: 1px solid var(--gray);}
 
 #list-webResponse {
@@ -131,6 +130,7 @@ hr {
 }
 
 select,option,input,textarea,.btn,button {background-color: var(--dark); color: #fff; max-width: 100%;}
+.gutter {background-color: var(--dark); }
 
 .small,small {font-size:  0.8rem;}
 

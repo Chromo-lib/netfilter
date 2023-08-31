@@ -12,22 +12,11 @@
     "zip": "npm run zip:firefox && npm run zip:chrome"
   },
   "dependencies": {
-    "@codemirror/lang-javascript": "^6.1.9",
-    "@codemirror/theme-one-dark": "^6.1.2",
-    "@uiw/react-codemirror": "^4.21.9",
     "axios": "^1.4.0",
-    "jotai": "^2.4.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "webextension-polyfill": "^0.10.0"
+    "split.js": "^1.6.5"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.243",
-    "@types/node": "^20.5.3",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@types/webextension-polyfill": "^0.10.2",
-    "@vitejs/plugin-react": "^4.0.4",
     "vite": "^4.4.9"
   },
   "author": "Haikel Fazzani",
