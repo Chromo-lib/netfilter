@@ -5,18 +5,18 @@ export default function handleRules({ message, ruleType, url, rules, methodName 
 
   if (message === 'add:rules') {
     RulesManager.add({ rules, ruleType });
-    chrome.runtime.sendMessage({ message:'add:rules' });
+    chrome.runtime.sendMessage({ message: 'add:rules' });
   }
 
   if (message === 'remove:rules') {
     RulesManager.remove({ rules, ruleType });
-    chrome.runtime.sendMessage({ message:'remove:rules' });
+    chrome.runtime.sendMessage({ message: 'remove:rules' });
   }
 
   if (message === 'block:url') {
     RulesManager.generate(url).then(rule => {
-      sendResponse(rule);
-      RulesManager.add({ rules: [rule], ruleType: 'dynamic' });
+      sendResponse(rule ? url+': is inserted successfully in blacklist' : 'URL is already blocked');
+      if (rule) RulesManager.add({ rules: [rule], ruleType: 'dynamic' });
     });
   }
 

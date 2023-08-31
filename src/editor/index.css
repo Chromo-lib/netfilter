@@ -143,6 +143,7 @@ pre {
 #snackbar code {
   padding: 10px;
   background-color: var(--red);
+  overflow: auto;
 }
 
 select,option,input,textarea,.btn,button {background-color: var(--dark); color: #fff; max-width: 100%;}
