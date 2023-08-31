@@ -53,7 +53,7 @@ body {
 }
 
 aside {padding: 10px; overflow: auto;}
-main {overflow: auto; border-right: 1px solid var(--gray);}
+main {overflow: auto;}
 
 #list-webResponse {
   height: calc(100% - 50px);
