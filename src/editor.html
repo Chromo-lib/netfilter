@@ -19,12 +19,15 @@
     <main>
       <header class="d-flex justify-between align-center border-bottom">
         <h2 class="m-0">Logs</h2>
-        <form class="w-100 d-flex bordered mr-3 ml-3 br7">
-          <input class="w-100" type="text" name="url" id="url" placeholder="google.com">
-          <select name="" id="">
+        <form class="w-100 d-flex bordered mr-3 ml-3 br7" id="form-search">
+          <input class="w-100" type="search" name="url" id="url" placeholder="google.com">
+          <select name="errname" id="errname">
+            <option value="ALL">ALL</option>
             <option value="net::ERR_BLOCKED_BY_CLIENT">ERR_BLOCKED_BY_CLIENT</option>
             <option value="net::ERR_ABORTED">ERR_ABORTED</option>
             <option value="net::ERR_FAILED">ERR_FAILED</option>
+            <option value="net::ERR_CONNECTION_REFUSED">ERR_CONNECTION_REFUSED</option>
+            <option value="net::ERR_INCOMPLETE_CHUNKED_ENCODING">ERR_INCOMPLETE_CHUNKED_ENCODING</option>
           </select>
           <button type="submit">filter</button>
         </form>
@@ -36,7 +39,7 @@
       <ul class="w-100" id="list-webResponse"></ul>
     </main>
     <aside>
-      <form>
+      <form id="form-add-domain">
         <label for="url">Add rules</label>
         <input class="w-100 mb-1 mt-1" type="text" name="url" id="url" placeholder="google.com" required>
         <div class="d-flex">
@@ -47,7 +50,7 @@
 
       <hr>
 
-      <form action="">
+      <form id="form-add-rules">
         <label for="">Add rules</label>
         <textarea class="mt-1" name="" id="" cols="50" rows="15"></textarea>
         <select class="w-100 mb-1 mt-1" name="rules">

@@ -5,10 +5,7 @@ import filterwebResponseErrorDetails from "../utils/filterwebResponseErrorDetail
 export default function handleWebResponse({ message, tabId, url, filter }: any) {
   if (message === 'get:webResponseErrorDetails' && (tabId || url)) {
     WebResponseStorage.findOne(tabId, url).then(webResponseErrorDetails => {
-      if (filter) {
-        webResponseErrorDetails = filterwebResponseErrorDetails(webResponseErrorDetails, filter);
-      }
-      sendMessage({ webResponseErrorDetails, url: url });
+      sendMessage({ webResponseErrorDetails, url });
     });
     return true;
   }
