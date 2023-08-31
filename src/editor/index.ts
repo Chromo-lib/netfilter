@@ -1,8 +1,9 @@
 import Split from 'split.js'
-import { btnClear, btnReload, formAddRules, formBlockDomain, formSearch, preRules } from "./constants";
+import { btnClear, btnReload, formAddRules, formBlockURL, formGetRules, formSearch, preRules } from "./constants";
 import onAddRules from './events/onAddRules';
 import onBlockDomain from './events/onBlockDomain';
 import onClear from "./events/onClear";
+import onGetRules from './events/onGetRules';
 import onMessages from "./events/onMessages";
 import onRealod from "./events/onReload";
 import onSearch from "./events/onSearch";
@@ -26,8 +27,9 @@ preRules.innerHTML = JSON.stringify([
 
 Split(['main', 'aside'], { sizes: [75, 25] });
 
+formGetRules.addEventListener('submit', onGetRules);
 formAddRules.addEventListener('submit', onAddRules);
-formBlockDomain.addEventListener('submit', onBlockDomain);
+formBlockURL.addEventListener('submit', onBlockDomain);
 formSearch.addEventListener('submit', onSearch);
 
 btnReload.addEventListener('click', onRealod);

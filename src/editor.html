@@ -38,9 +38,23 @@
       </header>
       <ul class="w-100" id="list-webResponse"></ul>
     </main>
+
     <aside>
-      <form id="form-block-domain">
-        <label for="url">block a domain</label>
+      <form class="d-flex" id="form-get-rules">
+        <select class="w-100" name="methodName" id="methodName">
+          <option value="getDynamicRules">Dynamic Rules</option>
+          <option value="getSessionRules">Session Rules</option>
+          <option value="getEnabledRulesets">Enabled Rulesets</option>
+        </select>
+        <button type="submit">get</button>
+      </form>
+
+      <pre id="display-rules"></pre>
+
+      <hr>
+
+      <form id="form-block-url">
+        <label for="url">block url</label>
         <input class="w-100 mb-1 mt-1" type="text" name="url" id="url" placeholder="google.com" required>
         <div class="d-flex">
           <button class="w-100 bg-green" type="submit">block</button>
@@ -48,14 +62,16 @@
         </div>
       </form>
 
+      <p class="message"></p>
+
       <hr>
 
       <form id="form-add-rules">
         <label for="text-rules">Add rules</label>
         <pre id="text-rules" contenteditable="true"></pre>
         <select class="w-100 mb-1 mt-1" name="rules">
-          <option value="addDynamicRules">dynamic</option>
-          <option value="addSessionRules">session</option>
+          <option value="dynamic">dynamic</option>
+          <option value="session">session</option>
         </select>
         <div class="d-flex">
           <button class="w-100 bg-green" type="submit">add</button>

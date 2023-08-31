@@ -2,7 +2,7 @@ import WebResponseStorage from "../storage/WebResponseStorage";
 import sendMessage from "../helpers/sendMessage";
 import filterwebResponseErrorDetails from "../utils/filterwebResponseErrorDetails";
 
-export default function handleWebResponse({ message, tabId, url, filter }: any) {
+export default function handleWebResponse({ message, tabId, url, filter }: any, sendResponse: any) {
   if (message === 'get:webResponseErrorDetails' && (tabId || url)) {
     WebResponseStorage.findOne(tabId, url).then(webResponseErrorDetails => {
       sendMessage({ webResponseErrorDetails, url });

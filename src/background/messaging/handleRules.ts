@@ -1,42 +1,21 @@
-import BlockURL from "../helpers/BlockURL";
-import onUpdateRules from "../events/onUpdateRules";
-import sendMessage from "../helpers/sendMessage";
+import RulesManager from "../helpers/RulesManager";
 
-const declarativeNetRequest = chrome.declarativeNetRequest;
-const getRules = ['getDynamicRules', 'getSessionRules', 'getEnabledRulesets'];
-
-export default function handleRules({ message, url, nRules }: any) {
-  if (message === 'addDynamicRules') {
-    const isArr = Array.isArray(nRules);
-    const removeRuleIds = isArr ? nRules.map((r: any) => r.id) : [nRules.id];
-    const addRules = isArr ? nRules : [nRules];
-    declarativeNetRequest.updateDynamicRules({ removeRuleIds, addRules }, onUpdateRules);
-    return true;
+export default function handleRules({ message, ruleType, url, rules, methodName }: any, sendResponse: any) {
+  if (message === 'add:rules') {
+    RulesManager.add({ rules, ruleType });
   }
 
-  if (message === 'addSessionRules') {
-    const isArr = Array.isArray(nRules);
-    const removeRuleIds = isArr ? nRules.map((r: any) => r.id) : [nRules.id];
-    const addRules = isArr ? nRules : [nRules];
-    declarativeNetRequest.updateSessionRules({ removeRuleIds, addRules }, onUpdateRules);
-    return true;
-  }
-
-  if (message === 'block:website') {
-    BlockURL.generateRules(url).then(rules => {
-      declarativeNetRequest.updateDynamicRules({ addRules: rules, removeRuleIds: [1123, 1124] });
+  if (message === 'block:url') {
+    RulesManager.generate(url).then(rule => {
+      sendResponse(rule);
+      RulesManager.add({ rules: [rule], ruleType: 'dynamic' });
     });
-    return true;
   }
 
-  if (message === 'clear:domains') {
-    BlockURL.clear();
-    return true;
+  if (message === 'get:rules' && ['getDynamicRules', 'getSessionRules', 'getEnabledRulesets'].includes(methodName)) {
+    RulesManager.findMany(methodName).then(rules => {
+      chrome.runtime.sendMessage({ rules });
+    });
   }
-
-  if (getRules.includes(message)) {
-    const rules = chrome.declarativeNetRequest[message]();
-    sendMessage({ rules });
-    return true;
-  }  
+  return true;
 }
