@@ -56,12 +56,12 @@ aside {padding: 10px; overflow: auto;}
 main {overflow: auto;}
 
 #list-webResponse {
-  height: calc(100% - 50px);
+  height: calc(100% - 40px);
   overflow: auto;
 }
 
 header {
-  height: 50px;
+  height: 40px;
   position: relative;
   position: sticky;
   top: 0;
@@ -74,7 +74,7 @@ header {
 h2 {font-size: 1.2rem;}
 h3 {font-size: 1rem;}
 
-input,button,select,textarea {padding: 10px 15px; outline: none; line-height: 1.5; border: none;}
+input,button,select,textarea {padding: 10px 15px; outline: none; line-height: 1.5; border: none; border-radius: 7px;}
 
 .btn,button {
   display: flex;

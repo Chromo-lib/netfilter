@@ -83,7 +83,8 @@ ebaystatic.com/rs/c/9527tracking/configuration.js
 ebaystatic.com/rs/v/dxtuvtkk2q3hpkc1xveeo13iaek.js
 etsy.com/bcn/beacon
 eu-mobile.events.data.microsoft.com
-facebook.com/ajax/bnzai?__a=1&__ccg=GOOD&__comet_req=
+facebook.com/ajax/bnzai
+facebook.com/ajax/timezone
 fakings.com/tools/get_banner.php
 fapix.porn/front/js/unwanted.js
 forcedgayporn.com/js/odWRPsjXZqsqsSkW.js

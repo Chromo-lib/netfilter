@@ -49,14 +49,19 @@ ytd-player-legacy-desktop-watch-ads-renderer {
 a[href^="https://www.googleadservices.com/pagead/aclk?"],div[id^="lsadvert-"],
 div[data-advertiser-id],a[href^="https://affpa.top/"],a[aria-label="Advertiser"],
 div[class^="Hits_SponsoredWrapper__"],iframe[id^="google_ads_frame"],div[id^="adsads"],
+
 div[class^="MaxBanner_container_"],div[id^="div-gpt-ad"],div[class^="MaxBanner_container_"],iframe[name^="google_ads_iframe"],
-[aria-label=cookieconsent],div[aria-label*="Timeline: Explore"],div[data-placeholder-*="Ad"],aside[aria-label*="Who to follow"],div[aria-label*="Timeline: Trending now"],
-iframe[id^=ad_],div[class*="-ad-v"],div[class*="ads"],div[class*="-ads-"],div[class*="AdsenseAd_"],a[href*="/adwords/"],a[href*="doubleclick.net"],iframe[src*="doubleclick.net"],
+[aria-label=cookieconsent],div[aria-label*="Timeline: Explore"],div[data-placeholder-*="Ad"],aside[aria-label*="Who to follow"],
+div[aria-label*="Timeline: Trending now"],
+iframe[id^=ad_],div[class*="-ads-"],div[class*="AdsenseAd_"],a[href*="/adwords/"],
+a[href*="doubleclick.net"],iframe[src*="doubleclick.net"],
+
 a[href^="http://www.youtube.com/cthru?"],a[href^="https://www.youtube.com/cthru?"],
 a[onclick*='"ping_url":"http://www.google.com/aclk?'],a[rel^="sponsored"][target="_blank"],
 a[onclick*="\"ping_url\":\"http://www.google.com/aclk?"],a[href^="https://www.bet365.com/"][href*="affiliate="],
 a[data-ads-placement-id],a[data-ads-placement-type],a[href*=".aflam.info"],a[href*=".hao123.com/?tn="] > img,a[href*="/?track=ad:"],
 a[href*="/jump/next.php?r="],
+
 a[href*="adintop.com/outgoing/click.php?"],a[href*="booraq.org"],a[href^="mailto:support@netu.tv"],
 a[href*="dubizzle.com/ar/?utm_source="],a[href^="http://arabyads.go2cloud.org/"],
 a[href^="http://clicks.pipaffiliates.com/"] > img,a[href^="http://viral481.com/srv."],

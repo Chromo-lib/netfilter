@@ -537,6 +537,7 @@ logservice.hicloud.com
 logservice1.hicloud.com
 m.hotmail.com
 m.yap.yahoo.com
+mail-ads.google.com
 mainad-codpp.com
 marketingsolutions.yahoo.com
 matomo.cloudfront.similarweb.io
@@ -970,6 +971,7 @@ sourcepoint-mms.aetv.com
 sourcepoint-mms.history.com
 sourcepoint-mms.mylifetime.com
 sourcepoint.theguardian.com
+spade.sci.twitch.tv
 spads.me
 speedtest.dailymotion.com
 squirrels.getsquirrel.co
