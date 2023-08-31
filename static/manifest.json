@@ -14,6 +14,19 @@
     "default_popup": "popup.html",
     "default_icon": "32.png"
   },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage",
+    "webRequest",
+    "activeTab",
+    "tabs",
+    "alarms",
+    "management"
+  ],
   "background": {
     "service_worker": "background.js"
   },
@@ -46,18 +59,6 @@
       }
     ]
   },
-  "host_permissions": [
-    "<all_urls>"
-  ],
-  "permissions": [
-    "declarativeNetRequest",
-    "declarativeNetRequestFeedback",
-    "storage",
-    "webRequest",
-    "activeTab",
-    "tabs",
-    "alarms"
-  ],
   "content_scripts": [
     {
       "css": [

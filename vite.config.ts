@@ -1,6 +1,5 @@
 import { parse, resolve } from 'path';
-import { defineConfig, UserConfigExport } from 'vite'
-import react from '@vitejs/plugin-react';
+import { defineConfig, UserConfigExport } from 'vite';
 
 import { replaceWord } from './plugins/replaceWord';
 import { copyStatic } from './plugins/copyStatic';
@@ -35,11 +34,7 @@ export default defineConfig({
     }
   },
   plugins: [
-    {
-      ...replaceWord({ from, to }),
-      enforce: 'pre'
-    },
-    react(),
+    { ...replaceWord({ from, to }), enforce: 'pre' },
     copyStatic('rulesets'),
     process.env.NODE_ENV === 'production' ? copyStatic('static') : null,
     process.env.NODE_ENV === 'production' ? combineRules() : null

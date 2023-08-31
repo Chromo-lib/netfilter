@@ -8,7 +8,7 @@ export default class WebResponseStorage {
   }
 
   static async add(requestId: string, details: WebResponseErrorDetails | any): Promise<string | null> {
-    const data = await this.findAll();
+    const data = await this.findMany();
     const url = details.type === 'xmlhttprequest'
       ? this.splitOnSixthSlash(details.url)
       : details.url.split('?')[0];
@@ -21,12 +21,12 @@ export default class WebResponseStorage {
   }
 
   static async findOne(tabId: string, initiator?: string) {
-    return (await this.findAll()).filter(d => d
+    return (await this.findMany()).filter(d => d
       && d.error.includes('BLOCKED')
       && (+d.tabId === +tabId || d.initiator?.includes(initiator || '*/*$)=(-è_op$*/--$')));
   }
 
-  static async findAll(): Promise<WebResponseErrorDetails[]> {
+  static async findMany(): Promise<WebResponseErrorDetails[]> {
     const items = await chrome.storage.local.get(null);
     let result: any = [];
     if (items) Object.keys(items).forEach(key => {
@@ -40,7 +40,7 @@ export default class WebResponseStorage {
   static async deleteOne(tabId: number, url?: string | undefined): Promise<WebResponseErrorDetails[]> {
     const time = new Date().getTime();
     const result: WebResponseErrorDetails[] = [];
-    (await this.findAll()).forEach(async (d) => {
+    (await this.findMany()).forEach(async (d) => {
       if (d.tabId === tabId || (url && d.initiator?.includes(url)) || (((time - d.timeStamp) / (1000 * 60 * 60)) % 24) > 1) await chrome.storage.local.remove(d.requestId);
       else result.push(d);
     });
@@ -48,11 +48,11 @@ export default class WebResponseStorage {
     return result;
   }
 
-  static async deleteAll(): Promise<WebResponseErrorDetails[]> {
-    (await this.findAll()).forEach(async (d) => {
+  static async deleteMany(): Promise<WebResponseErrorDetails[]> {
+    (await this.findMany()).forEach(async (d) => {
       if (d.requestId) await chrome.storage.local.remove(d.requestId);
     });
 
-    return await this.findAll();
+    return await this.findMany();
   }
 }

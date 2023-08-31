@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ad, Tacking, Malwares block and dashboard for developers, using declarativeNetRequest API.">
+  <meta name="description"
+    content="Ad, Tacking, Malwares block and dashboard for developers, using declarativeNetRequest API.">
   <meta name="keywords" content="ad, block, malware, phishing, ads">
   <meta name="author" content="Haikel Fazzani">
-  <title>NetFilter</title>
-  <link rel="stylesheet" href="editor.css">
-  <script type="module" src="editor/index.tsx"></script>
+  <title>Editor - NetFilter</title>
+  <link rel="stylesheet" href="editor/index.css">
+  <script type="module" src="editor/index.ts" defer></script>
 </head>
+
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <main>
+      <header class="d-flex justify-between align-center border-bottom">
+        <h2 class="m-0">Logs</h2>
+        <form class="w-100 d-flex bordered mr-3 ml-3 br7">
+          <input class="w-100" type="text" name="url" id="url" placeholder="google.com">
+          <select name="" id="">
+            <option value="net::ERR_BLOCKED_BY_CLIENT">ERR_BLOCKED_BY_CLIENT</option>
+            <option value="net::ERR_ABORTED">ERR_ABORTED</option>
+            <option value="net::ERR_FAILED">ERR_FAILED</option>
+          </select>
+          <button type="submit">filter</button>
+        </form>
+        <div class="d-flex">
+          <button class="mr-1" id="btn-reload">Reload</button>
+          <button id="btn-clear">Clear</button>
+        </div>
+      </header>
+      <ul class="w-100" id="list-webResponse"></ul>
+    </main>
+    <aside>
+      <form>
+        <label for="url">Add rules</label>
+        <input class="w-100 mb-1 mt-1" type="text" name="url" id="url" placeholder="google.com" required>
+        <div class="d-flex">
+          <button class="w-100 bg-green" type="submit">add domain</button>
+          <button class="w-100 bg-red" type="reset">reset</button>
+        </div>
+      </form>
+
+      <hr>
+
+      <form action="">
+        <label for="">Add rules</label>
+        <textarea class="mt-1" name="" id="" cols="50" rows="15"></textarea>
+        <select class="w-100 mb-1 mt-1" name="rules">
+          <option value="addDynamicRules">Dynamic Rules</option>
+          <option value="addSessionRules">Session Rules</option>
+        </select>
+        <div class="d-flex">
+          <button class="w-100 bg-green" type="submit">add rules</button>
+          <button class="w-100 bg-red" type="reset">reset</button>
+        </div>
+      </form>
+    </aside>
+  </div>
 </body>
+
 </html>

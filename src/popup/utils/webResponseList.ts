@@ -2,7 +2,7 @@ import { webResponseErrorDetailsUL } from "../constants";
 import { WebResponseErrorDetails } from "../types";
 import getDomainFromUrl from "./getDomainFromUrl";
 
-export default function setWebResponseErrorDetailsUL({ webResponseErrorDetails, url }: { webResponseErrorDetails: WebResponseErrorDetails[], url: string }) {
+export default function webResponseList({ webResponseErrorDetails, url }: { webResponseErrorDetails: WebResponseErrorDetails[], url: string }) {
   if (webResponseErrorDetails && Array.isArray(webResponseErrorDetails)) {
 
     webResponseErrorDetailsUL.innerHTML = '';

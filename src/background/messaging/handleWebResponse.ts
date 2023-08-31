@@ -14,7 +14,7 @@ export default function handleWebResponse({ message, tabId, url, filter }: any) 
   }
 
   if (message === 'get:webResponseErrorDetails') {
-    WebResponseStorage.findAll().then(details => {
+    WebResponseStorage.findMany().then(details => {
       let webResponseErrorDetails = url && url.length > 0
         ? details.filter((v: any) => (v.initiator || v.originUrl).includes(url))
         : details;
@@ -37,7 +37,7 @@ export default function handleWebResponse({ message, tabId, url, filter }: any) 
   }
 
   if (message === 'clear:webResponseErrorDetails') {
-    WebResponseStorage.deleteAll().then(() => {
+    WebResponseStorage.deleteMany().then(() => {
       sendMessage({ webResponseErrorDetails: [] });
     });
     return true;
