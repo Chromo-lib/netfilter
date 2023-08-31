@@ -1,5 +1,7 @@
 import Split from 'split.js'
 import { btnClear, btnReload, formAddRules, formBlockDomain, formSearch, preRules } from "./constants";
+import onAddRules from './events/onAddRules';
+import onBlockDomain from './events/onBlockDomain';
 import onClear from "./events/onClear";
 import onMessages from "./events/onMessages";
 import onRealod from "./events/onReload";
@@ -24,9 +26,11 @@ preRules.innerHTML = JSON.stringify([
 
 Split(['main', 'aside'], { sizes: [75, 25] });
 
-formAddRules.addEventListener('submit', onSearch);
-formBlockDomain.addEventListener('submit', onSearch);
+formAddRules.addEventListener('submit', onAddRules);
+formBlockDomain.addEventListener('submit', onBlockDomain);
 formSearch.addEventListener('submit', onSearch);
+
 btnReload.addEventListener('click', onRealod);
 btnClear.addEventListener('click', onClear);
+
 chrome.runtime.onMessage.addListener(onMessages);
