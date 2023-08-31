@@ -1,18 +1,19 @@
 import Split from 'split.js'
-import { btnClear, btnReload, formAddRules, formBlockURL, formGetRules, formSearch, preRules } from "./constants";
+import { btnClear, btnReload, formAddRules, formBlockURL, formGetRules, formSearch, preRules, snackbar } from "./constants";
 import onAddRules from './events/onAddRules';
-import onBlockDomain from './events/onBlockDomain';
+import onBlockURL from './events/onBlockURL';
 import onClear from "./events/onClear";
 import onGetRules from './events/onGetRules';
 import onMessages from "./events/onMessages";
 import onRealod from "./events/onReload";
 import onSearch from "./events/onSearch";
+import onSnackbar from './events/onSnackbar';
 
 chrome.runtime.sendMessage({ message: 'get:webResponseErrorDetails' });
 
 preRules.innerHTML = JSON.stringify([
   {
-    "id": 61,
+    "id": 5000,
     "priority": 2,
     "action": {
       "type": "block"
@@ -29,9 +30,10 @@ Split(['main', 'aside'], { sizes: [75, 25] });
 
 formGetRules.addEventListener('submit', onGetRules);
 formAddRules.addEventListener('submit', onAddRules);
-formBlockURL.addEventListener('submit', onBlockDomain);
+formBlockURL.addEventListener('submit', onBlockURL);
 formSearch.addEventListener('submit', onSearch);
 
+snackbar.querySelector('button')!.addEventListener('click', onSnackbar)
 btnReload.addEventListener('click', onRealod);
 btnClear.addEventListener('click', onClear);
 

@@ -8,4 +8,5 @@ export const formGetRules = document.getElementById('form-get-rules')!;
 
 export const preRules = document.getElementById('text-rules')!;
 
-export const messageEL = document.querySelector('.message')!;
+export const snackbar = document.getElementById('snackbar')!;
+export const snackbarCode = snackbar.querySelector('code')!;

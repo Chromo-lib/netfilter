@@ -49,8 +49,6 @@
         <button type="submit">get</button>
       </form>
 
-      <pre id="display-rules"></pre>
-
       <hr>
 
       <form id="form-block-url">
@@ -62,22 +60,41 @@
         </div>
       </form>
 
-      <p class="message"></p>
-
       <hr>
 
       <form id="form-add-rules">
         <label for="text-rules">Add rules</label>
         <pre id="text-rules" contenteditable="true"></pre>
-        <select class="w-100 mb-1 mt-1" name="rules">
-          <option value="dynamic">dynamic</option>
-          <option value="session">session</option>
-        </select>
+
+        <div class="d-flex mb-1 mt-1">
+          <div>
+            <label for="ruleType">Rule Type</label>
+            <select class="w-100 mt-1" name="ruleType">
+              <option value="dynamic">dynamic</option>
+              <option value="session">session</option>
+            </select>
+          </div>
+  
+          <div>
+            <label for="action">action</label>
+            <select class="w-100 mt-1" name="action" id="action">
+              <option value="add">add</option>
+              <option value="remove">remove</option>
+            </select>
+          </div>
+        </div>
+
         <div class="d-flex">
-          <button class="w-100 bg-green" type="submit">add</button>
+          <button class="w-100 bg-green" type="submit">start</button>          
           <button class="w-100 bg-red" type="reset">reset</button>
         </div>
       </form>
+
+      <pre id="snackbar" class="d-flex br7 d-none">
+        <code></code>
+        <button>x</button>
+      </pre>
+      
     </aside>
   </div>
 </body>

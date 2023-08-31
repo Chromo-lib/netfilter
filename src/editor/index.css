@@ -117,6 +117,11 @@ hr {
     margin: 15px 0;
 }
 
+pre {
+  max-height: 300px;
+  overflow: auto;
+}
+
 .tag {
   color: var(--gray);
   font-size: 0.73rem;
@@ -127,6 +132,17 @@ hr {
   margin-left: 0;
   margin-bottom: 0;
   word-break: keep-all;
+}
+
+#snackbar {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+}
+
+#snackbar code {
+  padding: 10px;
+  background-color: var(--red);
 }
 
 select,option,input,textarea,.btn,button {background-color: var(--dark); color: #fff; max-width: 100%;}
