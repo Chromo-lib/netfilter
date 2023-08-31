@@ -124,7 +124,7 @@ pre {
 
 .tag {
   color: var(--gray);
-  font-size: 0.73rem;
+  font-size: 0.85rem;
   display: flex;
   align-items: center;
   border-radius: 7px;

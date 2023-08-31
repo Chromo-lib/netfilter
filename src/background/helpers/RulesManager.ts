@@ -32,10 +32,7 @@ export default class RulesManager {
           isUrlFilterCaseSensitive: false,
           resourceTypes: [
             ResourceType.MAIN_FRAME,
-            // ResourceType.SCRIPT,
-            // ResourceType.XMLHTTPREQUEST,
-            // ResourceType.CSP_REPORT,
-            // ResourceType.OTHER
+            ResourceType.XMLHTTPREQUEST,
           ]
         }
       }

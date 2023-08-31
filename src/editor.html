@@ -26,6 +26,7 @@
             <option value="net::ERR_BLOCKED_BY_CLIENT">ERR_BLOCKED_BY_CLIENT</option>
             <option value="net::ERR_ABORTED">ERR_ABORTED</option>
             <option value="net::ERR_FAILED">ERR_FAILED</option>
+            <option value="net::ERR_CACHE_MISS">ERR_CACHE_MISS</option>
             <option value="net::ERR_CONNECTION_REFUSED">ERR_CONNECTION_REFUSED</option>
             <option value="net::ERR_INCOMPLETE_CHUNKED_ENCODING">ERR_INCOMPLETE_CHUNKED_ENCODING</option>
           </select>
@@ -52,7 +53,7 @@
       <hr>
 
       <form id="form-block-url">
-        <label for="url">block url</label>
+        <label for="url">Block domain or url</label>
         <input class="w-100 mb-1 mt-1" type="text" name="url" id="url" placeholder="google.com" required>
         <div class="d-flex">
           <button class="w-100 bg-green" type="submit">block</button>
@@ -63,7 +64,7 @@
       <hr>
 
       <form id="form-add-rules">
-        <label for="text-rules">Add rules</label>
+        <label for="text-rules">Rules</label>
         <pre id="text-rules" contenteditable="true"></pre>
 
         <div class="d-flex mb-1 mt-1">

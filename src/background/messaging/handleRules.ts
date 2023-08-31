@@ -10,7 +10,7 @@ export default function handleRules({ message, ruleType, url, rules, methodName 
 
   if (message === 'remove:rules') {
     RulesManager.remove({ rules, ruleType });
-    chrome.runtime.sendMessage({ message: 'remove:rules' });
+    chrome.runtime.sendMessage({ message: 'Rules are removed successfully.' });
   }
 
   if (message === 'block:url') {
