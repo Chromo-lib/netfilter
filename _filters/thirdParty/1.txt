@@ -1749,6 +1749,7 @@ beachfront.com
 beachlinkz.com
 beacon.errorception.com
 beacon.kmi-us.com
+beacon.riskified.com
 beacon.wikia-services.com
 beaconhealthsystem.org
 beacons.mediamelon.com
@@ -1951,7 +1952,6 @@ bilsyndication.com
 bimathyphy.com
 bimobject.com
 binance.cloud
-bing.com
 bingo.com
 binomnet3.com
 binsaiwo.net
@@ -5559,7 +5559,6 @@ gxgydnhz.com
 gypsyrysmarter.com
 gzppit.com
 h-cdn.com
-h-ct-m-fbx.fbsbx.online-metrix.net
 h.cloudengage.com
 h12-media.com
 h4k5.com
@@ -9071,7 +9070,6 @@ pixel-tracker.com
 pixel.ad
 pixel.condenastdigital.com
 pixel.convertize.io
-pixel.everesttech.net
 pixel.facebook.com
 pixel.safe-installation.com
 pixel.tapad.com
@@ -10261,7 +10259,6 @@ sablesong.com
 sabnzbd.org
 sabotagetimes.com
 sabq.org
-sac-h-ct-m-fbx.fbsbx.online-metrix.net
 sadjklq.com
 safe-click.net
 safebooru.org
@@ -13255,8 +13252,6 @@ williamhill.es
 williamhill.it
 williamhillcasino.com
 winamax.fr
-window-close.cf
-windows.net
 windsplay.com
 wineasy.se
 winner.com

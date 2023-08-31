@@ -1,8 +1,8 @@
 {
   "name": "NetFilter",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "manifest_version": 3,
-  "description": "Ad, Tacking, Malwares block and dashboard for developers, using declarativeNetRequest API.",
+  "description": "Netfilter - An efficient blocker for ads, trackers, coin miners, popups, annoying anti-blockers, malware sites, etc.",
   "icons": {
     "32": "32.png",
     "64": "64.png",

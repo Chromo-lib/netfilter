@@ -79,6 +79,7 @@ _right_ads\.
 /s/su.php\?t=
 /script/ut.js\?cb=
 /sensorsdata.
+/shreddit/perfMetrics
 /smarttag-prod\.
 /streamsense.min.js
 /tagmanager/pptm\.

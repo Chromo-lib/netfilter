@@ -158,6 +158,7 @@ prisma.io/gastats.js
 rapeporn.xyz/js/WBaV00YD0JTBSypXSc.js
 rapetube.me/js/2oWLXMqWrBJLr5kGnC.js
 realtor.com/rdc_user_check/init.js
+redditstatic.com/accountmanager/sentry.
 redditstatic.com/ads/pixel.js
 roughhardsex.com/js/YxklHzfRQPifk0utgjMI7a.js
 salesloft.com/sl.js
@@ -203,11 +204,13 @@ twitter.com/i/api/1.1/jot
 twitter.com/i/api/1.1/promoted_content/log.json
 twitter.com/i/jot
 twitter.com/oct.js
+unity3d.com/v1/events
 unsplash.com/nmetrics
 upstream.to/google.js
 vice-web-statics-cdn.vice.com/fonts/mtiFontTrackingCode.js
 videowood.tv/pop
 vimeo.com/ablincoln
+vimeocdn.com/js_opt/logging_combined.min.js
 vintagenudes.pro/js/aQCeo5xWBGKc6Uv0xe.js
 visualstudio.com/v2/track
 vonzeitzuzeit.de/tracking
@@ -233,6 +236,7 @@ yahoo.com/_td/api/resource/StreamService.ads;ads=
 yahoo.com/neo/stat
 yahoo.com/neo/ymstat
 yahoo.com/pageview
+yahoo.net/pixel.gif
 yimg.com/cx/vzm/cs.js
 yimg.com/nn/lib/metro/g/myy/advertisement
 yimg.com/wi/ytc.js

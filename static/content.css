@@ -2,6 +2,7 @@ body {
   user-select: initial !important;
 }
 
+.ytp-ad-progress-list,
 .ytp-ad-skip-button-slot,
 .ytp-ad-skip-button-container,
 .ytp-ad-skip-button {
@@ -16,7 +17,7 @@ body {
   display: none !important;
 }
 
-.ytp-ad-progress-list,.aeF > .nH > .nH[role="main"] > .aKB,.ad-slot-header__wrapper,.ad-feedback-link-container,
+.aeF > .nH > .nH[role="main"] > .aKB,.ad-slot-header__wrapper,.ad-feedback-link-container,.sponsorPost,
 .ads_under_player,.advert-wrapper,.cookie-policy,.adSlotHeaderContainer,.ad-slot-header,.ad-feedback__modal,.h-position-fixed-bottom,
 .ad-link,.post-ads,.sponsored_ad,.AdBox,.advertising_widget,.sticky-ad-bottom,.js-skyscraper-ad,.theiaStickySidebar,
 .adsbygoogle,.side-ads,.seoAdWrapper,.wall_marked_as_ads,._ads_block_data_w,.news_ticker_iframe,.burda-masthead-placement.ad,
