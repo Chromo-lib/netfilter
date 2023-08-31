@@ -1,5 +1,5 @@
 import Split from 'split.js'
-import { btnClear, btnReload, formSearch, preRules } from "./constants";
+import { btnClear, btnReload, formAddRules, formBlockDomain, formSearch, preRules } from "./constants";
 import onClear from "./events/onClear";
 import onMessages from "./events/onMessages";
 import onRealod from "./events/onReload";
@@ -17,13 +17,15 @@ preRules.innerHTML = JSON.stringify([
     "condition": {
       "requestDomains": ["ghost.io","chatlio.com","crisp.chat","vimkit.io","peer5.com"],
       "domainType": "thirdParty",
-      "resourceTypes": ["script","image","object","xmlhttprequest","ping","media","websocket","webtransport","csp_report"]
+      "resourceTypes": ["script","image","object","xmlhttprequest","media","websocket","webtransport"]
     }
   }
 ], null, 2);
 
 Split(['main', 'aside'], { sizes: [75, 25] });
 
+formAddRules.addEventListener('submit', onSearch);
+formBlockDomain.addEventListener('submit', onSearch);
 formSearch.addEventListener('submit', onSearch);
 btnReload.addEventListener('click', onRealod);
 btnClear.addEventListener('click', onClear);

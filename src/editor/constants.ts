@@ -3,6 +3,6 @@ export const btnClear = document.getElementById('btn-clear')!;
 
 export const formSearch = document.getElementById('form-search')!;
 export const formAddRules = document.getElementById('form-add-rules')!;
-export const formAddDomain = document.getElementById('form-add-domain')!;
+export const formBlockDomain = document.getElementById('form-block-domain')!;
 
 export const preRules = document.getElementById('text-rules')!;

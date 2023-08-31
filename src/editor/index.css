@@ -130,7 +130,7 @@ hr {
 }
 
 select,option,input,textarea,.btn,button {background-color: var(--dark); color: #fff; max-width: 100%;}
-.gutter {background-color: var(--dark); }
+.gutter {background-color: var(--dark); cursor: col-resize; }
 
 .small,small {font-size:  0.8rem;}
 
