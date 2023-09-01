@@ -1,13 +1,12 @@
 import Split from 'split.js'
-import { btnClear, btnReload, formAddRules, formBlockURL, formGetRules, formSearch, preRules, snackbar } from "./constants";
+import { formAddRules, formBlockURL, formGetRules, formSearch, preRules, snackbar, webResponseAction } from "./constants";
 import onAddRules from './events/onAddRules';
 import onBlockURL from './events/onBlockURL';
-import onClear from "./events/onClear";
 import onGetRules from './events/onGetRules';
 import onMessages from "./events/onMessages";
-import onRealod from "./events/onReload";
 import onSearch from "./events/onSearch";
 import onSnackbar from './events/onSnackbar';
+import onWebResponseAction from './events/onWebResponseAction';
 
 chrome.runtime.sendMessage({ message: 'get:webResponseErrorDetails' });
 
@@ -19,9 +18,9 @@ preRules.innerHTML = JSON.stringify([
       "type": "block"
     },
     "condition": {
-      "requestDomains": ["ghost.io","chatlio.com","crisp.chat","vimkit.io","peer5.com"],
+      "requestDomains": ["ghost.io", "chatlio.com", "crisp.chat", "vimkit.io", "peer5.com"],
       "domainType": "thirdParty",
-      "resourceTypes": ["script","image","object","xmlhttprequest","media","websocket","webtransport"]
+      "resourceTypes": ["script", "image", "object", "xmlhttprequest", "media", "websocket", "webtransport"]
     }
   }
 ], null, 2);
@@ -33,8 +32,8 @@ formAddRules.addEventListener('submit', onAddRules);
 formBlockURL.addEventListener('submit', onBlockURL);
 formSearch.addEventListener('submit', onSearch);
 
+webResponseAction.addEventListener('click', onWebResponseAction);
+
 snackbar.querySelector('button')!.addEventListener('click', onSnackbar)
-btnReload.addEventListener('click', onRealod);
-btnClear.addEventListener('click', onClear);
 
 chrome.runtime.onMessage.addListener(onMessages);

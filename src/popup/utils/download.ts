@@ -1,6 +1,6 @@
-import { webResponseErrorDetailsUL } from "../constants"
+import { webResponseErrorDetailsUL } from "../constants";
 
-export default function onDownload() {
+export default function download() {
   if (window.confirm('Do you really want to download logs?')) {
     const data = [...webResponseErrorDetailsUL.querySelectorAll('#url')].map(el => el.textContent?.trim());
     const a = document.createElement("a")

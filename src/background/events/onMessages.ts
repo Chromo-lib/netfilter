@@ -4,7 +4,7 @@ import handleWebResponse from "../messaging/handleWebResponse";
 export default function onMessages(request: any, _: any, sendResponse: any) {
   console.log('Service worker');
   sendResponse('Service worker');  
-  handleWebResponse(request, sendResponse);
+  handleWebResponse(request);
   handleRules(request, sendResponse);
   return true;
 }

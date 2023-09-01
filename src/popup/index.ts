@@ -1,20 +1,14 @@
-import { btnDownload, btnOpenEditor, btnShowSearchBar, formSearch } from "./constants";
-import onClear from "./events/onClear";
+import { webResponseAction, btnShowSearchBar, formSearch } from "./constants";
 import onMessages from "./events/onMessages";
-import onOpenEditor from "./events/onOpenEditor";
 import onStartup from "./events/onStartup";
-import onDownload from "./events/onDownload";
 import onSearch from "./events/onSearch";
 import onToggleSearchBar from "./events/onToggleSearchBar";
+import onWebResponseAction from "./events/onWebResponseAction";
 
 onStartup();
-
-document.getElementById('btn-update-webResponseErrorDetails')?.addEventListener('click', onStartup);
-document.getElementById('btn-clear-webResponseErrorDetails')?.addEventListener('click', onClear);
 
 btnShowSearchBar.addEventListener('click', onToggleSearchBar);
 formSearch.querySelector('#btn-close-search')?.addEventListener('click', onToggleSearchBar);
 formSearch.querySelector('input')?.addEventListener('change', onSearch);
-btnDownload.addEventListener('click', onDownload);
-btnOpenEditor.addEventListener('click', onOpenEditor);
+webResponseAction.addEventListener('click', onWebResponseAction);
 chrome.runtime.onMessage.addListener(onMessages);
