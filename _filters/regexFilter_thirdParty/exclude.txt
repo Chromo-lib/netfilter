@@ -12,3 +12,5 @@ polyfill.io
 deno.dev
 sndcdn.com
 alicdn.com
+github.com
+gitlab.com

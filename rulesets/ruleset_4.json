@@ -192,6 +192,24 @@
     },
     "condition": {
       "regexFilter": "^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]",
+      "excludedInitiatorDomains": [
+        "abuseipdb.com",
+        "dash.deno.com",
+        "facebook.com",
+        "youtube.com",
+        "googlevideo.com",
+        "google.com",
+        "openai.com",
+        "www.abuseipdb.com",
+        "www.gstatic.com",
+        "www.virustotal.com",
+        "polyfill.io",
+        "deno.dev",
+        "sndcdn.com",
+        "alicdn.com",
+        "github.com",
+        "gitlab.com"
+      ],
       "resourceTypes": [
         "main_frame",
         "sub_frame",
