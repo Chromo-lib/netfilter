@@ -1,6 +1,4 @@
-|eteknix.com/wp-content/uploads/*skin
 01net.com/e3/nrtv/?u=
-199.19.203.46/js
 24support.cc/js/stats.js
 3sat.de/mediaplayer/*/plugins/IVWTrackingPlugin.swf
 3sat.de/mediathek/xmlservice/web/tracking
@@ -10,7 +8,6 @@
 7.p.tdf.ringier.ch/rp.js
 7days.ru/ajax/route/browser
 7days.ru/statistics/*/hit?id=
-81.176.238.128/Counter.aspx
 85st.com/static/js/logging.js
 a.apkpure.com/analytics_*.js
 a.bf-tools.net/de/de.js
@@ -131,6 +128,7 @@ arcpublishing.com*/datapoint/save
 arms.aliyuncs.com/r.png
 arstechnica.com/keys/arstechnica.com/p.js
 articles2.marketrealist.com/aptrk
+as.coinbase.com/metrics
 asadcdn.com/bt
 asahibeer.co.jp/tracking.js
 assets-jpcust.jwpsrv.com/*/ping.js
@@ -143,6 +141,7 @@ at.mklaud.com/at/at_log_*.php
 at.rtb-cdn.net/?t_aid
 atlassian.com/gateway/api/*/batch
 atube.sex/*/js.php
+auth.services.adobe.com/signin/v1/audit
 auto-bild.de/*/gaEvents
 auto-motor-und-sport.de/js/sophus3/logging.js
 autoscout24.de/ArticleList/CustomLogging
@@ -233,7 +232,6 @@ cdn.shopify.com/s*/trekkie*.js
 cdn.shopify.com/shopifycloud/consent-tracking-api/*/consent-tracking-api.js
 cdn.ustatik.com/vendor/metrica/watch.js
 cdnjs.work/metrics.js
-cdns.gigya.com/js/gigyaGAIntegration.js
 cdnst.zaycev.net/static/*/countersm.js
 ceoscoredaily.com/weblog/gtracker
 cerberus.sqrt-5041.de/somtag/logs
@@ -409,6 +407,7 @@ emmi.jp/Scripts/tracker.js
 emp.de/on/demandware.store/*/__Analytics-Tracking
 episerver.net/ia.gif?r=
 esmas.com/scripts/esmas_stats.js
+eteknix.com/wp-content/uploads/*skin
 etl-xlmc-ssl.xunlei.com/api/stat
 etsy.com/bcn/beacon
 eu-mobile.events.data.microsoft.com
@@ -1350,11 +1349,6 @@ xiaohuangshu.me/visit.php
 xn--pckua2a7gp15o89zb.com/api/tracking.js
 xtapes.to/out.php
 xtraffstat.com/js/ktr.js
-xtremetop100.com/horizontalBanner.jpg
-xtremetop100.com/images/right_adspot2.jpg
-xtremetop100.com/images/UWSidebanner.gif
-xxxbunker.com/ajax/guestlog
-xxxbunker.com/ajax/viewlog
 xxxgirlsphotos.com/girls.js
 xxxpornanal.com/123iigttdj924
 yahoo.com/_td_api/resource/contentList;ad_meta=

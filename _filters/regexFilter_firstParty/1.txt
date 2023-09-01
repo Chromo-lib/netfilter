@@ -28,6 +28,7 @@ _right_ads\.
 /assets/ads-
 /assets/jquery/main100\.js\?v\=
 /atrk.js
+/b/ss/*/js-
 /b/ss/indepdev/1/JS-
 /beacon\.js
 /browserinfo\?f.sid=
@@ -44,6 +45,7 @@ _right_ads\.
 /faciliti-tag\.
 /fbevents.js
 /fixSpecialAdHome\.
+/ga-events\.js
 /gapro.js
 /google-ads-
 /gtm.js
