@@ -25,6 +25,7 @@ _right_ads\.
 /appmeasurement_module_
 /appmeasurement.min.js
 /assets/ads-
+/assets/jquery/main0\.js\?v\=
 /atrk.js
 /b/ss/expediaglobal/10/JS-
 /b/ss/indepdev/1/JS-

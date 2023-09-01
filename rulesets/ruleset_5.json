@@ -55,5 +55,19 @@
         "script"
       ]
     }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ":\/\/rkn.gov.ru\/*.gif",
+      "domainType": "firstParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
   }
 ]

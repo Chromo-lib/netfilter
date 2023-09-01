@@ -5444,7 +5444,6 @@ gotrackier.com
 gotraffic.net
 gotrk.net
 gotu.tpbid.com
-gounlimited.to
 gourmetads.com
 gousouse.com
 govee.com
@@ -7657,9 +7656,7 @@ meetlocals.com
 meetmilfy.com
 meetrics.net
 mega-stats.com
-mega.co.nz
 mega.com
-mega.nz
 megapersonals.eu
 megapornpics.com
 megastats.net
@@ -7801,7 +7798,6 @@ misslola.com
 missmalini.com
 miva.com
 mixadvert.com
-mixdrop.co
 mixi.mn
 mixo.io
 mixpanel.com
@@ -12118,6 +12114,7 @@ tracker.bz
 tracker.convead.io
 tracker.idocdn.com
 tracker.metricool.com
+tracker.samplicio.us
 tracker.thinkermail.com
 trackerhqu.com
 trackertest.org
@@ -12810,7 +12807,6 @@ vidible.tv
 vidmax.com
 vidoomy.com
 vidora.com
-vidoza.net
 vidsrev.com
 vidto.me
 vidverto.io
