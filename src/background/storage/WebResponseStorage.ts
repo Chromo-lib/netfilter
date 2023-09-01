@@ -17,6 +17,7 @@ export default class WebResponseStorage {
       await chrome.storage.local.set({ [requestId]: JSON.stringify({ ...details, url }) });
       return details.url;
     }
+
     return null;
   }
 
@@ -28,10 +29,12 @@ export default class WebResponseStorage {
 
   static async findMany(): Promise<WebResponseErrorDetails[]> {
     const items = await chrome.storage.local.get(null);
-    let result: any = [];
+    let result: WebResponseErrorDetails[] = [];
     if (items) Object.keys(items).forEach(key => {
+      const item: WebResponseErrorDetails = typeof items[key] === 'string' ? JSON.parse(items[key]) : items[key];
       if (/^\d+/g.test(key) && !key.includes('rules')) {
-        result.push(typeof items[key] === 'string' ? JSON.parse(items[key]) : items[key]);
+        if (result.some(d => d.url === item.url && d.initiator === item.initiator)) chrome.storage.local.remove(item.requestId);
+        else result.push(item);
       }
     });
     return result
