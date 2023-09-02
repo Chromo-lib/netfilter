@@ -29,12 +29,17 @@ export default class WebResponseStorage {
   }
 
   static async findMany(): Promise<WebResponseErrorDetails[]> {
+    const tabs = (await chrome.tabs.query({}));
     const items = await chrome.storage.local.get(null);
     let result: WebResponseErrorDetails[] = [];
     if (items) Object.keys(items).forEach(key => {
+      
       const item: WebResponseErrorDetails = typeof items[key] === 'string' ? JSON.parse(items[key]) : items[key];
+
       if (/^\d+/g.test(key) && !key.includes('rules')) {
-        if (result.some(d => d.url === item.url && d.initiator === item.initiator)) chrome.storage.local.remove(item.requestId);
+        if ((result.some(d => d.url === item.url && d.initiator === item.initiator)) || !tabs.some(t => t.id === item.tabId)) {
+          chrome.storage.local.remove(item.requestId);
+        }
         else result.push(item);
       }
     });
