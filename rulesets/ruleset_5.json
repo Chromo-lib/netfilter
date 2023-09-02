@@ -69,5 +69,24 @@
         "script"
       ]
     }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^[a-zA-Z0-9\/=7?.-_&%]+[.]{1}(cf|ga|tk|gq|xyz|kim|surf|casino|poker)[\/|?|&]{1}",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "xmlhttprequest",
+        "media",
+        "websocket"
+      ]
+    }
   }
 ]

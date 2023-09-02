@@ -56,6 +56,11 @@
         "id": "ruleset_5",
         "enabled": true,
         "path": "ruleset_5.json"
+      },
+      {
+        "id": "ruleset_6",
+        "enabled": true,
+        "path": "ruleset_6.json"
       }
     ]
   },

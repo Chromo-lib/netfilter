@@ -796,6 +796,7 @@ n-tv.de/stats
 n11.com/realTime/count
 nakanohito.jp/*/?uisv=
 nakanohito.jp/b*/b*.js
+naver.net/wcslog.js
 nbcudigitaladops.com/hosted/util/geo_data.js
 ncp-e.com/typo3conf/ext/leadlab/res/wm_autotrack_v*.js
 nemosa.co.za/images/mad_ad.png
@@ -1108,6 +1109,7 @@ staticwl.bkmcdn.com/scripts/adwords-tracker.js
 statnews.com/wp-content/compiled/js/stat-adobe-analytics.js
 statnews.com/wp-content/compiled/js/stat-dfp.js
 stats.autoscout24.ch/tp.gif
+stats.dailyremote.com/api/event
 stats.viqeo.tv
 stbbs.afreecatv.com/api/*_log.php
 steamchina.com/default/usabilitytracking
