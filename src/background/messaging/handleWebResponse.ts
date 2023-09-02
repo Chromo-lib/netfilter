@@ -27,15 +27,15 @@ export default function handleWebResponse({ message, tabId, url, filter }: any) 
   }
 
   if (message === 'delete:webResponseErrorDetails') {
-    WebResponseStorage.deleteOne(+tabId, url).then(() => {
-      sendMessage({ webResponseErrorDetails: [] });
+    WebResponseStorage.deleteMany(+tabId, url).then((webResponseErrorDetails) => {
+      sendMessage({ webResponseErrorDetails });
     });
     return true;
   }
 
   if (message === 'clear:webResponseErrorDetails') {
-    WebResponseStorage.deleteMany().then(() => {
-      sendMessage({ webResponseErrorDetails: [] });
+    WebResponseStorage.clear().then((webResponseErrorDetails) => {
+      sendMessage({ webResponseErrorDetails });
     });
     return true;
   }

@@ -13,12 +13,12 @@ export default function webResponseList(webResponseErrorDetails: chrome.webReque
       </div>
       <div class="d-flex justify-between align-center gray">
         <div>
-          <span class="mr-3">${r.initiator}</span>
-          <span class="mr-3">${r.method}</span>
-          <span class="mr-3">${r.ip || ''}</span>
-          <span class="mr-3">${timeStamp}</span>
+          <small class="mr-3">${r.initiator}</small>
+          <small class="mr-3">${r.method}</small>
+          <small class="mr-3">${r.ip || ''}</small>
+          <small class="mr-3">${timeStamp}</small>
         </div>
-        <span>${r.error}</span>
+        <small>${r.error}</small>
       </div>
     </li>`;
   });

@@ -1,8 +1,8 @@
 :root {
   --light: #e7e7e7;
   --white:#fff;
-  --black: #000;
-  --dark: #2c2c2c;
+  --black: #000000;
+  --dark: #1a1a1a;
   --gray:#656565;
 
   --transparent: #13131359;
@@ -26,7 +26,6 @@
 }
 
 html {
-  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -36,7 +35,8 @@ body {
   background-color: var(--dark);
   color: var(--white);
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Inter,sans-serif;
+  line-height: inherit;
   font-size: .9rem;
   letter-spacing: 0.6px;
   padding: 7px;
@@ -123,8 +123,6 @@ pre {
 }
 
 .tag {
-  color: var(--gray);
-  font-size: 0.85rem;
   display: flex;
   align-items: center;
   border-radius: 7px;
@@ -149,7 +147,7 @@ pre {
 select,option,input,textarea,.btn,button {background-color: var(--dark); color: #fff; max-width: 100%;}
 .gutter {background-color: var(--dark); cursor: col-resize; }
 
-.small,small {font-size:  0.8rem;}
+.small,.tag,small {font-size:  0.8rem; color: var(--gray);}
 
 .rounded {border-radius: 50%;}
 

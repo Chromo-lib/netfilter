@@ -1,4 +1,5 @@
 import { WebResponseErrorDetails } from "../types";
+import millisecondsToHours from "../utils/millisecondsToHours";
 
 export default class WebResponseStorage {
 
@@ -40,22 +41,23 @@ export default class WebResponseStorage {
     return result
   }
 
-  static async deleteOne(tabId: number, url?: string | undefined): Promise<WebResponseErrorDetails[]> {
-    const time = new Date().getTime();
-    const result: WebResponseErrorDetails[] = [];
+  static async deleteMany(tabId: number, initiator?: string | undefined): Promise<[]> {
+    const timeInMilliseconds = new Date().getTime();
+
     (await this.findMany()).forEach(async (d) => {
-      if (d.tabId === tabId || (url && d.initiator?.includes(url)) || (((time - d.timeStamp) / (1000 * 60 * 60)) % 24) > 1) await chrome.storage.local.remove(d.requestId);
-      else result.push(d);
+      if (d.tabId === tabId || (initiator && d.initiator?.includes(initiator)) || millisecondsToHours(timeInMilliseconds - d.timeStamp) >= 2) {
+        await chrome.storage.local.remove(d.requestId);
+      }
     });
 
-    return result;
+    return [];
   }
 
-  static async deleteMany(): Promise<WebResponseErrorDetails[]> {
+  static async clear(): Promise<WebResponseErrorDetails[]> {
     (await this.findMany()).forEach(async (d) => {
       if (d.requestId) await chrome.storage.local.remove(d.requestId);
     });
 
-    return await this.findMany();
+    return [];
   }
 }

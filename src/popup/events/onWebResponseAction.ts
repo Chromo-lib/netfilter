@@ -1,5 +1,6 @@
 import sendMessage from "../helpers/sendMessage";
 import download from "../utils/download";
+import copy from "../utils/copy";
 import onStartup from "./onStartup";
 
 export default function onWebResponseAction(e: any) {
@@ -14,7 +15,7 @@ export default function onWebResponseAction(e: any) {
       break;
 
     case 'copy':
-      sendMessage({ message: 'copy:webResponseErrorDetails' });
+      copy()
       break;
 
     case 'download':
