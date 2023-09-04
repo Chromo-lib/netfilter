@@ -466,6 +466,7 @@ events.attentivemobile.com
 events.audiate.me
 events.brightline.tv
 events.demoup.com
+events.framer.com
 events.jokerly.com
 events.jotform.com
 events.mapbox.com

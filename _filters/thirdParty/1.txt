@@ -1254,7 +1254,6 @@ alitems.site
 aliveachiever.com
 alivenetwork.com
 aliyun.com
-aliyuncs.com
 alkar.net
 alkemics.com
 alklinker.com
@@ -2097,6 +2096,7 @@ beaconhealthsystem.org
 beacons.mediamelon.com
 beaconstreetservices.com
 beam.koddi.com
+beamanalytics.io
 beampulse.com
 beanstalkdata.com
 beanstock.com

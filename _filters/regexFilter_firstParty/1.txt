@@ -17,6 +17,7 @@ _right_ads\.
 /advanced-ads-
 /advert_
 /adx\.
+/affiliate\.js
 /affiliates-landing-
 /ahoy/visits
 /ajax/bnzai\?_
@@ -28,14 +29,17 @@ _right_ads\.
 /api/models/vast*preroll
 /api/models\?userId\=
 /api/v3/trackSegmentEvent
+/api/v3/user-ip
 /assets/ads-
 /assets/jquery/main100\.js\?v\=
 /atrk.js
 /b/ss/*/js-
 /b/ss/indepdev/1/JS-
+/banner-ad-
 /beacon\.js
 /blockblock/blockblock.jquery.js
 /browserinfo\?f.sid=
+/census/RecordHit
 /clientlib-analytics-
 /cmbdv2\.js
 /common-js/exit/om2.min.js
@@ -103,7 +107,8 @@ _right_ads\.
 /s/su.php\?t=
 /script/awesome.js
 /script/ut.js\?cb=
-/sensorsdata.
+/sensorsdata-
+/sensorsdata\.
 /shreddit/perfMetrics
 /smarttag-prod\.
 /ssp/req/*/\?pb=
