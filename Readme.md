@@ -1,5 +1,5 @@
 # NetFilter
-Ad, Tacking, Malwares block and dashboard for developers, using declarativeNetRequest API.
+Netfilter - An efficient blocker for ads, trackers, coin miners, popups, annoying anti-blockers, malware sites, etc.
 
   ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen) ![GitHub release](https://img.shields.io/github/release/Chromo-lib/netfilter/all?logo=GitHub) ![](https://badgen.net/github/license/Chromo-lib/netfilter)
 
