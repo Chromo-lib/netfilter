@@ -10,3 +10,4 @@ yarn-error.log
 combine-rules-test
 *.zip
 *.rar
+*.xpi
