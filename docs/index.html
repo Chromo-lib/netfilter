@@ -44,7 +44,7 @@
 
 <body>
 
-  <nav class="container">
+  <nav class="container flex-wrap">
     <ul class="d-flex">
       <li class="d-flex align-center"><img class="mr-1" width="25" height="25" src="assets/128.png" alt="">
         <h2 class="m-0">Netfilter</h2>
@@ -72,7 +72,7 @@
 
     <div class="dropdown">
       <button class="btn"><i class="fa fa-download mr-1"></i>download</button>
-      <ul class="bg-dark left">
+      <ul class="bg-black left">
         <li><a href="https://microsoftedge.microsoft.com/addons/detail/bglkabckjafblolnieljfgcgnnekcbkh"
             target="_blank"><i class="fab fa-edge mr-1"></i>Microsoft edge</a></li>
         <li><a href="https://github.com/Chromo-lib/netfilter/releases" target="_blank"><i class="fas fa-file-archive mr-1"></i>Zip file</a></li>
@@ -86,8 +86,7 @@
       <div class="card">
         <h1 class="m-0"><i class="fas fa-chalkboard-teacher"></i></h1>
         <h2>Ad Blocking</h2>
-        <p>Netfilter is a must-have for anyone who wants to eliminate all the annoying banners, pop-ups that tend to
-          clog up their browsing experience.</p>
+        <p>Eliminate all the annoying banners, pop-ups that tend to clog up their browsing experience.</p>
       </div>
       <div class="card">
         <h1 class="m-0"><i class="fas fa-user-shield"></i></h1>
@@ -97,15 +96,14 @@
       <div class="card">
         <h1 class="m-0"><i class="fas fa-shield-alt"></i></h1>
         <h2>Browsing Security</h2>
-        <p>Stay safe online with Netfilter - it protects against phishing scams and harmful websites. Browse stress-free
-          knowing you're protected.</p>
+        <p>Protection against phishing scams and harmful websites. Browse stress-free knowing you're protected.</p>
       </div>
     </div>
   </section>
 
-  <section class="vh-100 container grid-2 left bg-black">
+  <section class="vh-100 container grid-2 align-center left bg-black">
     <div>
-      <h1 class="text-2">enjoy the web the way it should be</h1>
+      <h1 class="text-3">enjoy the web the way it should be</h1>
       <ul>
         <li class="mb-2">Netfilter is a simple, easy to use browser extension designed to block ads and trackers without
           compromising
@@ -130,7 +128,7 @@
     <h1 class="mb-0">User Reviews</h1>
     <p class="lead uppercase mb-3">application rating</p>
     <div class="reviews grid-3"></div>
-    <button class="btn mt-3"><i class="fa fa-plus mr-1"></i>add review</button>
+    <button class="btn mt-3" id="btn-open-modal"><i class="fa fa-plus mr-1"></i>add review</button>
   </section>
 
   <section class="container grid-3 bg-black left pt-3 pb-3">
@@ -165,6 +163,25 @@
       </ul>
     </div>
   </section>
+
+  <div class="w-100 modal d-flex align-center justify-center flex-column d-none">
+    <button id="btn-close-modal"><i class="fa fa-times"></i></button>
+    <form class="w-100 bg-white mt-1" id="form-review">
+      <div class="d-flex flex-column mb-1">
+        <label for="fullname">Full name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Joe Doe" required>
+      </div>
+      <div class="d-flex flex-column mb-1">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="joe.doe@gmail.com" required>
+      </div>
+      <div class="d-flex flex-column mb-1">
+        <label for="description">Description</label>
+        <textarea class="w-100" name="description" id="description" cols="10" rows="10" required></textarea>
+      </div>
+      <button class="w-100 btn" type="submit"><i class="fas fa-paper-plane mr-1"></i>submit</button>
+    </form>
+  </div>
 
   <footer class="container bg-dark ">
     <p>Netfilter is developed by Haikel Fazzani, under <a href="https://raw.githubusercontent.com/Chromo-lib/netfilter/master/LICENSE" target="_blank">GPL-3.0 License</a>.</p>

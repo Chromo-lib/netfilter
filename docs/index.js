@@ -1,3 +1,6 @@
+const modal = document.querySelector('.modal');
+const btnCloseModal = document.getElementById('btn-close-modal');
+
 fetch('https://api.npoint.io/6beb7f1b0a9f0b10f6af')
   .then(r => r.json())
   .then(data => {
@@ -10,3 +13,15 @@ fetch('https://api.npoint.io/6beb7f1b0a9f0b10f6af')
 </div>`
     })
   });
+
+document.getElementById('btn-open-modal').addEventListener('click', () => {
+  modal.classList.remove('d-none')
+})
+
+document.getElementById('form-review').addEventListener('submit', e => {
+  e.preventDefault();
+  modal.classList.add('d-none')
+  e.reset();
+});
+
+btnCloseModal.addEventListener('click', () => { modal.classList.add('d-none'); })
