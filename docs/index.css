@@ -80,7 +80,7 @@ p {margin: 0;}
 
 .btn {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 20px 25px;
   border-radius: 5px;
   margin: 10px;
   background-color: var(--dark);
@@ -113,8 +113,9 @@ img {
 
 .dropdown {position: relative;}
 .dropdown ul { display: none;}
-.dropdown:hover ul {min-width: 200px; position: absolute;display: block; border-radius: 7px;}
+.dropdown:hover ul {min-width: 200px; position: absolute;display: block; border-radius: 7px; box-shadow: 2px 2px 7px 0 rgb(0 0 0 / 13%);}
 .dropdown li {padding: 10px; border-bottom: 1px solid var(--black); }
+.dropdown li:last-child {border: 0;}
 
 .card {
   padding: 20px;
@@ -168,6 +169,18 @@ img {
 
 .vh-100 {min-height: 100vh;}
 .w-100 {width: 100%;}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 10px 50px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .container {
