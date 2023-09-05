@@ -4,7 +4,7 @@
 
 :root {
   --black: #000000;
-  --dark: #212529;
+  --dark: #2c2c2c;
   --white: #fff;
   --red: #ff0000;
 }
@@ -45,7 +45,12 @@ section {
   text-align: center;
 }
 
-h1,.text-2  {
+h1 {font-size: 2.2rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem;}
+h4 {font-size: 1.1rem;}
+
+.text-1, .text-2  {
   font-size: 4.8rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -53,8 +58,6 @@ h1,.text-2  {
 }
 
 .text-2 {font-size: 3.8rem;}
-.text-3 {font-size: 2.5rem;}
-h4 {font-size: 1.1rem;}
 
 ul {
   padding: 0;

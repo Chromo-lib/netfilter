@@ -57,6 +57,7 @@ _right_ads\.
 /detroitchicago/tampa\.js
 /Disable\%2BAdblock.
 /disabled_adBlock\.
+/discourse-adplugin-
 /egcs/v2/collect
 /elqCfg.min.js
 /event/beacon
@@ -95,6 +96,7 @@ _right_ads\.
 /push-analytics\.js
 /push-skin/skin.min.js
 /QuotaService.RecordEvent
+/rainbow/master-js
 /redirect\?spot_id=
 /related_1.html\?language=
 /renderTimingPixel.

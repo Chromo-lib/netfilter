@@ -1942,7 +1942,6 @@ aznude.com
 azointel.com
 azqq.online
 b-msedge.net
-b.scorecardresearch.com
 b0e8.com
 b0oie4xjeb4ite.com
 b16.nakanohito.jp
@@ -5228,6 +5227,7 @@ events.mapbox.com
 events.newsroom.bi
 events.redditmedia.com
 events.tubecup.org
+events.ubembed.com
 eventsapi.grocerkey.com
 eventsbands.com
 eventucker.com
