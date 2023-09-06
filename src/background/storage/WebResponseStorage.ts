@@ -19,7 +19,7 @@ export default class WebResponseStorage {
     const host = new URL(details.url).host;
 
     const url = details.type === 'xmlhttprequest'
-      ? this.splitOnSixthSlash(details.url)
+      ? this.splitOnSixthSlash(this.removeParams(details.url))
       : this.removeParams(details.url);
 
     if (!data.some(d => d.url === url && d.initiator === details.initiator)) {
