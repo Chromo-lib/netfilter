@@ -5,17 +5,25 @@ export default class WebResponseStorage {
 
   private static splitOnSixthSlash(inputString: string) {
     const parts = inputString.split('/');
-    return parts.length >= 6 ? parts.slice(0, 6).join('/') : inputString;
+    return parts.length >= 6 ? parts.slice(0, inputString.length > 100 ? 2 : 6).join('/') : inputString;
+  }
+
+  private static removeParams(url: string) {
+    const details = url.split('?');
+    if (details.length > 1 && details[1].length < 20) return url;
+    return details[0];
   }
 
   static async add(requestId: string, details: WebResponseErrorDetails | any): Promise<string | null> {
     const data = await this.findMany();
+    const host = new URL(details.url).host;
+
     const url = details.type === 'xmlhttprequest'
       ? this.splitOnSixthSlash(details.url)
-      : details.url.split('?')[0];
+      : this.removeParams(details.url);
 
     if (!data.some(d => d.url === url && d.initiator === details.initiator)) {
-      await chrome.storage.local.set({ [requestId]: JSON.stringify({ ...details, url }) });
+      await chrome.storage.local.set({ [requestId]: JSON.stringify({ ...details, host, url }) });
       return details.url;
     }
 
@@ -33,7 +41,7 @@ export default class WebResponseStorage {
     const items = await chrome.storage.local.get(null);
     let result: WebResponseErrorDetails[] = [];
     if (items) Object.keys(items).forEach(key => {
-      
+
       const item: WebResponseErrorDetails = typeof items[key] === 'string' ? JSON.parse(items[key]) : items[key];
 
       if (/^\d+/g.test(key) && !key.includes('rules')) {

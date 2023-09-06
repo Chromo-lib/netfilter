@@ -94,7 +94,6 @@ api-v*.tinypass.com/api/v*/conversion/logEspMicroConversion
 api-web.pressplay.cc/marketing
 api.atlassian.com/metal/ingest
 api.aws.mapquest.com/logger
-api.b2c.com/api/x.gif
 api.centify.co/adb
 api.contentpass.net/analytics
 api.giga.de/*tracking
@@ -119,7 +118,6 @@ app.compendium.com/js/stats_bundle.js
 app.convertkit.com/forms/*/visit
 app.huawei.com/hwa-c*&action=
 app.huawei.com/hwa-c/configresource/js/general/ha.js
-app.leadplan.ru/assets/img/1px.gif
 app.retargetapp.com/pixel/pixel.min.js
 app.revhunter.tech/px
 araskargo.com.tr/tr/jv_google_analytics.js
@@ -181,7 +179,6 @@ blogheim.at/ranking
 blogtotal.de/blogtotal_stats_
 bloomberg.com/8FCGYgk4/init.js
 blue.wric.com/script.js
-bmw-connecteddrive.de/z.gif?x=
 boersennews.de/js/lib/BnPageTracker.js
 bol.com/tracking/*.gif
 bollywoodporn.name/js/PfV5GLKSF5S5md5LwPUPY.js
@@ -190,7 +187,6 @@ boss.berlinonline.de/cp.php
 br.de/doTrack
 brave.com/static-assets/js/analysis.js
 bravotube.net/b_track.js
-brightcove.com/1pix.gif
 brille24.de/fileadmin/tracking
 btrace.video.qq.com/kvcollect
 builder.io/api/v1/track
@@ -199,7 +195,6 @@ businesswire.com/js/videojs.ga.min.js
 byjus.com/byjusweb/js/tracking-2.min.js
 c-date.at/sites/c-date.ch/modules/tracking
 c.amazon-adsystem.com/aax2/apstag.js
-c.lazada.co.id/t/v.gif?__t=
 ca-fe.pstatic.net/web-mobile/static/naverStatLogger
 ca-fe.pstatic.net/web-mobile/static/web-crash-logger
 cache.ltn.com.tw/js/c.js
@@ -245,11 +240,8 @@ chronicle.com/_track
 churchtechtoday.com/?wordfence_lh=
 cimri.com/r/analytics
 cisnet.iqsn.de/L*/counter-cisstart.php
-citizensvoice.com/logger/p.gif
 citybeat.de/include/cbtrck.104.min.js
 cjs-cdkeys.com/index.php?action=track
-click.xda-developers.com/api/pixel.gif
-clickstream.grubhub.com/event.gif?event=
 cloud.weborama.design/nonio.js
 cloudflare.com/cdn-cgi/trace
 cloudfront.net/?a=
@@ -264,7 +256,6 @@ cloudfront.net/sso.js
 cloudfront.net/uba.js
 cloudfront.similarweb.io/sw-matomo
 cloudfunctions.net/export-customizer-data-metrics
-cmap.alibaba.com/landing_ae.gif
 cmap.alibaba.com/ml.html?callback=landing
 cmexota.ru/templates/default/images/livinternet.png
 cmp.focus.de/wrapper/metrics
@@ -301,7 +292,6 @@ crunchyroll.com/versioned_assets/js/tracking
 cultofmac.com/presslabs.js
 d.line-cdn.net/*/torimochi.js/*/torimochi.js
 d.line-scdn.net/*/torimochi.js/*/torimochi.js
-d.mobilebanner.ru/p.gif
 d.sudouest.fr/logs
 d1d3jupgwm7m5r.cloudfront.net/prod/cloudfrontVideoTracker.
 d1gofkrkum4ehe.cloudfront.net/tracker.js
@@ -318,7 +308,6 @@ daisomall.co.kr/collect.php
 data.biliintl.com/log
 data.gov.in/ogdp-stats-
 data.html5games.com/event/ad
-data.reactandshare.com/track.gif
 dax.yle.fi/yya/event
 daxab.com/logger
 dba.dk/ajax/tracking
@@ -405,7 +394,6 @@ emag.ru/counter/counter.php?url=
 embed.videosdemadurasx.com/js/u_hits_control.js
 emmi.jp/Scripts/tracker.js
 emp.de/on/demandware.store/*/__Analytics-Tracking
-episerver.net/ia.gif?r=
 esmas.com/scripts/esmas_stats.js
 eteknix.com/wp-content/uploads/*skin
 etl-xlmc-ssl.xunlei.com/api/stat
@@ -416,9 +404,7 @@ evcdn.com/store/plugins/tracker-ev-sdk.js
 event-analytics.yesware.com/main.js
 events.genndi.com/tracker
 ewaline.su/stats.js
-exchangerates.org.uk/images/200x200_currency.gif
 excnn.com/templates/anime/sexybookmark/js/popup.js
-exelator.com/pixel.gif
 expedia.*/minify/client-logger-bundle-
 expedia.com*/evaluateexperimentsandlog
 expedia.com*/logexperiments
@@ -461,25 +447,21 @@ forum.zuvio.com.tw/api/article/finish
 fotka.com/ajax_action/adblock_stat
 fotka.com/out/counters.php
 franeski.net/js/lib.js
-freebookspot.club/vernambanner.gif
 freedownloadmanager.org/js/achecker.js
 freeones.com/build/freeones/adWidget.
 freepornvideo.name/js/JTJIV6szTz6sdA4.js
 freeworldgroup.com/banner
-fresheye.com/s.gif
 fresnel.vimeocdn.com/add/player-test-impression?beacon
 friv.com/z/assets/scripts/advert-336x280.js
 frontend-prod.healthline.com/api/metrics
 fullhdxxx.com/*/js.php
 fulltrannytube.com/analytics.js
-fulltrannytube.com/stats.gif
 funnyjunk.com/site/js/extra/pre
 fupa.net/fupa/api.php?p=besucher_klick
 fuq.com/js/analytics
 futbollatam.com/ads.js
 g.csdnimg.cn/common/csdn-report/report.js
 g.ezoic.net/ezosuigeneris.js
-g.jwpsrv.com/g/gcid-0.1.2.html?notrack
 g2insights-cdn.azureedge.net/*/mng/g2insights.min.js
 gamblingnewsmagazine.com/wp-content/uploads/*/ocg-ad-
 gamecopyworld.com/js/pp.js
@@ -518,13 +500,9 @@ glssp.net/logger.js
 goldporn.org/js/nc2nlpLCSuNoX5A.js
 golem.de/staticrl/scripts/golem_cpxl_
 good-gay.tv/analytics.js
-good-gay.tv/stats.gif
 google-analtyics.com/analytics.js
-google-analytics.com*/__utm.gif
 google.*/ads/ga-audiences?v=
 google.com/adsense/search
-google.com/images/phd/gfl.gif
-google.com/images/phd/px.gif
 googleadservices.com/pagead/conversion_async.js
 googleapis.com/maps/api/mapsjs/gen_204
 goroost.com/api/pageview
@@ -561,9 +539,7 @@ highwebmedia.com/CACHE/js/output.ed5f5a28fb27.js
 hits.tv8.com.tr/save_video_event
 hltv.org/scripts/hltv-tracking.js
 hltv.org/staticimg/*?ixlib=
-hm.baidu.com/hm.gif
 hm.com/global/session-tracking
-hmma.baidu.com/app.gif
 home.ebs.co.kr/ebsnews/logProce/logAjax
 hondacarsrockhill.com/pixall/pix-ddc-fp.min.js
 horizon.businessinsider.com/*/track
@@ -584,7 +560,6 @@ hulu.com/metricsconfig
 i.ag.ru/ag/i/counters_new_nr.png
 i.bcicdn.com/js-min/*/chunks/8.*.js
 i.computer-bild.de/i/ab/*.gif?r
-i.computer-bild.de/i/blind.gif
 i.doodcdn.co/ads/ad.js
 i.imgur.com/cSePTP2.jpg
 i.milliyet.com.tr/D/j/Molatik/GoogleAnalit.js
@@ -611,10 +586,8 @@ images.hepsiburada.net/webtrekk/webtrekk.js
 images.search.yahoo.com/viewer;_ylt=
 images.tcdn.com.br/commerce/assets/store/js/dist/facebook-conversion.js?pixel=
 imagetwist.com/b9ng.js
-imdb.com*/b.gif
 imdb.com/tr/*pageHit
 img-kotonw.mncdn.com/*/acc.clickandcollect.js
-img.litix.io/a.gif
 img.sportsworldi.com/static/w_sportsworld/common/js/analytics.js
 img.sputniknews.com/min/js/plugins/video-counters.js
 img*.en25.com/i/elqCfg.min.js
@@ -672,7 +645,7 @@ justjavhd.com/wp-content/uploads/2017/05/300.gif
 justjavhd.com/wp-content/uploads/2017/05/728.gif
 justmyshop.com/common/lib/f_ad_code.js
 justswallows.com/lib/ajax/track.php
-jwpltx.com/*/ping.gif
+jwpsrv.com/g/gcid-*.html?notrack
 kazus.ru/js/*/log_trackjs.htm
 kerch.fm/templates/FM/js/analytic.js
 kfzteile24.de/*_tracking.js
@@ -727,7 +700,6 @@ mail.yahoo.com/neo/splunkLogger
 mailtrack.io/trace/mail/*.png
 main.exoclick.com/tag.php
 mallorcamagazin.com/sfCounter
-manager-magazin.de/static/sys/pixel.gif
 mangapedia.com/js/abb.
 manporn.xxx/agent.php
 manychat.com/analytics/event
@@ -842,7 +814,6 @@ onlydudes.tv/analytics.js
 open-s.alibaba.com/openservice/userBehaviorProductViewService
 open.spotify.com/log/analytics
 opensubtitles.org/gfx/banners_campaigns/2x2.gif
-ophan.theguardian.com/a.gif
 orbitz.com*/evaluateexperimentsandlog
 orbitz.com/api/datacapture/track
 orbitz.com/cl/data/typeahead_client_metrics.json
@@ -863,7 +834,6 @@ patreon.com/api/tracking
 paypal.com/credit-presentment/log
 paypal.com/tagmanager/pptm.js
 paypal.com/xoplatform/logger/api/logger
-paypalobjects.com/*/pixel.gif
 pcgames.de/webservices/socialShareCount.php
 pcgameshardware.de/webservices/socialShareCount.php
 pclick.yahoo.com
@@ -879,16 +849,13 @@ pi.pardot.com/analytics
 pic4you.ru/img/footer.js
 pikabu.ru/ajax/save_stories_stat.php
 pin-river.data.ea.com/pinEvents
-ping.typekit.net/p.gif
 pinterest.com/_/_/trace/trace
 pitomec.ru/top.gif
 pixelcounter.marca.com/pixelcontabilizacion/pixelcontabilizacion.gif
 pixlee.com/assets/pixlee_events.js
 play.google.com/log
-play.tv3.lt/static/scripts/trackdb/events.gif
 playep.pro/pl/vendor/stat.min.js
 player-feedback-mds.glomex.com/pf/?clientName=
-player-files.remixd.com/ping.gif
 player.ani-stream.com/log
 player.vimeo.com/log
 player.vzaar.com/libs/googleAnalytics/vzaarGoogleAnalytics.js
@@ -919,7 +886,6 @@ prettyfast.to/log
 prisma.io/gastats.js
 progorodchelny.ru/modules/lenta/stat.php
 prokazan.ru/components/analytics/stat.js
-prometeo-media-service.com/assets/pixel.gif
 prosecrets.pro/js/VietXfAdvStats/frontend.js
 publicdomaintorrents.info/grabs/hdsale.png
 publicdomaintorrents.info/rentme.gif
@@ -931,7 +897,6 @@ qgraph.io/v3/r/aiqua.js
 qq.com/stdlog
 quelle.de/servlet/LandmarkServlet?clientId=
 quoka.de/services/count.php
-r.popin.cc/log.gif
 r.yna.co.kr/global/lib/*/js/nlogger.js
 r3.mail.ru/k?sign=
 rackcdn.com/stf.js
@@ -992,8 +957,6 @@ saabsunited.com/wp-content/uploads/*banner
 saccest.com/js/lidyana.js
 sahibinden.com/ajax/counter
 salesloft.com/sl.js
-salesmanago.com/api/r.gif
-salesmanago.pl/api/r.gif
 samsung.com*/scripts/tracking.js
 samsung.com/*/peppermint_buy_tracking.js
 sat-universe.com/wos2.png
@@ -1009,12 +972,10 @@ scv.band.us/jackpotlog/*/logs
 search.brave.com/api/feedback
 searchiq.co/api/tr?event=
 secretescapes.de/assets/common/tracker
-secure.agoda.com/pixel.gif
 segmentnext.com/LhfdY3JSwVQ8.js
 sendsay.ru/js/target/tracking.js
 seotoolset.com/pathmaps.
 serv.tooplay.com/analyse
-serv2.tooplay.com/b.gif
 servebom.com/event.js
 service.geico.com/insite/js/mbox2.js
 sexfreehd.xxx/*/js.php
@@ -1192,7 +1153,6 @@ tms.marriott.com/error/e.gif
 tonkosti.ru/JS/statistic.php
 top.gg/api/auctions/i
 topshop.com/wcsstore/ConsumerDirectStorefrontAssetStore/images/trans_pixel.gif
-toptracker.ru/buttons/counter.gif
 torrent911.ws/z-
 torrenteditor.com/img/graphical-network-monitor.gif
 tosshub.com/sites/common/resources/trackdata/min/itgdtrack*.js
@@ -1233,7 +1193,6 @@ tumblr.com/services/bblog
 tunein.com/api/*/comscore
 turner.com/analytics/comscore/streamsense.
 tv.naver.com/resources/release/js_*/player*Logge
-tv3play.skaties.lv/static/scripts/trackdb/events.gif
 tvid.in/log/logs
 tvid.in/sdk/loader.js
 tweakers.net*&p=
@@ -1275,7 +1234,6 @@ vantastic-foods.com/dlyx/tms.js
 vastz.b-cdn.net/hsr/HSR*.mp4
 vc.ru/booster/daily/hits
 vc.ru/hit
-vc.ru/px.gif
 vice-web-statics-cdn.vice.com/fonts/mtiFontTrackingCode.js
 vid.me/api/metric
 videos.giga.de/*/tracking
@@ -1336,13 +1294,10 @@ winfuture.de/ajax/count
 wingiftnow.life/js/popunder.js
 wintorrents.ru/templates/WinTorentsNew/images/gp.jpg
 wiwo.de/js/*/webtrekk
-woopic.com/z.gif
 worldofmods.com/wompush-init.js
 wowgame.jp/countup.asp
 wp-r.github.io/*/assets/js/jquery.iframetracker.js
-wp.aliexpress.com/trace.gif?event=
 wp.com/wp-content/js/bilmur.min.js
-wscatalog.ru/dizain/cycounter.gif
 wsj.com/asset/ace/ace.min.js
 www.google.*/adsense/search/ads.js
 www002.commutil.kr/adlog/adlog_arrviewset.php
@@ -1362,7 +1317,6 @@ yahoo.com/neo/ymstat
 yahoo.com/pageview
 yahoo.net/pixel.gif
 yahoo.net/pixel*.gif
-yahoodns.net/pixel.gif
 yandex.*/cy?base=0&host=
 yandexcdn.com/ajax.php
 yastatic.net/s3/distribution/yanalytics/yanalytics.js
@@ -1379,7 +1333,6 @@ youtube.com/youtubei/v1/log_event
 ytconvert.me/pop.js
 ytmp3.cc/js/inner.js
 ytmp3.plus/ba
-yvesrocher.com.tr/images/__utm.gif
 yvesrocher.com.tr/images/avenseo/tr_TR/avenseo-uniq.min.js
 yvesrocher.com.tr/images/js/coremetrics.js
 yvesrocher.com.tr/images/js/tracking

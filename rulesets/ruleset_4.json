@@ -267,5 +267,31 @@
         "image"
       ]
     }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "/(a|b|h|v|w|z|x|p|r|s|z|ia|px|hm|1px|1pix|events|log|trace|counter|mwb2|cycounter).gif\\??",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "/(gfl|__utm|app|ping|blind|pixel|event|landing_ae|track|200x200_currency|vernambanner|stats).gif\\??",
+      "resourceTypes": [
+        "image"
+      ]
+    }
   }
 ]

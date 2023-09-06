@@ -64,6 +64,7 @@ _right_ads\.
 /eventproxy/track
 /faciliti-tag\.
 /fbevents.js
+/fingerprint\.js
 /fixSpecialAdHome\.
 /frontend-gtag\.
 /ga-events\.js
@@ -85,7 +86,7 @@ _right_ads\.
 /metrics/rum
 /o_tealium\.
 /omniture/tracking\.
-/OtAutoBlock.js
+/OtAutoBlock\.js
 /perf-vitals_
 /piwik\.
 /pixelpropagate\.
@@ -101,7 +102,7 @@ _right_ads\.
 /related_1.html\?language=
 /renderTimingPixel.
 /retargeting-pixels\.
-/rollbar.js
+/rollbar\.js
 /ruxitagentjs_
 /s/opensans/v17
 /s/s/js/ssu.v2\.
