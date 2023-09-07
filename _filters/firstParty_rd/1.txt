@@ -547,6 +547,7 @@ mc.yandex.ru
 mdrecv.app.cntvwb.cn
 metrics-dra.dt.hicloud.com
 metrics-logger.spot.im
+metrics.10web.io
 metrics.aa.com
 metrics.adacreisen.de
 metrics.api.drift.com

@@ -13,7 +13,7 @@ body {
 #popupModal,#appconsent,#ad-wrap,#id-custom_banner,#onboarding-splash,#cookies_policy_wrap,#ad_bnr_atf_01,
 #content-for-adblock,#newsletter-floating,#page-body,#player-ads,#CybotCookiebotDialogBodyUnderlay,#newsletter_modal,#olay2,
 #show-ad,#masthead-ad,#google-top-ads,#ads_left,#big-yoodle,#display-ads,#adContainer,#display-ads,
-#tgChat {
+#tgChat,#adOverlay {
   display: none !important;
 }
 

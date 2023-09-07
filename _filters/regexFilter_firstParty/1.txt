@@ -131,6 +131,7 @@ _right_ads\.
 /web-vitals.
 /wf-beacon-
 /zaraz/s.js
+\?action=saveViewStat\&
 \?sentry_key=
 \.php\?zone_id\=
 \.snowplowanalytics\.

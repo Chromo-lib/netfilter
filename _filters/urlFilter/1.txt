@@ -99,6 +99,7 @@ api.contentpass.net/analytics
 api.giga.de/*tracking
 api.impresa.pt/trackercookie
 api.mercadolibre.com/tracks
+api.mindbox.ru/scripts/*/tracker.
 api.mindbox.ru/scripts/*/tracker.js
 api.opinary.com/*events
 api.phoenix-widget.com/c?wid=
@@ -172,6 +173,7 @@ bilibilicomics.com/twirp/log.
 bing.com/fd/ls/GLinkPingPost.aspx
 bing.com/fd/ls/l?IG=
 bing.com/fd/ls/lsp.aspx
+bing.com/mouselog
 bitrix.info/ba.js
 biz.alibaba.com/order/ajax/AjaxOrderStatistic.do
 blick.ch/stats
@@ -195,6 +197,7 @@ businesswire.com/js/videojs.ga.min.js
 byjus.com/byjusweb/js/tracking-2.min.js
 c-date.at/sites/c-date.ch/modules/tracking
 c.amazon-adsystem.com/aax2/apstag.js
+c.evidon.com/geo/country.js
 ca-fe.pstatic.net/web-mobile/static/naverStatLogger
 ca-fe.pstatic.net/web-mobile/static/web-crash-logger
 cache.ltn.com.tw/js/c.js
@@ -243,6 +246,7 @@ cisnet.iqsn.de/L*/counter-cisstart.php
 citybeat.de/include/cbtrck.104.min.js
 cjs-cdkeys.com/index.php?action=track
 cloud.weborama.design/nonio.js
+cloudflare.com*/snowstorm-min.js
 cloudflare.com/cdn-cgi/trace
 cloudfront.net/?a=
 cloudfront.net/abw.js
@@ -350,6 +354,7 @@ domatv.dnevnik.hr/bin/usrtrck-new.php
 dove.com*/Assets/JS/udm.js
 downloads-photoshop.ru/templates/dp/images/count_top.png
 downloads-photoshop.ru/templates/dp/images/count.png
+downloads.mailchimp.com/js/signup-forms/popup/embed.js
 dpool.sina.com.cn/iplookup/iplookup.php
 drift.com/impressions
 drift.com/targeting
@@ -412,6 +417,8 @@ expedia.com/api/datacapture/track
 expedia.com/cl/data/typeahead_client_metrics.json
 extra.cz/counter.php?id=
 extremetech.com/sbs/beacon.js
+facebook.com/ajax/*/log.php
+facebook.com/ajax/*logging.
 facebook.com/ajax/bnzai
 facebook.com/ajax/timezone
 facebook.com/impression.php
@@ -507,7 +514,6 @@ googleadservices.com/pagead/conversion_async.js
 googleapis.com/maps/api/mapsjs/gen_204
 goroost.com/api/pageview
 gowatchit.com/analytics.js
-graph.instagram.com/logging_client_events
 gratis.com/ccstoreui/*/analytics/visitorsMetric
 groupon.it/tracky
 grpcgateway.codersrank.io/communication/thread_count
@@ -613,6 +619,7 @@ inq.com/tagserver/logging/logline
 insider.com/chunks/scripts/datadog-
 instadp.com/track
 instagram.com/ajax/bz
+instagram.com/logging_client_events
 intercomcdn.com/sentry-modern
 intercomcdn.com/vendors~sentry-modern
 internet-abc.de*/eTracker.js
@@ -860,6 +867,7 @@ player.ani-stream.com/log
 player.vimeo.com/log
 player.vzaar.com/libs/googleAnalytics/vzaarGoogleAnalytics.js
 playout.3qsdn.com/watchtime?event=
+plibcdn.com/templates/base_master/js/jquery.shows2.min.js
 plista.com/iframeShowItem.php
 poder360.com.br/_tracker
 pornegypt.com/js/UkxJS6eXaq4UYmNDr8iqYtA.js
@@ -952,6 +960,7 @@ s.yimg.jp/images/listing/tool/cv/ytag.js
 s1.daumcdn.net/svc/original/U03/cssjs/userAgent
 s3.amazonaws.com/cdx-radar
 s3.ap-northeast-2.amazonaws.com/adpick.co.kr/apis/apTracker.v*.js
+s3.eu-central-1.amazonaws.com/popups/popup.js
 sa.crunchyroll.com/analytics.js
 saabsunited.com/wp-content/uploads/*banner
 saccest.com/js/lidyana.js
@@ -1198,8 +1207,8 @@ tvid.in/sdk/loader.js
 tweakers.net*&p=
 tweakers.net/x/scripts/min/ptBO.js
 twgreatdaily.com/site/js/name/stat
-twitter.com/i/api/1.1/jot
-twitter.com/i/api/1.1/promoted_content/log.json
+twitter.com/i/api/*/jot
+twitter.com/i/api/*/promoted_content/log.json
 twitter.com/i/jot
 twitter.com/oct.js
 twowheeler.policybazaar.com/js/GTMgoogleAnalytics.js

@@ -1,4 +1,5 @@
 _event_pub\.
+_right_ads_
 _right_ads\.
 -adobeDatalayer_
 -auto-ads-
@@ -52,6 +53,7 @@ _right_ads\.
 /ht.js\?site_
 /id\?d_visid_
 /inc/ad-
+/jquery.adx.js
 /js/ad.js\?slot\=
 /maps/api/mapsjs/gen_204
 /matomo\.js
@@ -67,6 +69,7 @@ _right_ads\.
 /plausible.js
 /prebid\.
 /QuotaService.RecordEvent
+/redirect/\?spot_id=
 /redirect\?spot_id=
 /related_1.html\?language=
 /renderTimingPixel.
