@@ -16,3 +16,4 @@ alicdn.com
 github.com
 gitlab.com
 android.com
+linuxmint.com

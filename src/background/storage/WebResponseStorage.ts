@@ -4,6 +4,9 @@ import millisecondsToHours from "../utils/millisecondsToHours";
 export default class WebResponseStorage {
 
   private static splitOnSixthSlash(inputString: string) {
+    if (inputString.includes('googlesyndication.com')) {
+      return inputString.split('activity_ext')[0];
+    }
     const parts = inputString.split('/');
     return parts.length >= 6 ? parts.slice(0, inputString.length > 100 ? 2 : 6).join('/') : inputString;
   }
@@ -18,7 +21,7 @@ export default class WebResponseStorage {
     const data = await this.findMany();
     const host = new URL(details.url).host;
 
-    const url = details.type === 'xmlhttprequest'
+    const url = ['xmlhttprequest', 'image'].includes(details.type)
       ? this.splitOnSixthSlash(this.removeParams(details.url))
       : this.removeParams(details.url);
 
