@@ -491,6 +491,7 @@ g1.ads.oppomobile.com
 ganon.yahoo.com
 gcafdhiacibjafajadi.ru
 gemini.yahoo.com
+geo.dailymotion.com
 geo.gorillanation.com
 geo.kontagent.net
 geo.mezr.com
@@ -528,6 +529,7 @@ karma.mdpcdn.com
 kiks.yandex.ru
 kohlermetricssecure.kohler.com
 kq6lwk3m9g.ru
+lcs.naver.com
 link.link.ru
 log.fc.yahoo.com
 log.pinterest.com
@@ -630,6 +632,7 @@ phonograph2.voxmedia.com
 piwik.ubuntu-fr.org
 pix.spot.im
 pixel.facebook.com
+pixiedust.buzzfeed.com
 play.mix.kinostuff.com
 pos.baidu.com
 posthog.chatwoot.com
@@ -913,6 +916,7 @@ smetrics.shinseibank.com
 smetrics.shopjapan.co.jp
 smetrics.shopmyexchange.com
 smetrics.shopnbc.com
+smetrics.sky.com
 smetrics.sky.de
 smetrics.skyhighsecurity.com
 smetrics.solarwinds.com

@@ -15636,7 +15636,6 @@ startek.sbs
 startex3download.com
 startgifts.com
 startmyhost.com
-startpage.com
 starts-bets.com
 statcounter.com
 statdynamic.com
@@ -18425,7 +18424,6 @@ yacarehosting.com
 yadro.ru
 yagoa.fr
 yahoo-news.co
-yahoo.com
 yahoosites.com
 yahuu.org
 yajeaumd.com

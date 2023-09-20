@@ -307,7 +307,6 @@ d2jjzw81hqbuqv.cloudfront.net/assets/*/autotrack-
 d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js
 d3jaymjyiads5d.cloudfront.net/tracker.js
 dailymotion.com/gravity/report
-dailymotion.com/logger/*?session_id=
 daisomall.co.kr/collect.php
 data.biliintl.com/log
 data.gov.in/ogdp-stats-
@@ -906,7 +905,6 @@ qq.com/stdlog
 quelle.de/servlet/LandmarkServlet?clientId=
 quoka.de/services/count.php
 r.yna.co.kr/global/lib/*/js/nlogger.js
-r3.mail.ru/k?sign=
 rackcdn.com/stf.js
 radioreference.com/i/p4/tp/smPortalBanner.gif
 raidlight.com/*/index.php?controller=statistics
@@ -1255,6 +1253,7 @@ vidmoly.me/suba.php
 vidoo.de/api_v*/index.php?service=analytics&
 vidoo.de/api_v*/index.php?service=stats&
 vidoza.net/papi/*/addevent/promo_data
+vidoza.net/sw.js
 vidtech.cbsinteractive.com/*/lib/tracking/adobe/VideoHeartbeat-
 vidtech.cbsinteractive.com/uvpjs/*/lib/tracking/mux.js
 vidzstore.com/popembed.php

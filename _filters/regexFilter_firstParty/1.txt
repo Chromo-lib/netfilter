@@ -84,6 +84,7 @@ _right_ads\.
 /matomo\.js
 /mendelstats\.
 /metrics/rum
+/mtiFontTrackingCode.js
 /o_tealium\.
 /omniture/tracking\.
 /OtAutoBlock\.js
@@ -120,6 +121,7 @@ _right_ads\.
 /tagmanager/pptm\.
 /trackingCode.js
 /trk\.*/impression/.
+/twitter-ads\.
 /uisprime/track
 /universal_1.html\?language=
 /v1/log_event
