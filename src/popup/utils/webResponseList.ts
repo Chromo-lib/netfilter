@@ -2,13 +2,17 @@ import { webResponseErrorDetailsUL } from "../constants";
 import { WebResponseErrorDetails } from "../types";
 import getDomainFromUrl from "./getDomainFromUrl";
 
+const initiatorEL = document.getElementById('initiator')!;
+
 export default function webResponseList({ webResponseErrorDetails, url }: { webResponseErrorDetails: WebResponseErrorDetails[], url: string }) {
   if (webResponseErrorDetails && Array.isArray(webResponseErrorDetails)) {
 
     webResponseErrorDetailsUL.innerHTML = '';
 
     if (url) {
-      document.getElementById('initiator')!.textContent = url.replace(/https?:\/\//g, '');
+      url = url.replace(/https?:\/\//g, '');
+      initiatorEL.title = url;
+      initiatorEL.textContent = url;
       document.getElementById('details-len')!.textContent = 'B ' + (webResponseErrorDetails.length || 0);
     }
 

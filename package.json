@@ -6,10 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=dev vite build -w",
-    "build": "NODE_ENV=production vite build",
-    "zip:chrome": "NODE_ENV=production BROWSER=chrome npm run build && (cd dist; zip -r ../chrome.zip .)",
-    "zip:firefox": "NODE_ENV=production BROWSER=firefox npm run build && (cd dist; zip -r ../firefox.zip .)",
-    "zip": "npm run zip:firefox && npm run zip:chrome"
+    "build": "NODE_ENV=production vite build"
   },
   "dependencies": {
     "axios": "^1.4.0",
