@@ -7,7 +7,6 @@ import onMessages from "./events/onMessages";
 import onSearch from "./events/onSearch";
 import onSnackbar from './events/onSnackbar';
 import onWebResponseAction from './events/onWebResponseAction';
-import onStartup from './events/onStartup';
 
 preRules.innerHTML = JSON.stringify([
   {
@@ -27,7 +26,7 @@ preRules.innerHTML = JSON.stringify([
 window.addEventListener('DOMContentLoaded', () => {
   Split(['main', 'aside'], { sizes: [75, 25] });
 
-  onStartup();
+  chrome.runtime.sendMessage({ message: 'get:webResponseErrorDetails' });
 
   formGetRules.addEventListener('submit', onGetRules);
   formAddRules.addEventListener('submit', onAddRules);

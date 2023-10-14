@@ -1,7 +1,6 @@
 import sendMessage from "../helpers/sendMessage";
 import download from "../utils/download";
 import copy from "../utils/copy";
-import onStartup from "./onStartup";
 
 export default function onWebResponseAction(e: any) {
   const target = e.target;
@@ -11,7 +10,7 @@ export default function onWebResponseAction(e: any) {
       break;
 
     case 'reload':
-      onStartup()
+      sendMessage({ message: 'getOne:webResponseErrorDetails' });
       break;
 
     case 'copy':

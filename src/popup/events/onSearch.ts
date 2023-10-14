@@ -1,5 +1,5 @@
 import { webResponseErrorDetailsUL } from "../constants";
-import onStartup from "./onStartup";
+import sendMessage from "../helpers/sendMessage";
 
 export default async function onSearch(e: any) {
   const query = e.target.value.trim();
@@ -11,5 +11,5 @@ export default async function onSearch(e: any) {
     else return el.id
   });
 
-  if (query.length < 1) onStartup()
+  if (query.length < 1) sendMessage({ message: 'getOne:webResponseErrorDetails' });
 }
