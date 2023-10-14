@@ -10,7 +10,7 @@ export default class ResponseStorage {
 
     if (!foundedKey) this.store[key] = [details]
     else {
-      if (!this.store[foundedKey].some((d: WebResponseErrorDetails) => details.url.includes(d.url)))
+      if (!this.store[foundedKey].some((d: WebResponseErrorDetails) => details.url === d.url && details.initiator === d.initiator))
         this.store[foundedKey] = [...this.store[foundedKey], details]
     }
   }
