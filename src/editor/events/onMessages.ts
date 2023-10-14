@@ -20,8 +20,9 @@ export default function onMessages(request: any, _: any, sendResponse: any) {
 
   if (webResponseErrorDetails) {
     listWebResponseEL.innerHTML = '';
+
     Object.keys(webResponseErrorDetails).forEach(resp => {
-      webResponseErrorDetails[resp].forEach(w => webResponseList(w))
+      webResponseErrorDetails[resp].forEach(webResponseList);
     });
 
     return true;

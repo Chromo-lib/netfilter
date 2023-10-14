@@ -4,22 +4,11 @@ export default class ResponseStorage {
 
   static store: any = {};
 
-  private static removeParams(url: string) {
-    const details = url.split('?');
-    return details[0];
-  }
-
   static async save(details: WebResponseErrorDetails) {
     if (!this.store[details.tabId]) this.store[details.tabId] = [details]
     else {
       if (!this.store[details.tabId].some((d: WebResponseErrorDetails) => details.url.includes(d.url)))
-        this.store[details.tabId] = [
-          ...this.store[details.tabId],
-          {
-            ...details,
-            url: this.removeParams(details.url)
-          }
-        ]
+        this.store[details.tabId] = [...this.store[details.tabId], details]
     }
 
     await chrome.storage.local.set({ ['tab-' + details.tabId]: JSON.stringify(this.store[details.tabId]) });

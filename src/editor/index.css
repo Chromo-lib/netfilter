@@ -1,9 +1,8 @@
 :root {
   --light: #e7e7e7;
   --white:#fff;
-  --black: #000000;
-  --dark: #1a1a1a;
-  --gray:#656565;
+  --black: #2c2b3c;
+  --gray:#3b3a51;
 
   --transparent: #13131359;
   --green: #46a800;
@@ -32,11 +31,10 @@ html {
 }
 
 body {
-  background-color: var(--dark);
+  background-color: #16151e;
   color: var(--white);
   margin: 0;
   font-family: Inter,sans-serif;
-  line-height: inherit;
   font-size: .9rem;
   letter-spacing: 0.6px;
   padding: 7px;
@@ -45,36 +43,37 @@ body {
 #root {
   width: 100%;
   height: calc(100vh - 14px);
+  background-color: var(--black);
   display: flex;
   position: relative;
-  background-color: var(--black);
   border-radius: 7px;
   overflow: hidden;
+  border: 1px solid var(--gray);
 }
 
-aside {padding: 10px; overflow: auto;}
-main {overflow: auto;}
+aside {overflow: auto; padding: 10px;border-left: 1px solid var(--gray);}
+main {overflow: auto; border-right: 1px solid var(--gray);}
 
 #list-webResponse {
-  height: calc(100% - 40px);
+  height: calc(100% - 50px);
   overflow: auto;
 }
 
 header {
-  height: 40px;
+  height: 50px;
   position: relative;
   position: sticky;
   top: 0;
   padding: 10px 15px;
-  background-color: transparent;
+  border-bottom: 1px solid var(--gray);
   backdrop-filter: blur(3px);
   z-index: 99;
 }
 
-h2 {font-size: 1.2rem;}
-h3 {font-size: 1rem;}
+h2 {font-size: 1.2rem;    white-space: pre;}
+h3 {font-size: 1rem;    white-space: pre;}
 
-input,button,select,textarea {padding: 10px 15px; outline: none; line-height: 1.5; border: none; border-radius: 7px;}
+input,button,select,textarea {padding: 12px 15px; outline: none; border: none;}
 
 .btn,button {
   display: flex;
@@ -113,8 +112,8 @@ small {color: var(--gray);}
 
 hr {
   width: 100%;
-    border-color: var(--gray);
-    margin: 15px 0;
+  border-color: var(--gray);
+  margin: 15px 0;
 }
 
 pre {
@@ -144,12 +143,13 @@ pre {
   overflow: auto;
 }
 
-select,option,input,textarea,.btn,button {background-color: var(--dark); color: #fff; max-width: 100%;}
-.gutter {background-color: var(--dark); cursor: col-resize; }
+select,option,input,textarea,.btn,button {background-color: var(--gray); color: #fff; max-width: 100%;}
+.gutter {background-color: var(--transparent); cursor: col-resize; }
+.gutter:hover {background-color: var(--gray);  }
 
 #list-webResponse {display: flex;flex-direction: column-reverse;}
 
-.small,.tag,small {font-size:  0.8rem; color: var(--gray);}
+.small,.tag,small {font-size:  0.8rem; color: var(--metal);}
 
 .rounded {border-radius: 50%;}
 
@@ -213,8 +213,6 @@ select,option,input,textarea,.btn,button {background-color: var(--dark); color: 
 .bordered {border: 1px solid var(--gray);}
 .border-bottom {border-bottom: 1px solid var(--gray);}
 
-.br7 {border-radius: 7px;}
-
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -226,10 +224,10 @@ select,option,input,textarea,.btn,button {background-color: var(--dark); color: 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--dark);
+  background: var(--gray);
   border-radius: 7px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--black);
+  background: var(--dark);
 }

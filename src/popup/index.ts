@@ -5,8 +5,6 @@ import onToggleSearchBar from "./events/onToggleSearchBar";
 import onWebResponseAction from "./events/onWebResponseAction";
 import sendMessage from "./helpers/sendMessage";
 
-// chrome.storage.local.clear();
-
 document.addEventListener('DOMContentLoaded', () => {
   sendMessage({ message: 'getOne:webResponseErrorDetails' });
 
