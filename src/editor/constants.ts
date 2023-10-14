@@ -9,3 +9,5 @@ export const preRules = document.getElementById('text-rules')!;
 
 export const snackbar = document.getElementById('snackbar')!;
 export const snackbarCode = snackbar.querySelector('code')!;
+
+export const listWebResponseEL = document.getElementById('list-webResponse')!;  

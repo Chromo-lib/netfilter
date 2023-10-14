@@ -7,7 +7,7 @@ export default function onWebResponseAction(e: any) {
   const target = e.target;
   switch (target.dataset.id || target.parentElement.dataset.id || target.parentElement.dataset.icon || target.dataset.icon) {
     case 'clear':
-      if (window.confirm('Do you really want to clear storage?')) sendMessage({ message: 'delete:webResponseErrorDetails' });
+      if (window.confirm('Do you really want to clear storage?')) sendMessage({ message: 'deleteOne:webResponseErrorDetails' });
       break;
 
     case 'reload':

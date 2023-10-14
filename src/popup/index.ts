@@ -7,6 +7,8 @@ import onWebResponseAction from "./events/onWebResponseAction";
 
 onStartup();
 
+// chrome.storage.local.clear();
+
 btnShowSearchBar.addEventListener('click', onToggleSearchBar);
 formSearch.querySelector('#btn-close-search')?.addEventListener('click', onToggleSearchBar);
 formSearch.querySelector('input')?.addEventListener('change', onSearch);

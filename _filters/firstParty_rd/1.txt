@@ -237,6 +237,7 @@ analytics.orenshmu.com
 analytics.ostr.io
 analytics.paddle.com
 analytics.pagefly.io
+analytics.pgncs.notion.so
 analytics.picknrg.com
 analytics.piksel.com
 analytics.pinterest.com

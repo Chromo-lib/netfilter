@@ -7,7 +7,7 @@ import onAlarm from "./events/onAlarm";
 async function onStartup() {
   console.log('**--onStartup--**');
   
-  chrome.alarms.create({ periodInMinutes: 0.3 });
+  chrome.alarms.create({ periodInMinutes: 0.29 });
   chrome.webRequest.onErrorOccurred.addListener(onErrorOccurred, { urls: ["<all_urls>"] }, []);
 
   chrome.tabs.onRemoved.addListener(onTabRemoved);

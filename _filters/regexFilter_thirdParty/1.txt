@@ -18,6 +18,7 @@ _right_ads\.
 /affiliates-landing-
 /ahoy/visits
 /ajax/bnzai\?_
+/analytics-ping
 /analytics/analytics.
 /analytics/ga\.
 /api/models/vast.*preroll
@@ -32,7 +33,9 @@ _right_ads\.
 /b/ss/indepdev/1/JS-
 /beacon\.js
 /browserinfo\?f.sid=
+/client\.rum\.
 /cmbdv2.js
+/cohesion-latest\.
 /collect\?data=
 /common-js/exit/om2.min.js
 /comscore-min.js
@@ -64,6 +67,7 @@ _right_ads\.
 /o_tealium\.
 /omniture/tracking\.
 /OtAutoBlock.js
+/owa\.Analytics\.m\.js
 /perf-vitals_
 /pixelpropagate\.
 /plausible.js

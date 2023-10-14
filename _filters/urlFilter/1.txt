@@ -122,6 +122,7 @@ app.huawei.com/hwa-c/configresource/js/general/ha.js
 app.retargetapp.com/pixel/pixel.min.js
 app.revhunter.tech/px
 araskargo.com.tr/tr/jv_google_analytics.js
+arc.msn.com/*/api/selection\?placement\=*upsell
 arc.msn.com/*/Impression?PID=
 arcpublishing.com*/datapoint/save
 arms.aliyuncs.com/r.png
@@ -828,6 +829,7 @@ organicfruitapps.com/analytics
 orgasm.com/images/girl3.jpg
 ostkcdn.com/js/ostk-user-tracking-*.js
 ostkcdn.com/js/thirdparty/siteIntercept.*.js
+outlook.live.com/ows/*/outlookoptions/adsaggregate
 owlcation.com/.bootscripts/hubPages*Tracker.min.js
 p.rst.im/q/www.googletagmanager.com/gtag/js?id=
 pa.7w.ro/js/trk.js

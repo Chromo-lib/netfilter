@@ -8,8 +8,6 @@ import onSearch from "./events/onSearch";
 import onSnackbar from './events/onSnackbar';
 import onWebResponseAction from './events/onWebResponseAction';
 
-chrome.runtime.sendMessage({ message: 'get:webResponseErrorDetails' });
-
 preRules.innerHTML = JSON.stringify([
   {
     "id": 5000,
@@ -33,7 +31,5 @@ formBlockURL.addEventListener('submit', onBlockURL);
 formSearch.addEventListener('submit', onSearch);
 
 webResponseAction.addEventListener('click', onWebResponseAction);
-
-snackbar.querySelector('button')!.addEventListener('click', onSnackbar)
-
+snackbar.querySelector('button')!.addEventListener('click', onSnackbar);
 chrome.runtime.onMessage.addListener(onMessages);

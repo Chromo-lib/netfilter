@@ -11,7 +11,7 @@ MANIFEST_FILE=manifest.json
 
 # build project
 echo -e "\n$YELLOW"
-read -p 'Do you really want to build project?
+read -p 'Do you really want to build project? (Yes | No)
 > ' build_project
 echo -e "\n$ENDCOLOR"
 
@@ -26,7 +26,7 @@ fi
 
 # browserType: chrome | firefox
 echo -e "\n$YELLOW"
-read -p 'Enter browser type: 
+read -p 'Enter browser type: (chrome | firefox) 
 > ' browserType
 echo -e "\n$ENDCOLOR"
 
@@ -46,7 +46,7 @@ fi
 
 # create zip file for dist
 echo -e "\n$YELLOW"
-read -p 'Do you really want to create zip file? 
+read -p 'Do you really want to create zip file? (Yes | No)
 > ' create_zip
 echo -e "\n$ENDCOLOR"
 
@@ -56,7 +56,7 @@ fi
 
 # Push changes
 echo -e "\n$YELLOW"
-read -p "Do you really want to push changes to Github? 
+read -p "Do you really want to push changes to Github? (Yes | No)
 > " push_changes
 echo -e "\n$ENDCOLOR"
 if [[ "$push_changes" == "yes" ]]; then

@@ -4,11 +4,11 @@ import getDomainFromUrl from "./getDomainFromUrl";
 
 const initiatorEL = document.getElementById('initiator')!;
 
-export default function webResponseList({ webResponseErrorDetails, url }: { webResponseErrorDetails: WebResponseErrorDetails[], url: string }) {
+export default function webResponseList({ webResponseErrorDetails, url }: { webResponseErrorDetails: WebResponseErrorDetails[], url: string | undefined }) {
+
+  webResponseErrorDetailsUL.innerHTML = '';
+
   if (webResponseErrorDetails && Array.isArray(webResponseErrorDetails)) {
-
-    webResponseErrorDetailsUL.innerHTML = '';
-
     if (url) {
       url = url.replace(/https?:\/\//g, '');
       initiatorEL.title = url;
@@ -23,7 +23,7 @@ export default function webResponseList({ webResponseErrorDetails, url }: { webR
           <div class="w-100 d-flex align-center justify-between">
             <div class="d-flex align-center mb-1 truncate">
               <span class="ml-0 mr-1 badge rounded bg-red p-5" title="Initiator: ${detail.initiator}">${initiator}</span>
-              <h4 class="d-block m-0 ml-1 red truncate" title="${detail.host}">${getDomainFromUrl(detail.host)}</h4> 
+              <h4 class="d-block m-0 ml-1 red truncate" title="${getDomainFromUrl(detail.url)}">${getDomainFromUrl(detail.url)}</h4> 
             </div>
   
             <div class="gray small uppercase">
