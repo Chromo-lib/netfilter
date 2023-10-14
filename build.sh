@@ -5,7 +5,6 @@ ENDCOLOR="\e[0m"
 
 mkdir -p dist
 
-# Get the path to the dist directory.
 dist_dir=$(pwd)/dist/
 MANIFEST_FILE=manifest.json
 

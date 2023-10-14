@@ -7,6 +7,7 @@ import onMessages from "./events/onMessages";
 import onSearch from "./events/onSearch";
 import onSnackbar from './events/onSnackbar';
 import onWebResponseAction from './events/onWebResponseAction';
+import onStartup from './events/onStartup';
 
 preRules.innerHTML = JSON.stringify([
   {
@@ -23,13 +24,17 @@ preRules.innerHTML = JSON.stringify([
   }
 ], null, 2);
 
-Split(['main', 'aside'], { sizes: [75, 25] });
+window.addEventListener('DOMContentLoaded', () => {
+  Split(['main', 'aside'], { sizes: [75, 25] });
 
-formGetRules.addEventListener('submit', onGetRules);
-formAddRules.addEventListener('submit', onAddRules);
-formBlockURL.addEventListener('submit', onBlockURL);
-formSearch.addEventListener('submit', onSearch);
+  onStartup();
 
-webResponseAction.addEventListener('click', onWebResponseAction);
-snackbar.querySelector('button')!.addEventListener('click', onSnackbar);
-chrome.runtime.onMessage.addListener(onMessages);
+  formGetRules.addEventListener('submit', onGetRules);
+  formAddRules.addEventListener('submit', onAddRules);
+  formBlockURL.addEventListener('submit', onBlockURL);
+  formSearch.addEventListener('submit', onSearch);
+
+  webResponseAction.addEventListener('click', onWebResponseAction);
+  snackbar.querySelector('button')!.addEventListener('click', onSnackbar);
+  chrome.runtime.onMessage.addListener(onMessages);
+});

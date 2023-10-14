@@ -16,6 +16,13 @@ export default function handleWebResponse({ message, tabId, url }: any) {
     return true;
   }
 
+  if (message === 'get:webResponseErrorDetails') {
+    ResponseStorage.findMany().then(webResponseErrorDetails => {
+      sendMessage({ webResponseErrorDetails });
+    });
+    return true;
+  }
+
   if (message === 'clear:webResponseErrorDetails') {
     ResponseStorage.clear().then((webResponseErrorDetails) => {
       sendMessage({ webResponseErrorDetails });

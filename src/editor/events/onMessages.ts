@@ -1,4 +1,4 @@
-import { snackbar, snackbarCode } from "../constants";
+import { listWebResponseEL, snackbar, snackbarCode } from "../constants";
 import webResponseList from "../dom/webResponseList";
 import copy from "../utils/copy";
 import download from "../utils/download";
@@ -19,7 +19,11 @@ export default function onMessages(request: any, _: any, sendResponse: any) {
   }
 
   if (webResponseErrorDetails) {
-    webResponseList(request.webResponseErrorDetails);
+    listWebResponseEL.innerHTML = '';
+    Object.keys(webResponseErrorDetails).forEach(resp => {
+      webResponseErrorDetails[resp].forEach(w => webResponseList(w))
+    });
+
     return true;
   }
 
@@ -27,7 +31,7 @@ export default function onMessages(request: any, _: any, sendResponse: any) {
     snackbar.classList.remove('d-none');
     snackbarCode.innerText = JSON.stringify(rules, null, 2);
     return true;
-  }  
+  }
 
   if (message) {
     snackbar.classList.remove('d-none')

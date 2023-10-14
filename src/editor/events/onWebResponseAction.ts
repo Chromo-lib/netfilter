@@ -6,17 +6,20 @@ export default function onWebResponseAction(e: any) {
     case 'clear':
       if (window.confirm('Do you really want to clear storage?')) {
         listWebResponseEL.innerHTML = '';
-      }      
+        chrome.runtime.sendMessage({ message: 'clear:webResponseErrorDetails' });
+      }
       break;
 
     case 'copy':
-      console.log('');
-      
+      chrome.runtime.sendMessage({ message: 'download:webResponseErrorDetails' });
       break;
 
     case 'download':
-      console.log('');
-      
+      chrome.runtime.sendMessage({ message: 'copy:webResponseErrorDetails' });
+      break;
+
+    case 'reload':
+      chrome.runtime.sendMessage({ message: 'get:webResponseErrorDetails' });
       break;
 
     default:
