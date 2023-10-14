@@ -11,7 +11,7 @@ export default class ResponseStorage {
         this.store[details.tabId] = [...this.store[details.tabId], details]
     }
 
-    await chrome.storage.local.set({ ['tab-' + details.tabId]: JSON.stringify(this.store[details.tabId]) });
+    await chrome.storage.local.set({ [`tab-${Date.now()}-${details.tabId}`]: JSON.stringify(this.store[details.tabId]) });
   }
 
   static async findOne(tabId: number) {
@@ -38,9 +38,13 @@ export default class ResponseStorage {
   }
 
   static async deleteOne(tabId: number) {
+    const now = Date.now();
     const diskStore = await this.findMany();
+
     for (const key in diskStore) {
-      if (+key.replace('tab-', '') === tabId) {
+      const timeStamp = +key.split('-')[1];
+
+      if (+key.replace('tab-', '') === tabId || ((now - timeStamp) / 60000) > 60) {
         chrome.storage.local.remove(key);
         return;
       }

@@ -1,8 +1,9 @@
 :root {
   --light: #e7e7e7;
   --white:#fff;
-  --black: #2c2b3c;
-  --gray:#3b3a51;
+  --black: #16151e;
+  --dark: #21202c;
+  --gray:#302f41;
 
   --transparent: #13131359;
   --green: #46a800;
@@ -43,7 +44,7 @@ body {
 #root {
   width: 100%;
   height: calc(100vh - 14px);
-  background-color: var(--black);
+  background-color: var(--dark);
   display: flex;
   position: relative;
   border-radius: 7px;
@@ -73,9 +74,10 @@ header {
 h2 {font-size: 1.2rem;    white-space: pre;}
 h3 {font-size: 1rem;    white-space: pre;}
 
-input,button,select,textarea {padding: 12px 15px; outline: none; border: none;}
+input,button,select,textarea {padding: 12px 15px; outline: none; border: none; background-color: var(--gray); color: #fff; max-width: 100%;}
 
 .btn,button {
+  background-color: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +114,7 @@ small {color: var(--gray);}
 
 hr {
   width: 100%;
-  border-color: var(--gray);
+  border-color: var(--black);
   margin: 15px 0;
 }
 
@@ -143,7 +145,6 @@ pre {
   overflow: auto;
 }
 
-select,option,input,textarea,.btn,button {background-color: var(--gray); color: #fff; max-width: 100%;}
 .gutter {background-color: var(--transparent); cursor: col-resize; }
 .gutter:hover {background-color: var(--gray);  }
 
@@ -176,6 +177,8 @@ select,option,input,textarea,.btn,button {background-color: var(--gray); color: 
 .d-block {display: block;}
 .d-flex {display: flex;}
 .d-none {display: none;}
+
+.gap-1 {gap: 10px;}
 
 .uppercase {text-transform: uppercase;}
 .lowercase {text-transform: lowercase;}
@@ -212,6 +215,7 @@ select,option,input,textarea,.btn,button {background-color: var(--gray); color: 
 .border-0 {border: 0;}
 .bordered {border: 1px solid var(--gray);}
 .border-bottom {border-bottom: 1px solid var(--gray);}
+.border-right {border-right: 1px solid var(--gray);}
 
 @keyframes fadeIn {
   0% {opacity: 0;}
