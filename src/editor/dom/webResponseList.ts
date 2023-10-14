@@ -5,8 +5,8 @@ export default function webResponseList(details: chrome.webRequest.WebResponseEr
 
   const timeStamp = new Date(details.timeStamp).toISOString().slice(0, 19);
 
-  listWebResponseEL.innerHTML += `<li class="border-bottom fadein" data-tabid="${details.tabId}">
-    <input type="text" name="details" id="details" value="${JSON.stringify(details)}" hidden>
+  listWebResponseEL.innerHTML += `<li class="border-bottom fadein">
+
       <div class="d-flex align-center mb-1">
         <span class="${'tag ' + details.type}">${details.type}</span>
         <h3 class="m-0 ml-1 truncate">${details.url}</h3>

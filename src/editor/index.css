@@ -159,6 +159,7 @@ pre {
 .rose{color: var(--rose);}
 .gray {color: var(--gray);}
 
+.bg-black {background-color: var(--black);}
 .bg-dark {background-color: var(--dark);}
 .bg-transparent, .image,.media, .stylesheet,.font {background-color: var(--transparent);}
 .bg-green, .image,.media {background-color: var(--green); color: var(--white);}

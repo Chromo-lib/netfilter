@@ -36,7 +36,7 @@ export default class ResponseStorage {
 
     for (const key in this.store) {
       const data = this.store[key].map((v: WebResponseErrorDetails) => v);
-      result = [...result, ...data]
+      result = [...result, ...data];
     }
  
     return result
@@ -50,7 +50,7 @@ export default class ResponseStorage {
       if (+tab_id === tabId || ((now - +timeStamp) / 60000) > 5) delete this.store[`tab-${timeStamp}-${tabId}`];
     }
 
-    return [];
+    return this.findMany();
   }
 
   static clear() {
