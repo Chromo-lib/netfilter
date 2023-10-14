@@ -4,66 +4,57 @@ export default class ResponseStorage {
 
   static store: any = {};
 
-  static async save(details: WebResponseErrorDetails) {
-    if (!this.store[details.tabId]) this.store[details.tabId] = [details]
+  static save(details: WebResponseErrorDetails) {
+    const key = `tab-${Date.now()}-${details.tabId}`;
+    const foundedKey = this.findKey(details.tabId);
+
+    if (!foundedKey) this.store[key] = [details]
     else {
-      if (!this.store[details.tabId].some((d: WebResponseErrorDetails) => details.url.includes(d.url)))
-        this.store[details.tabId] = [...this.store[details.tabId], details]
-    }
-
-    await chrome.storage.local.set({ [`tab-${Date.now()}-${details.tabId}`]: JSON.stringify(this.store[details.tabId]) });
-  }
-
-  static async findOne(tabId: number) {
-    const diskStore = await this.findMany();
-
-    for (const key in diskStore) {
-      if (+key.replace('tab-', '') === tabId) {
-        return typeof diskStore[key] === "string" ? JSON.parse(diskStore[key]) : diskStore[key]
-      }
+      if (!this.store[foundedKey].some((d: WebResponseErrorDetails) => details.url.includes(d.url)))
+        this.store[foundedKey] = [...this.store[foundedKey], details]
     }
   }
 
-  static async findMany() {
-    const storage = await chrome.storage.local.get(null)
-    const responses: any = {};
-
-    Object.keys(storage).forEach(key => {
-      if (/^tab/.test(key)) {
-        responses[key] = JSON.parse(storage[key]);
-      }
-    });
-
-    return responses
+  static findKey(tabId: number) {
+    for (const key in this.store) {
+      const tab_id = +key.split('-')[2];
+      if (tab_id === tabId) return key;
+    }
+    return null
   }
 
-  static async deleteOne(tabId: number) {
+  static findOne(tabId: number) {
+    for (const key in this.store) {
+      const tab_id = +key.split('-')[2];
+      if (tab_id === tabId) return this.store[key];
+    }
+    return []
+  }
+
+  static findMany(): WebResponseErrorDetails[] {
+    let result: WebResponseErrorDetails[] = [];
+
+    for (const key in this.store) {
+      const data = this.store[key].map((v: WebResponseErrorDetails) => v);
+      result = [...result, ...data]
+    }
+ 
+    return result
+  }
+
+  static deleteOne(tabId: number) {
     const now = Date.now();
-    const diskStore = await this.findMany();
 
-    for (const key in diskStore) {
-      const timeStamp = +key.split('-')[1];
-
-      if (+key.replace('tab-', '') === tabId || ((now - timeStamp) / 60000) > 60) {
-        chrome.storage.local.remove(key);
-        return;
-      }
+    for (const key in this.store) {
+      const [_, timeStamp, tab_id] = key.split('-');
+      if (+tab_id === tabId || ((now - +timeStamp) / 60000) > 5) delete this.store[`tab-${timeStamp}-${tabId}`];
     }
 
-    delete this.store[tabId];
     return [];
   }
 
-  static async clear() {
-    const storage = await chrome.storage.local.get(null);
-
-    for (const key in storage) {
-      if (/^tab/.test(key)) {
-        chrome.storage.local.remove(key);
-      }
-    }
-
-    this.store = [];
+  static clear() {
+    this.store = {};
     return [];
   }
 }

@@ -1,10 +1,12 @@
 import { listWebResponseEL } from "../constants";
 
 export default function webResponseList(details: chrome.webRequest.WebResponseErrorDetails) {
-  if (details && details.url) {
-    const timeStamp = new Date(details.timeStamp).toISOString().slice(0, 19);
+  if (!details || !details.url) return;
 
-    listWebResponseEL.innerHTML += `<li class="border-bottom fadein" data-tabid="${details.tabId}">
+  const timeStamp = new Date(details.timeStamp).toISOString().slice(0, 19);
+
+  listWebResponseEL.innerHTML += `<li class="border-bottom fadein" data-tabid="${details.tabId}">
+    <input type="text" name="details" id="details" value="${JSON.stringify(details)}" hidden>
       <div class="d-flex align-center mb-1">
         <span class="${'tag ' + details.type}">${details.type}</span>
         <h3 class="m-0 ml-1 truncate">${details.url}</h3>
@@ -20,6 +22,5 @@ export default function webResponseList(details: chrome.webRequest.WebResponseEr
       </div>
     </li>`;
 
-    document.querySelector('h2')!.textContent = 'Logs: ' + listWebResponseEL.children.length;
-  }
+  document.querySelector('h2')!.textContent = 'Logs: ' + listWebResponseEL.children.length;
 }
