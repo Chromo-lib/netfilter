@@ -137,11 +137,11 @@ pre {
   position: fixed;
   bottom: 10px;
   left: 50%;
+  z-index: 99;
 }
 
 #snackbar code {
   padding: 10px;
-  background-color: var(--red);
   overflow: auto;
 }
 

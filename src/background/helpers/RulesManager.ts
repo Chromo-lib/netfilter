@@ -16,25 +16,16 @@ export default class RulesManager {
     return true;
   }
 
-  static async generate(url: string): Promise<chrome.declarativeNetRequest.Rule | null> {
+  static async generate(url: string, ruleActionType: string): Promise<chrome.declarativeNetRequest.Rule | null> {
     const rules = await this.findMany();
-    const domains = rules.map(r => r.condition.urlFilter);
+    const domains = rules.map(r => r.condition.urlFilter || r.condition.requestDomains);
 
-    if (domains.some(d => d.includes(url))) {
+    if (!domains.some(d => d.includes(url))) {
       const id = await this.lastID();
       return {
         id,
-        action: {
-          type: RuleActionType.BLOCK
-        },
-        condition: {
-          urlFilter: `||${url}^`,
-          isUrlFilterCaseSensitive: false,
-          resourceTypes: [
-            ResourceType.MAIN_FRAME,
-            ResourceType.XMLHTTPREQUEST,
-          ]
-        }
+        action: { type: RuleActionType[ruleActionType] },
+        condition: { urlFilter: `||${url}^`, isUrlFilterCaseSensitive: false, }
       }
     }
     return null

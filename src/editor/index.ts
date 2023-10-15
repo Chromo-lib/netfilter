@@ -1,5 +1,5 @@
 import Split from 'split.js'
-import { formAddRules, formBlockURL, formGetRules, formSearch, preRules, snackbar, webResponseAction } from "./constants";
+import { formAddRules, formBlockAllowDomain, formGetRules, formSearch, preRules, snackbar, webResponseAction } from "./constants";
 import onAddRules from './events/onAddRules';
 import onBlockURL from './events/onBlockURL';
 import onGetRules from './events/onGetRules';
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   formGetRules.addEventListener('submit', onGetRules);
   formAddRules.addEventListener('submit', onAddRules);
-  formBlockURL.addEventListener('submit', onBlockURL);
+  formBlockAllowDomain.addEventListener('submit', onBlockURL);
   formSearch.addEventListener('submit', onSearch);
 
   webResponseAction.addEventListener('click', onWebResponseAction);

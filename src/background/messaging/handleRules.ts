@@ -1,6 +1,6 @@
 import RulesManager from "../helpers/RulesManager";
 
-export default function handleRules({ message, ruleType, url, rules, methodName }: any, sendResponse: any) {
+export default function handleRules({ message, ruleType, url, rules, methodName, ruleActionType }: any, sendResponse: any) {
   sendResponse('');
 
   if (message === 'add:rules') {
@@ -14,8 +14,8 @@ export default function handleRules({ message, ruleType, url, rules, methodName 
   }
 
   if (message === 'block:url') {
-    RulesManager.generate(url).then(rule => {
-      sendResponse(rule ? url+': is inserted successfully in blacklist' : 'URL is already blocked');
+    RulesManager.generate(url, ruleActionType).then(rule => {
+      sendResponse(rule ? url + ': is inserted successfully in blacklist' : 'URL is already blocked');
       if (rule) RulesManager.add({ rules: [rule], ruleType: 'dynamic' });
     });
   }

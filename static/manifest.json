@@ -1,6 +1,6 @@
 {
   "name": "NetFilter",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "manifest_version": 3,
   "description": "Netfilter - An efficient blocker for ads, trackers, coin miners, popups, annoying anti-blockers, malware sites, etc.",
   "icons": {

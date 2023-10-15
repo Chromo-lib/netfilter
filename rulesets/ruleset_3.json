@@ -179,5 +179,24 @@
         "image"
       ]
     }
+  },
+  {
+    "id": 18,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https:\/\/www.reddit.com\/svc\/shreddit\/[0-9A-z]{9,}",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "xmlhttprequest",
+        "media",
+        "websocket"
+      ]
+    }
   }
 ]
