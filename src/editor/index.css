@@ -1,9 +1,9 @@
 :root {
-  --light: #e7e7e7;
+  --light: #bdbdbd;
   --white:#fff;
-  --black: #16151e;
-  --dark: #21202c;
-  --gray:#302f41;
+  --black: #202020;
+  --dark: #303030;
+  --gray: #444444;
 
   --transparent: #13131359;
   --green: #46a800;
@@ -56,27 +56,26 @@ aside {overflow: auto; padding: 10px;border-left: 1px solid var(--gray);}
 main {overflow: auto; border-right: 1px solid var(--gray);}
 
 #list-webResponse {
-  height: calc(100% - 50px);
+  height: calc(100% - 63px);
   overflow: auto;
 }
 
 header {
-  height: 50px;
+  height: 40px;
   position: relative;
   position: sticky;
   top: 0;
-  padding: 10px 15px;
-  border-bottom: 1px solid var(--gray);
-  backdrop-filter: blur(3px);
   z-index: 99;
 }
 
 h2 {font-size: 1.2rem;    white-space: pre;}
 h3 {font-size: 1rem;    white-space: pre;}
 
-input,button,select,textarea {padding: 12px 15px; outline: none; border: none; background-color: var(--gray); color: #fff; max-width: 100%;}
+input,button,select,textarea {font-size: .85rem; padding: 10px 15px; outline: none; border: none; background-color: var(--gray); color: #fff; max-width: 100%;}
 
 .btn,button {
+  padding: 12px 15px;
+  font-size: .9rem;
   background-color: var(--black);
   display: flex;
   align-items: center;
@@ -150,7 +149,7 @@ pre {
 
 #list-webResponse {display: flex;flex-direction: column-reverse;}
 
-.small,.tag,small {font-size:  0.8rem; color: var(--metal);}
+.small,.tag,small {font-size:  0.8rem; color: var(--light);}
 
 .rounded {border-radius: 50%;}
 
@@ -201,6 +200,8 @@ pre {
 .mr-1 {margin-right: 10px;}
 .ml-1 {margin-left: 10px;}
 .mb-1 {margin-bottom: 10px;}
+
+.p-1 {padding: 5px 15px;}
 
 .mr-3 {margin-right: 30px;}
 .ml-3 {margin-left: 30px;}

@@ -1,4 +1,4 @@
-import { listWebResponseEL } from "../constants";
+import { listWebResponseEL, logInfoEl } from "../constants";
 
 export default function webResponseList(details: chrome.webRequest.WebResponseErrorDetails) {
   if (!details || !details.url) return;
@@ -22,5 +22,5 @@ export default function webResponseList(details: chrome.webRequest.WebResponseEr
       </div>
     </li>`;
 
-  document.querySelector('h2')!.textContent = 'Logs: ' + listWebResponseEL.children.length;
+    logInfoEl.innerHTML = `<small>${listWebResponseEL.children.length}°items</small><small>${new Date().toISOString()}</small>`;
 }
