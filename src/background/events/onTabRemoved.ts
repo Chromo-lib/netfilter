@@ -1,7 +1,6 @@
 import sendMessage from "../helpers/sendMessage";
-import ResponseStorage from "../storage/ResponseStorage";
+import WebResponseErrorDetailsStorage from "../storage/WebResponseErrorDetailsStorage";
 
-export default async function onTabRemoved(tabId: number) {
-  const webResponseErrorDetails = await ResponseStorage.deleteOne(tabId);
-  sendMessage({ webResponseErrorDetails });
+export default function onTabRemoved(tabId: number) {
+  sendMessage({ webResponseErrorDetails: WebResponseErrorDetailsStorage.deleteOne(tabId) });
 }

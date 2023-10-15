@@ -1,7 +1,6 @@
 import { WebResponseErrorDetails } from "../types";
 
-export default class ResponseStorage {
-
+export default class WebResponseErrorDetailsStorage {
   static store: any = {};
 
   static save(details: WebResponseErrorDetails) {

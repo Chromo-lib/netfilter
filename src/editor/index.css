@@ -2,8 +2,8 @@
   --light: #bdbdbd;
   --white:#fff;
   --black: #202020;
-  --dark: #303030;
-  --gray: #444444;
+  --dark: #2b2b2b;
+  --gray: #3d3d3d;
 
   --transparent: #13131359;
   --green: #46a800;
@@ -71,7 +71,8 @@ header {
 h2 {font-size: 1.2rem;    white-space: pre;}
 h3 {font-size: 1rem;    white-space: pre;}
 
-input,button,select,textarea {font-size: .85rem; padding: 10px 15px; outline: none; border: none; background-color: var(--gray); color: #fff; max-width: 100%;}
+input,button,select,textarea {font-size: .85rem; padding: 10px 15px; outline: none; border: 1px solid var(--gray); 
+  background-color: var(--black); color: #fff; max-width: 100%;}
 
 .btn,button {
   padding: 12px 15px;
@@ -80,9 +81,8 @@ input,button,select,textarea {font-size: .85rem; padding: 10px 15px; outline: no
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  outline: none;
+  text-transform: uppercase;  
+  cursor: pointer;  
   letter-spacing: 2px;  
   transition: opacity .25s;
 }
