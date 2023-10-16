@@ -4,7 +4,7 @@ _right_ads\.
 -adobeDatalayer_
 -auto-ads-
 ://syndication\.
-.adtech.
+\.adtech\.
 //ads\.
 //pub.*\?zoneid=
 /adcash\.

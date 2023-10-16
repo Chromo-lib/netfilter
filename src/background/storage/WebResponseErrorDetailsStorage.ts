@@ -1,59 +1,51 @@
 import { WebResponseErrorDetails } from "../types";
 
+type Store = { tabId: number, timeStamp: number, data: [] };
+
 export default class WebResponseErrorDetailsStorage {
-  static store: any = {};
 
-  static save(details: WebResponseErrorDetails) {
-    const key = `tab-${Date.now()}-${details.tabId}`;
-    const foundedKey = this.findKey(details.tabId);
+  private static memStore = {};
 
-    if (!foundedKey) this.store[key] = [details]
+  static save(details: WebResponseErrorDetails): void {
+    const store = this.memStore[details.tabId] as Store;
+
+    if (store) {
+      if (!store.data.some((d: WebResponseErrorDetails) => details.url === d.url && details.initiator === d.initiator)) {
+        this.memStore[details.tabId].data.push(details);
+      }
+    }
     else {
-      if (!this.store[foundedKey].some((d: WebResponseErrorDetails) => details.url === d.url && details.initiator === d.initiator))
-        this.store[foundedKey] = [...this.store[foundedKey], details]
+      this.memStore[details.tabId] = { tabId: details.tabId, timeStamp: Date.now(), data: [details] }
     }
   }
 
-  static findKey(tabId: number) {
-    for (const key in this.store) {
-      const tab_id = +key.split('-')[2];
-      if (tab_id === tabId) return key;
-    }
-    return null
-  }
-
-  static findOne(tabId: number) {
-    for (const key in this.store) {
-      const tab_id = +key.split('-')[2];
-      if (tab_id === tabId) return this.store[key];
-    }
-    return []
+  static findOne(tabId: number): WebResponseErrorDetails[] {
+    return this.memStore[tabId]?.data
   }
 
   static findMany(): WebResponseErrorDetails[] {
     let result: WebResponseErrorDetails[] = [];
-
-    for (const key in this.store) {
-      const data = this.store[key].map((v: WebResponseErrorDetails) => v);
-      result = [...result, ...data];
-    }
- 
+    Object.keys(this.memStore).map(key => {
+      result = [...result, ...this.memStore[key].data]
+    });
     return result
   }
 
-  static deleteOne(tabId: number) {
+  static deleteOne(tabId: number): WebResponseErrorDetails[] {
+    if (Object.keys(this.memStore).length < 1) return [];
+
     const now = Date.now();
 
-    for (const key in this.store) {
-      const [_, timeStamp, tab_id] = key.split('-');
-      if (+tab_id === tabId || ((now - +timeStamp) / 60000) > 5) delete this.store[`tab-${timeStamp}-${tabId}`];
+    for (const key in this.memStore) {
+      const store = this.memStore[key] as Store;
+      if (store.tabId === tabId || ((now - store.timeStamp) / 60000) > 5) delete this.memStore[key];
     }
 
     return this.findMany();
   }
 
-  static clear() {
-    this.store = {};
+  static clear(): WebResponseErrorDetails[] {
+    this.memStore = {};
     return [];
   }
 }

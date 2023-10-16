@@ -5,22 +5,24 @@ export default function webResponseList(details: chrome.webRequest.WebResponseEr
 
   const timeStamp = new Date(details.timeStamp).toISOString().slice(0, 19);
 
-  listWebResponseEL.innerHTML += `<li class="border-bottom fadein">
+  listWebResponseEL.innerHTML += `<li class="border-top fadein">
 
       <div class="d-flex align-center mb-1">
         <span class="${'tag ' + details.type}">${details.type}</span>
         <h3 class="m-0 ml-1 truncate">${details.url}</h3>
       </div>
       <div class="d-flex justify-between align-center">
-        <div>
-          <small class="mr-3">${details.initiator}</small>
-          <small class="mr-3">${details.method}</small>
-          <small class="mr-3">${details.ip || ''}</small>
-          <small class="mr-3">${timeStamp}</small>
+        <div class="d-flex gap-3">
+          <small>${details.initiator}</small>
+          <small>${details.method}</small>
+          <small>${details.ip || ''}</small>
+          <small>${timeStamp}</small>
         </div>
         <small>${details.error}</small>
       </div>
     </li>`;
 
-    logInfoEl.innerHTML = `<small>${listWebResponseEL.children.length}°items</small><small>${new Date().toISOString()}</small>`;
+    logInfoEl.innerHTML = `<small class="tag">${listWebResponseEL.children.length}°items</small>
+    <small class="tag">${new Date().toDateString()}</small>
+    <small class="tag">${new Date().toLocaleTimeString()}</small>`;
 }
