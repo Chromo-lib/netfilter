@@ -20,23 +20,22 @@ export default function webResponseList({ webResponseErrorDetails, url }: { webR
       const initiator = getDomainFromUrl(detail.initiator)?.slice(0, 1) || 'I';
 
       webResponseErrorDetailsUL.innerHTML += `<li class="bg-dark border-bottom fadein" id="d-${detail.requestId}"> 
-          <div class="w-100 d-flex align-center justify-between">
-            <div class="d-flex align-center mb-1 truncate">
-              <span class="ml-0 mr-1 badge rounded bg-red p-5" title="Initiator: ${detail.initiator}">${initiator}</span>
-              <h4 class="d-block m-0 ml-1 red truncate" title="${getDomainFromUrl(detail.url)}">${getDomainFromUrl(detail.url)}</h4> 
-            </div>
-  
-            <div class="gray small uppercase">
-              <span title="Method">${detail.method}</span>
-              <span>|</span>
-              <span title="Type">${detail.type}</span>
-            </div>
+        <div class="w-100 d-flex align-center justify-between">
+          <div class="d-flex align-center mb-1 truncate">
+            <small class="ml-0 mr-1 badge rounded bg-red p-5" title="${detail.initiator}">${initiator}</small>
+            <span class="d-block m-0 ml-1 red bold truncate" title="${getDomainFromUrl(detail.url)}">${getDomainFromUrl(detail.url)}</span> 
           </div>
-              
-          <div class="d-flex gray small" id="url">
-            <p class="m-0 gray truncate w-100" title="${detail.url}">${detail.url.replace(/https?:\/\//g, '')}</p>
+
+          <div class="gray small uppercase">
+            <small title="Method">${detail.method}</small>
+            <span>|</span>
+            <small title="Type">${detail.type}</small>
           </div>
-          
+        </div>
+            
+        <div class="d-flex gray small" id="url">
+          <span class="m-0 gray truncate w-100" title="${detail.url}">${detail.url.replace(/https?:\/\//g, '')}</span>
+        </div>          
       </li>`;
     });
   }

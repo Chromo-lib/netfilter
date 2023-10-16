@@ -9,7 +9,7 @@ export default function webResponseList(details: chrome.webRequest.WebResponseEr
 
       <div class="d-flex align-center mb-1">
         <span class="${'tag ' + details.type}">${details.type}</span>
-        <h3 class="m-0 ml-1 truncate">${details.url}</h3>
+        <span class="m-0 ml-1 bold truncate">${details.url}</span>
       </div>
       <div class="d-flex justify-between align-center">
         <div class="d-flex gap-3">

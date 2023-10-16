@@ -1,5 +1,5 @@
 :root {
-  --light: #bdbdbd;
+  --light: #838383;
   --white:#fff;
   --black: #202020;
   --dark: #2b2b2b;
@@ -66,9 +66,6 @@ header {
 
 .list li:hover {background-color: var(--black);}
 
-h2 {font-size: 1.2rem;    white-space: pre;}
-h3 {font-size: 1rem;    white-space: pre;}
-
 input,button,select,textarea {font-size: .85rem; padding: 10px 15px; outline: none; border: 1px solid var(--gray); 
   background-color: var(--black); color: #fff; max-width: 100%;}
 
@@ -111,7 +108,7 @@ small {color: var(--gray);}
 
 hr {
   width: 100%;
-  border-color: var(--black);
+  border-color: var(--transparent);
   margin: 15px 0;
 }
 
@@ -181,6 +178,8 @@ pre {
 .uppercase {text-transform: uppercase;}
 .lowercase {text-transform: lowercase;}
 .space-pre {    white-space: pre;}
+
+.bold {font-weight: bold;}
 
 .truncate {
   width: 100%;
