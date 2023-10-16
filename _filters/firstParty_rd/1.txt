@@ -2,7 +2,6 @@
 a.ads1.msn.com
 a.ads2.msads.net
 a.ads2.msn.com
-statistics.streamdav.com
 a.getflowbox.com
 a.hcaptcha.com
 a.mobify.com
@@ -989,6 +988,7 @@ ssp.bidvol.com
 startup.mobile.yandex.net
 static.chartbeat.com
 static.tradetracker.net
+statistics.streamdav.com
 stats.autoscout24.ch
 stats.brave.com
 stats.packetriot.com

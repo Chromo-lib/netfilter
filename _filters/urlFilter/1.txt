@@ -510,6 +510,8 @@ good-gay.tv/analytics.js
 google-analtyics.com/analytics.js
 google.*/ads/ga-audiences?v=
 google.com/adsense/search
+google.com/client_204
+google.tn/pagead/lvz
 googleadservices.com/pagead/conversion_async.js
 googleapis.com/maps/api/mapsjs/gen_204
 goroost.com/api/pageview
@@ -1338,7 +1340,9 @@ youngasianporntube.net/js/cyc2Z5Gg0nwnQY2Gy.js
 youronlinechoices.com/css/images/pixel.png
 youronlinechoices.com/images/pixel.png
 youtube.com/ad_companion
+youtube.com/api/stats/qoe
 youtube.com/gen_204
+youtube.com/generate_204
 youtube.com/youtubei/v1/log_event
 ytconvert.me/pop.js
 ytmp3.cc/js/inner.js

@@ -4,7 +4,6 @@ _right_ads\.
 -adobeDatalayer_
 -auto-ads-
 ://syndication\.
-\.adtech\.
 //ads\.
 //pub.*\?zoneid=
 /adcash\.
@@ -105,6 +104,7 @@ _right_ads\.
 /wf-beacon-
 /zaraz/s.js
 \?sentry_key\=
+\.adtech\.
 \.php\?zone_id\=
 \.snowplowanalytics\.
 \&action\=js_stats\&
