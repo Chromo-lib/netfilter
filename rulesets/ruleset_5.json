@@ -57,7 +57,7 @@
     }
   },  
   {
-    "id": 6,
+    "id": 5,
     "priority": 1,
     "action": {
       "type": "block"
@@ -66,12 +66,21 @@
       "regexFilter": "^[a-zA-Z0-9\/=7?.-_&%]+[.]{1}(cf|ga|tk|gq|xyz|kim|surf|casino|poker)[\/|?|&]{1}",
       "resourceTypes": [
         "main_frame",
-        "sub_frame",
-        "stylesheet",
+        "sub_frame"
+      ]
+    }
+  },  
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "https:\/\/[a-z]{10,12}\\.com\/[\/a-z]{2,}\\?id=19\\d{5}$",
+      "resourceTypes": [
         "script",
-        "xmlhttprequest",
-        "media",
-        "websocket"
+        "xmlhttprequest"
       ]
     }
   }

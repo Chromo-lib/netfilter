@@ -41,7 +41,7 @@ export default class WebResponseErrorDetailsStorage {
       if (store.tabId === tabId || ((now - store.timeStamp) / 60000) > 5) delete this.memStore[key];
     }
 
-    return this.findMany();
+    return [];
   }
 
   static clear(): WebResponseErrorDetails[] {

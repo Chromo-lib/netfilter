@@ -22,7 +22,13 @@ export default function webResponseList(details: chrome.webRequest.WebResponseEr
       </div>
     </li>`;
 
-    logInfoEl.innerHTML = `<small class="tag">${listWebResponseEL.children.length}°items</small>
-    <small class="tag">${new Date().toDateString()}</small>
-    <small class="tag">${new Date().toLocaleTimeString()}</small>`;
+    logInfoEl.innerHTML = `<div>
+      <small class="tag">${listWebResponseEL.children.length}°items</small>
+      <small class="tag">${new Date().toDateString()}</small>
+      <small class="tag">${new Date().toLocaleTimeString()}</small>
+    </div>
+    
+    <div>
+      <small>Netfilter ${chrome.runtime.getManifest().version}</small>
+    </div>`;
 }

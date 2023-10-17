@@ -1,5 +1,5 @@
 import Split from 'split.js'
-import { formAddRules, formBlockAllowDomain, formGetRules, formSearch, preRules, snackbar, webResponseAction } from "./constants";
+import { formAddRules, formBlockAllowDomain, formGetRules, formSearch, formSettings, preRules, snackbar, webResponseAction } from "./constants";
 import onAddRules from './events/onAddRules';
 import onBlockURL from './events/onBlockURL';
 import onGetRules from './events/onGetRules';
@@ -7,6 +7,7 @@ import onMessages from "./events/onMessages";
 import onSearch from "./events/onSearch";
 import onSnackbar from './events/onSnackbar';
 import onWebResponseAction from './events/onWebResponseAction';
+import onSettings from './events/onSettings';
 
 preRules.innerHTML = JSON.stringify([
   {
@@ -23,6 +24,12 @@ preRules.innerHTML = JSON.stringify([
   }
 ], null, 2);
 
+
+document.querySelectorAll('[data-icon]').forEach((el:any) => {
+  console.log(el);
+  el.style.background = `url(${el.dataset.icon}) center no-repeat`
+})
+
 window.addEventListener('DOMContentLoaded', () => {
   Split(['main', 'aside'], { sizes: [75, 25] });
 
@@ -32,6 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
   formAddRules.addEventListener('submit', onAddRules);
   formBlockAllowDomain.addEventListener('submit', onBlockURL);
   formSearch.addEventListener('submit', onSearch);
+  formSettings.addEventListener('submit', onSettings)
 
   webResponseAction.addEventListener('click', onWebResponseAction);
   snackbar.querySelector('button')!.addEventListener('click', onSnackbar);

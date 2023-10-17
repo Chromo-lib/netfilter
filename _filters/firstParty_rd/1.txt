@@ -612,6 +612,7 @@ mobflow21.com
 monitor.azure.com
 mtlog.droid4x.cn
 nadvideo2.baidu.com
+netlify-rum.netlify.app
 new-sentry.gitlab.net
 nmetrics.samsung.com
 notify.bugsnag.com
