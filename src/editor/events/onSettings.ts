@@ -1,3 +1,6 @@
+import { modalSettings } from "../constants";
+import settings from "../utils/settings";
+
 export default function onSettings(e: any) {
   e.preventDefault();
 
@@ -5,12 +8,7 @@ export default function onSettings(e: any) {
   const fontSize = elements[0].value;
   const theme = elements[1].value;
 
-  document.body.style.fontSize = fontSize + 'px';
-  document.body.style.filter = 'invert(1)';
+  settings().set({ fontSize, theme });
 
-  let local :any= localStorage.getItem('settings');
-
-  local = local ? JSON.parse(local) : {};
-
-  localStorage.setItem('settings', JSON.stringify({ ...local, fontSize, theme }));
+  modalSettings.classList.add('d-none');
 }

@@ -8,6 +8,7 @@ import onSearch from "./events/onSearch";
 import onSnackbar from './events/onSnackbar';
 import onWebResponseAction from './events/onWebResponseAction';
 import onSettings from './events/onSettings';
+import settings from './utils/settings';
 
 preRules.innerHTML = JSON.stringify([
   {
@@ -24,14 +25,10 @@ preRules.innerHTML = JSON.stringify([
   }
 ], null, 2);
 
-
-document.querySelectorAll('[data-icon]').forEach((el:any) => {
-  console.log(el);
-  el.style.background = `url(${el.dataset.icon}) center no-repeat`
-})
-
 window.addEventListener('DOMContentLoaded', () => {
   Split(['main', 'aside'], { sizes: [75, 25] });
+
+  settings().load();
 
   chrome.runtime.sendMessage({ message: 'get:webResponseErrorDetails' });
 

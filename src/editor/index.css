@@ -141,7 +141,7 @@ pre {
 .gutter {background-color: var(--black); cursor: col-resize; }
 .gutter:hover {background-color: var(--gray);  }
 
-.modal-settings { display: none; position: fixed; right: 10px; bottom: 10px; box-shadow: 0 0 20px 10px #00000040;}
+.modal-settings {position: fixed; right: 10px; bottom: 10px; box-shadow: 0 0 20px 10px #00000040; z-index: 99;}
 
 #list-webResponse {display: flex;flex-direction: column-reverse;}
 

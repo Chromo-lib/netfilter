@@ -14,3 +14,5 @@ export const snackbarCode = snackbar.querySelector('code')!;
 export const listWebResponseEL = document.getElementById('list-webResponse')!;
 
 export const logInfoEl = document.getElementById('log-info')!;
+
+export const modalSettings = document.querySelector('.modal-settings')!;

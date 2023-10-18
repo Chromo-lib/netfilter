@@ -1,4 +1,4 @@
-import { listWebResponseEL } from "../constants";
+import { listWebResponseEL, modalSettings } from "../constants";
 
 export default function onWebResponseAction(e: any) {
   const target = e.target;
@@ -11,15 +11,19 @@ export default function onWebResponseAction(e: any) {
       break;
 
     case 'copy':
-      chrome.runtime.sendMessage({ message: 'download:webResponseErrorDetails' });
+      chrome.runtime.sendMessage({ message: 'copy:webResponseErrorDetails' });
       break;
 
     case 'download':
-      chrome.runtime.sendMessage({ message: 'copy:webResponseErrorDetails' });
+      chrome.runtime.sendMessage({ message: 'download:webResponseErrorDetails' });
       break;
 
     case 'reload':
       chrome.runtime.sendMessage({ message: 'get:webResponseErrorDetails' });
+      break;
+
+    case 'settings':
+      modalSettings.classList.remove('d-none')
       break;
 
     default:

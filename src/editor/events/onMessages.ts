@@ -8,6 +8,9 @@ export default function onMessages(request: any, _: any, sendResponse: any) {
 
   const { message, webResponseErrorDetails, rules } = request;
 
+  snackbar.classList.remove('d-none')
+  snackbarCode.innerText = message?.replace(':webResponseErrorDetails','');
+
   if (message === 'download:webResponseErrorDetails') {
     download(webResponseErrorDetails);
     return true;
@@ -27,12 +30,6 @@ export default function onMessages(request: any, _: any, sendResponse: any) {
   if (rules) {
     snackbar.classList.remove('d-none');
     snackbarCode.innerText = JSON.stringify(rules, null, 2);
-    return true;
-  }
-
-  if (message) {
-    snackbar.classList.remove('d-none')
-    snackbarCode.innerText = message;
     return true;
   }
 }

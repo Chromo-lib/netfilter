@@ -13,20 +13,19 @@ export default function handleWebResponse({ message, tabId, url, filter }: any) 
     return true;
   }
 
-  if (message === 'get:webResponseErrorDetails') {
-    sendMessage({ webResponseErrorDetails: WebResponseErrorDetailsStorage.findMany() });
+  if (['get:webResponseErrorDetails', 'copy:webResponseErrorDetails', 'download:webResponseErrorDetails'].includes(message)) {
+    sendMessage({ webResponseErrorDetails: WebResponseErrorDetailsStorage.findMany(), message });
     return true;
   }
 
   if (message === 'search:webResponseErrorDetails') {
     const data = WebResponseErrorDetailsStorage.findMany();
-    const result = filterRequestDetails(data, filter);
-    sendMessage({ webResponseErrorDetails: result.length > 0 ? result : data });
+    sendMessage({ webResponseErrorDetails: filterRequestDetails(data, filter), message });
     return true;
   }
 
   if (message === 'clear:webResponseErrorDetails') {
-    sendMessage({ webResponseErrorDetails: WebResponseErrorDetailsStorage.clear() });
+    sendMessage({ webResponseErrorDetails: WebResponseErrorDetailsStorage.clear(), message });
     return true;
   }
 }

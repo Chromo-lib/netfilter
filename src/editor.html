@@ -31,14 +31,14 @@
             <option value="net::ERR_INTERNET_DISCONNECTED">ERR_INTERNET_DISCONNECTED</option>
             <option value="net::ERR_INCOMPLETE_CHUNKED_ENCODING">ERR_INCOMPLETE_CHUNKED_ENCODING</option>
           </select>
-          <button type="submit"><img src="svg/search.svg" alt="reload"></button>
+          <button type="submit"><img src="svg/search.svg" alt="search"></button>
         </form>
         <div class="d-flex" id="webResponse-action">
           <button title="Reload" data-id="reload"><img src="svg/reload.svg" alt="reload"></button>
           <button title="Copy" data-id="copy"><img src="svg/copy.svg" alt="copy"></button>
           <button title="Download" data-id="download"><img src="svg/download.svg" alt="download"></button>
           <button title="Clear" data-id="clear"><img src="svg/trash.svg" alt="trash"></button>
-          <button title="Settings" data-id="settings"><img src="svg/cog.svg" alt="cog"></button>
+          <button title="Settings" data-id="settings"><img data-icon="settings" src="svg/cog.svg" alt="cog"></button>
         </div>
       </header>
 
@@ -109,14 +109,13 @@
 
     </aside>
 
-
-    <div class="modal-settings bg-black br bordered">
+    <div class="modal-settings bg-black br bordered fadeIn d-none">
       <h3 class="d-flex align-center p-1 border-bottom m-0 mb-1"><img class="mr-1" src="svg/cog.svg" alt="cog">Settings</h3>
 
       <form class="p-1" id="form-settings">
         <div class="mb-1">
-          <label for="fontsize">Font size (px)</label>
-          <input class="w-100 mt-1" type="number" name="fontsize" value="14" id="fontsize">
+          <label for="fontSize">Font size (px)</label>
+          <input class="w-100 mt-1" type="number" name="fontSize" value="14" id="fontSize">
         </div>
 
         <div class="mb-1">
