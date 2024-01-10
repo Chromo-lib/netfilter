@@ -17,3 +17,4 @@ github.com
 gitlab.com
 android.com
 linuxmint.com
+wise.com

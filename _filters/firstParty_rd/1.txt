@@ -237,6 +237,7 @@ analytics.orenshmu.com
 analytics.ostr.io
 analytics.paddle.com
 analytics.pagefly.io
+analytics.paxful.com
 analytics.pgncs.notion.so
 analytics.picknrg.com
 analytics.piksel.com
@@ -384,6 +385,7 @@ c.imedia.cz
 c.live.com
 c.mgid.com
 c.wen.ru
+c.wired.com
 c153yb4hps.ru
 cb-mms.carbuyer.co.uk
 cdn.yanews24.com
@@ -517,6 +519,7 @@ go.onelink.me
 go0gl3.pages.dev
 graceful-creative.doorbell.io
 grade.market.yandex.ru
+gtm.wise.com
 hm.baidu.com
 improving.duckduckgo.com
 informer.yandex.ru
@@ -705,6 +708,7 @@ securemetrics.blackrock.com
 securemetrics.gap.com
 securemetrics.gapcanada.ca
 securemetrics.gapfactory.com
+sentry.paxful.com
 services.hmhost.co.uk
 sessions.bugsnag.com
 sftrack.searchforce.net
@@ -995,15 +999,15 @@ stats.brave.com
 stats.packetriot.com
 stats.pusher.com
 stats.wp.com
-stocks-analytics-events.apple.com
-stocks-analytics-events.news.apple-dns.net
 streamads.yahoo.com
 t.adx.opera.com
 t.dailymail.co.uk
 t.freelancer.com
 t.imgur.com
 t.indeed.com
+t.paypal.com
 tag.regieci.com
+tags.ludwig.guru
 teacher-diamond.snapshooter.com
 ted.dailymail.co.uk
 telemetry.api.playstation.com

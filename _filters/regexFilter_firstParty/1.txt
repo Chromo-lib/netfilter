@@ -68,6 +68,7 @@ _right_ads\.
 /fixSpecialAdHome\.
 /frontend-gtag\.
 /ga-events\.js
+/gajs/analytics\.js
 /gapro.js
 /google-ads-
 /gtm.js

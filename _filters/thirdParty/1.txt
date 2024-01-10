@@ -420,7 +420,6 @@ a.fobos.tv
 a.mayakinfo.ru
 a.mouseflow.com
 a.mt.ru
-a.myfidevs.io
 a.ruporn.me
 a.sdska.ru
 a.thairesort.ru
@@ -712,6 +711,7 @@ adcast.ru
 adcdnx.com
 adcell.com
 adcell.de
+adcetera.com
 adchemix.com
 adchemy-content.com
 adchemy.com
@@ -838,6 +838,7 @@ adlabsnetworks.com
 adland.ru
 adleadevent.com
 adlibr.com
+adlift.com
 adlift.ru
 adligature.com
 adlightning.com
@@ -3690,12 +3691,9 @@ cdn-ra.rockcontent.com
 cdn-rtb.sape.ru
 cdn-sitegainer.com
 cdn.actiflex.org
-cdn.adsninja.ca
 cdn.adsquirrel.ai
 cdn.amzuu.com
 cdn.bescore.com
-cdn.bizible.com
-cdn.cohesionapps.com
 cdn.counter.dev
 cdn.ddmanager.ru
 cdn.driveback.ru
@@ -3709,19 +3707,15 @@ cdn.memo.co
 cdn.movieads.ru
 cdn.onesignal.com
 cdn.preciso.net
-cdn.resonate.com
-cdn.sophi.io
 cdn.sportlabs.online
 cdn.steambets.net
+cdn.swaxis.com
 cdn.syndication.twimg.com
 cdn.teleportapi.com
-cdn.tercept.com
 cdn.topmind.io
 cdn.trackclicks.info
 cdn.umh.ua
 cdn.yanews24.com
-cdn.zx-adnet.com
-cdn*.swaxis.com
 cdn13.com
 cdn15.com
 cdn3reference.com
@@ -3730,7 +3724,6 @@ cdn4ads.com
 cdn4image.com
 cdn7.rocks
 cdn7.space
-cdn77.org
 cdnads.com
 cdnanalytics.xyz
 cdnativepush.com
@@ -4736,7 +4729,6 @@ crypto-coins.info
 crypto-loot.com
 crypto-pool.fr
 crypto-webminer.com
-crypto.com
 cryptobara.com
 cryptocoinsad.com
 cryptocoinsnews.com
@@ -5156,6 +5148,7 @@ deteql.net
 determine-month-upward-shoot.xyz
 deusex.com
 dev-as.cluep.com
+dev.visualwebsiteoptimizer.com
 dev2pub.com
 dev4enki.com
 devatics.com
@@ -5284,7 +5277,6 @@ displaymarketplace.com
 displayvertising.com
 disploot.com
 disqus.com
-disquscdn.com
 disredi.ru
 disregardbuymigrant.com
 disreputablegenuinelyhonorary.com
@@ -6602,8 +6594,6 @@ fingahvf.top
 fiobio.ru
 firebase-settings.crashlytics.com
 firebase.com
-firebaseinstallations.googleapis.com
-firebaseio.com
 firebaselogging-pa.googleapis.com
 firebaselogging.googleapis.com
 firebaseremoteconfig.googleapis.com
@@ -7335,8 +7325,6 @@ getscriptjs.com
 getsharedstore.com
 getshowads.com
 getsidecar.com
-getsmartcontent.com
-getsmartlook.com
 getsmartyapp.com
 getsomespecials.com
 getstat.net
@@ -8875,7 +8863,6 @@ interceptum.com
 interclics.com
 intercom-clicks.com
 intercom.io
-intercomassets.com
 interesteddeterminedeurope.com
 intergi.com
 intergid.ru
@@ -10447,7 +10434,6 @@ m-pathy.com
 m-rtb.com
 m-shes.ru
 m-t.io
-m.stripe.com
 m.yap.yahoo.com
 m0mentum.net
 m0zdeb.ru
@@ -12766,7 +12752,6 @@ pay-moeva.com
 payfery.ru
 paymentsweb.org
 paymonsters.biz
-paypalobjects.com
 payperpost.com
 payvclick.com
 paywoman.ru
@@ -12989,7 +12974,6 @@ pingdom.net
 pingil.com
 pingmeter.com
 pingomatic.com
-pinimg.com
 pinkcherry.ca
 pinkcherry.com
 pinkyads.quest
@@ -15977,7 +15961,6 @@ srpx.net
 srtrak.com
 srv.buysellads.com
 srv.plesk.com
-srv.stackadapt.com
 srv224.com
 srv2trking.com
 srvmath.com
@@ -17276,6 +17259,7 @@ track-web.net
 track.91app.io
 track.adabra.com
 track.aplaut.io
+track.contently.com
 track.ddmanager.ru
 track.leadhit.ru
 track.mituo.cn
@@ -17847,6 +17831,7 @@ ugyplysh.com
 uh.nakanohito.jp
 uhpdsplo.com
 uhuu.com
+uidapi.com
 uidhealth.com
 uidhome.com
 uidsync.net
@@ -18713,7 +18698,6 @@ watchersweb.com
 watchfreeofads.com
 watchingthat.com
 watchingthat.net
-watchlivesports4k.club
 watchmygf.to
 watchonista.com
 watchtaro.com
@@ -19158,7 +19142,6 @@ wowshortvideos.com
 wp-monero-miner.de
 wp-stats.com
 wp-tk.ru
-wp.com
 wpad.farm
 wpadmngr.com
 wpcc.io
@@ -19510,7 +19493,6 @@ yalealumnimagazine.com
 yamanoha.com
 yanabmw.ru
 yande.re
-yandex.net
 yandex.ru
 yandexadexchange.net
 yandexbrowser2019.ru
@@ -19518,7 +19500,6 @@ yanmar.com
 yanus.ir
 yardianalytics.com
 yardsales.net
-yastatic.net
 yaudience.com
 yavli.com
 yazio-analytics.com
@@ -19687,6 +19668,7 @@ yugaley.info
 yunit.org
 ywadk.top
 ywhnh.top
+ywxi.net
 yxswtummev.info
 yy8fgl2bdv.com
 yycjho.com

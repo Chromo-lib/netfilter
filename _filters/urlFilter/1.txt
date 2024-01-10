@@ -86,6 +86,7 @@ ampproject.org/preconnect.gif
 analdin.com/de/player/html.php
 analdin.com/js/analytics.js
 analytics.*.*/*.php
+analytics.paxful.com/events
 anapixel.elmundo.es/ter.gif
 androidauth.wpengine.com/wp-json/api/advanced_placement
 api-cf.affirm.com/api/v*/session/touch_track

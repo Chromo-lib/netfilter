@@ -5,6 +5,7 @@ let videoEL = null;
 
 function doProcess() {
   invokeClick('.ytp-ad-skip-button');
+  invokeClick('.ytp-ad-skip-button-modern');
   invokeClick('.ytp-ad-overlay-close-button');
 
   hideEL('.ytp-ad-text-overlay');
