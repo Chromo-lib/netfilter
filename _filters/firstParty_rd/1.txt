@@ -1011,6 +1011,7 @@ tags.ludwig.guru
 teacher-diamond.snapshooter.com
 ted.dailymail.co.uk
 telemetry.api.playstation.com
+telemetry.stytch.com
 ti.tradetracker.net
 tillertag-a.akamaihd.net
 top-fwz1.mail.ru
@@ -1050,7 +1051,6 @@ tracking.wisepops.com
 tracking1.brandmentions.com
 tracking2.channeladvisor.com
 trackingapi.cloudapp.net
-tradingview.com/ping
 treatment.grammarly.com
 trk.pinterest.com
 trk2.pinterest.com
