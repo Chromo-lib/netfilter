@@ -1,4 +1,4 @@
-export default function copy(data: []) {
+export default function copy(data: any) {
   try {
     navigator.clipboard.writeText(JSON.stringify(data));
   } catch (error) {

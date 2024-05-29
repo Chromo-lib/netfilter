@@ -1,4 +1,4 @@
-import { declarativeNetRequest, ResourceType, RuleActionType } from "../constants";
+import { declarativeNetRequest, RuleActionType } from "../constants";
 
 export default class RulesManager {
 

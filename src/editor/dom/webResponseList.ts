@@ -1,11 +1,13 @@
 import { listWebResponseEL, logInfoEl } from "../constants";
 
-export default function webResponseList(details: chrome.webRequest.WebResponseErrorDetails) {
+export default function webResponseList(details: chrome.webRequest.WebResponseErrorDetails, parentEL = listWebResponseEL) {
   if (!details || !details.url) return;
 
-  const timeStamp = new Date(details.timeStamp).toISOString().slice(0, 19);
+  const time = new Date(details.timeStamp).toISOString().slice(0, 19);
 
-  listWebResponseEL.innerHTML += `<li class="border-top fadein">
+  parentEL.innerHTML += `<li class="border-top fadein">
+
+      <textarea name="details" hidden rows="4" cols="5">${JSON.stringify(details)}</textarea>
 
       <div class="d-flex align-center mb-1">
         <span class="${'tag ' + details.type}">${details.type}</span>
@@ -16,14 +18,14 @@ export default function webResponseList(details: chrome.webRequest.WebResponseEr
           <small>${details.initiator}</small>
           <small>${details.method}</small>
           <small>${details.ip || ''}</small>
-          <small>${timeStamp}</small>
+          <small>${time}</small>
         </div>
         <small>${details.error}</small>
       </div>
     </li>`;
 
     logInfoEl.innerHTML = `<div>
-      <small class="tag">${listWebResponseEL.children.length}°items</small>
+      <small class="tag">${parentEL.children.length}°items</small>
       <small class="tag">${new Date().toDateString()}</small>
       <small class="tag">${new Date().toLocaleTimeString()}</small>
     </div>

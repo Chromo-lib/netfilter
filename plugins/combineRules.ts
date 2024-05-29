@@ -1,5 +1,6 @@
-const { readdirSync, readFileSync, writeFileSync } = require("fs");
-const { resolve } = require("path");
+import { readdirSync, readFileSync, writeFileSync } from "fs";
+import { resolve } from "path";
+import updateRule from './updateRule';
 
 function removeDuplicates(arr) {
   return arr.filter((item, index) => {
@@ -16,15 +17,11 @@ const onReadDir = directoryName => {
   const dirFiles = readdirSync(resolve(DATA_FILTERS_PATH, directoryName))
     .filter(file => file !== 'rule.json' && file !== 'exclude.txt');
 
-  const rule = require(resolve(DATA_FILTERS_PATH, directoryName, 'rule.json'), 'utf8');
+  //@ts-nocheck
+  const rule = require(resolve(DATA_FILTERS_PATH, directoryName, 'rule.json'));
 
   dirFiles.forEach(fileName => {
-
-    const fileLines = readFileSync(resolve(DATA_FILTERS_PATH, directoryName, fileName), 'utf8')
-      .split(/\n/g)
-      .map(line => line.replace(/(?!\|\|)(?<=.*)(?:\^.*)/g, '').replace(/\|\||@@/g, '').trim())
-      .filter(l => l && !l.startsWith('#') && !l.includes('^$all'));
-
+    const fileLines = readFileSync(resolve(DATA_FILTERS_PATH, directoryName, fileName), 'utf8').split(/\n/g);
     const domainList = removeDuplicates(fileLines);
 
     if (/regexFilter/gi.test(directoryName)) {
@@ -60,13 +57,6 @@ const onReadDir = directoryName => {
       const ruleDefinition = { ...rule, condition: { ...rule.condition, [domain]: domainList } };
       rules.push(ruleDefinition);
     }
-
-    console.log('> Clean filter ', directoryName);
-
-    writeFileSync(
-      resolve(process.cwd(), '_filters', directoryName, fileName),
-      domainList.sort((a, b) => a.localeCompare(b)).join('\n')
-    );
   })
 }
 
@@ -74,6 +64,8 @@ export function combineRules() {
   return {
     name: 'combine-rules',
     async buildEnd() {
+
+      updateRule()
 
       readdirSync(DATA_FILTERS_PATH).forEach(onReadDir);
 

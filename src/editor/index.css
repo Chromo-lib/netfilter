@@ -60,7 +60,7 @@ header {
   z-index: 99;
 }
 
-#list-webResponse {height: calc(100% - 82px);overflow: auto;transition: background-color .25s; }
+.list-webResponse {height: calc(100% - 82px);overflow: auto;transition: background-color .25s; }
 
 .list li:hover {background-color: var(--black);}
 
@@ -143,7 +143,7 @@ pre {
 
 .modal-settings {position: fixed; right: 10px; bottom: 10px; box-shadow: 0 0 20px 10px #00000040; z-index: 99;}
 
-#list-webResponse {display: flex;flex-direction: column-reverse;}
+.list {display: flex;flex-direction: column-reverse;}
 
 .small,.tag,small {font-size:  0.8rem; color: var(--light);}
 
@@ -166,6 +166,7 @@ pre {
 .bg-metal, .ping,.other {background-color: var(--metal); color: var(--white);}
 .bg-yellow, .sub_frame,.main_frame {background-color: var(--yellow); color: var(--white);}
 
+.grid-2 {display: grid; grid-template-columns: 1fr 1fr;}
 .align-center{align-items: center;}
 .justify-between {justify-content: space-between;}
 .d-block {display: block;}
@@ -216,6 +217,7 @@ pre {
 .bordered {border: 1px solid var(--gray);}
 .border-bottom {border-bottom: 1px solid var(--gray);}
 .border-right {border-right: 1px solid var(--gray);}
+.border-left {border-left: 1px solid var(--gray);}
 .border-top {border-top: 1px solid var(--gray);}
 
 @keyframes fadeIn {

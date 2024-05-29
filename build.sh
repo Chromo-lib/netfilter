@@ -18,6 +18,7 @@ if [[ "$build_project" == "yes" ]]; then
   npm run build
   # copy all static files
   cp -R static/. $dist_dir
+  cp manifest.json $dist_dir
 
   # copy all rulesets files
   cp -R rulesets/. $dist_dir
@@ -33,6 +34,9 @@ echo -e "\n$ENDCOLOR"
 touch $dist_dir/$MANIFEST_FILE
 
 if [[ "$browserType" == "firefox" ]]; then
+
+  cp manifest-firefox.json $dist_dir/manifest.json
+
   find $dist_dir -type f -name "*.js" -exec sh -c '
     for file do
       # Replace "chrome." with "browser."

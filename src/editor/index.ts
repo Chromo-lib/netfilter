@@ -18,7 +18,7 @@ preRules.innerHTML = JSON.stringify([
       "type": "block"
     },
     "condition": {
-      "requestDomains": ["ghost.io", "chatlio.com", "crisp.chat", "vimkit.io", "peer5.com"],
+      "requestDomains": ["ghost.io", "chatlio.com", "vimkit.io", "peer5.com"],
       "domainType": "thirdParty",
       "resourceTypes": ["script", "image", "object", "xmlhttprequest", "media", "websocket", "webtransport"]
     }
@@ -35,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
   formGetRules.addEventListener('submit', onGetRules);
   formAddRules.addEventListener('submit', onAddRules);
   formBlockAllowDomain.addEventListener('submit', onBlockURL);
+  
   formSearch.addEventListener('submit', onSearch);
   formSettings.addEventListener('submit', onSettings)
 

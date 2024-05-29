@@ -34,7 +34,6 @@
           <button type="submit"><img src="svg/search.svg" alt="search"></button>
         </form>
         <div class="d-flex" id="webResponse-action">
-          <button title="Reload" data-id="reload"><img src="svg/reload.svg" alt="reload"></button>
           <button title="Copy" data-id="copy"><img src="svg/copy.svg" alt="copy"></button>
           <button title="Download" data-id="download"><img src="svg/download.svg" alt="download"></button>
           <button title="Clear" data-id="clear"><img src="svg/trash.svg" alt="trash"></button>
@@ -42,7 +41,11 @@
         </div>
       </header>
 
-      <ul class="w-100 list" id="list-webResponse"></ul>
+      <div class="list-webResponse d-flex">
+        <ul class="w-100 list" id="list-webResponse"></ul>
+        <ul class="w-100 list border-left d-none bg-black" id="list-webResponse-filter"></ul>
+      </div>
+
       <div id="log-info" class="d-flex align-center justify-between gap-3 p-1 border-top">Logs</div>
     </main>
 
@@ -110,7 +113,8 @@
     </aside>
 
     <div class="modal-settings bg-black br bordered fadeIn d-none">
-      <h3 class="d-flex align-center p-1 border-bottom m-0 mb-1"><img class="mr-1" src="svg/cog.svg" alt="cog">Settings</h3>
+      <h3 class="d-flex align-center p-1 border-bottom m-0 mb-1"><img class="mr-1" src="svg/cog.svg" alt="cog">Settings
+      </h3>
 
       <form class="p-1" id="form-settings">
         <div class="mb-1">

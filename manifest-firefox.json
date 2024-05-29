@@ -1,0 +1,84 @@
+{
+  "name": "NetFilter",
+  "version": "1.0.15",
+  "manifest_version": 3,
+  "description": "Netfilter - An efficient blocker for ads, trackers, coin miners, popups, annoying anti-blockers, malware sites, etc.",
+  "icons": {
+    "32": "32.png",
+    "64": "64.png",
+    "128": "128.png",
+    "256": "256.png"
+  },
+  "action": {
+    "default_title": "NetFilter",
+    "default_popup": "popup.html",
+    "default_icon": "32.png"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "declarativeNetRequest",
+    "webRequest",
+    "activeTab",
+    "tabs",
+    "alarms"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+},
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "ruleset_1.json"
+      },
+      {
+        "id": "ruleset_2",
+        "enabled": true,
+        "path": "ruleset_2.json"
+      },
+      {
+        "id": "ruleset_3",
+        "enabled": true,
+        "path": "ruleset_3.json"
+      },
+      {
+        "id": "ruleset_4",
+        "enabled": true,
+        "path": "ruleset_4.json"
+      },
+      {
+        "id": "ruleset_5",
+        "enabled": true,
+        "path": "ruleset_5.json"
+      },
+      {
+        "id": "ruleset_6",
+        "enabled": true,
+        "path": "ruleset_6.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ],
+      "exclude_matches": [
+        "*://localhost/*",
+        "*://*.localhost/*"
+      ],
+      "match_about_blank": true,
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ]
+}

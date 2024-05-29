@@ -1,3 +1,3 @@
 export default function onAlarm() {
-  console.log('alarm');
+  console.log('Keep alive');
 }

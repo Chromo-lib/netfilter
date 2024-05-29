@@ -9,6 +9,7 @@ _right_ads\.
 /adcash\.
 /adobe-analytics-
 /ads-blocking-detector.
+/ads-vast-vpaid\.js
 /adserver\.
 /adslot-a
 /advanced-ads-
@@ -25,6 +26,7 @@ _right_ads\.
 /api/v3/trackSegmentEvent
 /appmeasurement_module_
 /appmeasurement.min.js
+/asg_embed\.js
 /assets/ads-
 /assets/jquery/main0\.js\?v\=
 /atrk.js
@@ -39,12 +41,16 @@ _right_ads\.
 /common-js/exit/om2.min.js
 /comscore-min.js
 /cta-loaded.js
+/duayn7\.
+/elastic-apm-rum\.umd\.min\.js
 /elqCfg.min.js
 /event/beacon
 /eventproxy/track
 /faciliti-tag\.
 /fbevents.js
+/fingerprint2\.js
 /fixSpecialAdHome\.
+/ftt2/js\.php
 /fuckadblock\.
 /gapro.js
 /GlanceCobrowseLoader_
@@ -77,6 +83,7 @@ _right_ads\.
 /redirect\?spot_id=
 /related_1.html\?language=
 /renderTimingPixel.
+/resource\?zones\=
 /retargeting-pixels\.
 /rollbar.js
 /ruxitagentjs_
@@ -104,6 +111,7 @@ _right_ads\.
 /wf-beacon-
 /zaraz/s.js
 \?sentry_key\=
+\?sentry_version\=
 \.adtech\.
 \.php\?zone_id\=
 \.snowplowanalytics\.

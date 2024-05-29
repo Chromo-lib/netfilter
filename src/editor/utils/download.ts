@@ -1,4 +1,4 @@
-export default function download(data: []) {
+export default function download(data: any) {
   const a = document.createElement("a")
   a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }))
   a.download = new Date().toISOString() + "-netfilter.json";

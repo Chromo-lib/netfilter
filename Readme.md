@@ -10,7 +10,6 @@ Netfilter - An efficient blocker for ads, trackers, coin miners, popups, annoyin
 </div>
 
 # Captures
-![](docs/assets/1.png)
 ![](docs/assets/2.png)
 
 # Notes

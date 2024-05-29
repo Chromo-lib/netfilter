@@ -1,16 +1,10 @@
-import { webResponseAction, btnShowSearchBar, formSearch } from "./constants";
-import onMessages from "./events/onMessages";
-import onSearch from "./events/onSearch";
-import onToggleSearchBar from "./events/onToggleSearchBar";
-import onWebResponseAction from "./events/onWebResponseAction";
-import sendMessage from "./helpers/sendMessage";
+function onOpenEditor() {
+  chrome.windows.create({ url: "editor.html", top: 0, left:1000, width:700, type: 'popup' });
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-  sendMessage({ message: 'getOne:webResponseErrorDetails' });
+function onReload() {
+  chrome.runtime.reload();
+}
 
-  btnShowSearchBar.addEventListener('click', onToggleSearchBar);
-  formSearch.querySelector('#btn-close-search')?.addEventListener('click', onToggleSearchBar);
-  formSearch.querySelector('input')?.addEventListener('change', onSearch);
-  webResponseAction.addEventListener('click', onWebResponseAction);
-  chrome.runtime.onMessage.addListener(onMessages);
-});
+document.getElementById('btn-open-editor')?.addEventListener('click', onOpenEditor)
+document.getElementById('btn-reload')?.addEventListener('click', onReload)

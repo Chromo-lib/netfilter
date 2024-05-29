@@ -279,6 +279,7 @@ d2yyd1h5u9mauk.cloudfront.net
 d2z51a9spn09cw.cloudfront.net
 d2zbpgxs57sg1k.cloudfront.net
 d2zcblk8m9mzq5.cloudfront.net
+d2zf5gu5e5mp87.cloudfront.net
 d2zur9cc2gf1tx.cloudfront.net
 d2zzazjvlpgmgi.cloudfront.net
 d301cxwfymy227.cloudfront.net
@@ -332,6 +333,7 @@ d3d0wndor0l4xe.cloudfront.net
 d3d9pt4go32tk8.cloudfront.net
 d3dq1nh1l1pzqy.cloudfront.net
 d3ep3jwb1mgn3k.cloudfront.net
+d3eub2e21dc6h0.cloudfront.net
 d3evio1yid77jr.cloudfront.net
 d3f1m03rbb66gy.cloudfront.net
 d3f1wcxz2rdrik.cloudfront.net
@@ -401,6 +403,7 @@ d3t87ooo0697p8.cloudfront.net
 d3tfz9q9zlwk84.cloudfront.net
 d3tjml0i5ek35w.cloudfront.net
 d3tozt7si7bmf7.cloudfront.net
+d3u598arehftfk.cloudfront.net
 d3ud741uvs727m.cloudfront.net
 d3ujids68p6xmq.cloudfront.net
 d3uqm14ppr8tkw.cloudfront.net

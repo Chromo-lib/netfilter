@@ -1,29 +1,18 @@
-import { listWebResponseEL, snackbar, snackbarCode } from "../constants";
+import { snackbar, snackbarCode } from "../constants";
 import webResponseList from "../dom/webResponseList";
-import copy from "../utils/copy";
-import download from "../utils/download";
 
 export default function onMessages(request: any, _: any, sendResponse: any) {
   sendResponse('');
 
-  const { message, webResponseErrorDetails, rules } = request;
+  const { message, details, rules } = request;
 
-  snackbar.classList.remove('d-none')
-  snackbarCode.innerText = message?.replace(':webResponseErrorDetails','');
-
-  if (message === 'download:webResponseErrorDetails') {
-    download(webResponseErrorDetails);
-    return true;
+  if (message) {
+    snackbar.classList.remove('d-none')
+    snackbarCode.innerText = message?.replace(':webResponseErrorDetails', '');
   }
 
-  if (message === 'copy:webResponseErrorDetails') {
-    copy(webResponseErrorDetails);
-    return true;
-  }
-
-  if (webResponseErrorDetails) {
-    listWebResponseEL.innerHTML = '';
-    webResponseErrorDetails.forEach(webResponseList);
+  if (details) {
+    webResponseList(details)
     return true;
   }
 
